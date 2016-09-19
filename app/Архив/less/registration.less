@@ -1,0 +1,313 @@
+@import "grundfile.less";
+
+    
+.input-button {
+    position: relative;
+    display: inline-block;
+    font-size: 14px;
+    font-family: 'ProximaNovaBold', sans-serif;
+    padding: 18px 45px;
+    text-transform: uppercase;
+    color: #232425;
+    letter-spacing: 0.1em;
+    white-space: nowrap;
+    text-align: center;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background: @colfirm;  
+}
+
+
+
+.input-button:hover {position: relative; display: inline-block;  background-color: #0dc652;  color: #fff !important;}
+
+
+.section--reg--form {width: 100%;float: left; background: #fafafa;
+.content {
+.float-content {float: left;  padding: 30px 0;   width: 100%; background: #fff;  margin-bottom: 70px;
+min-height: 750px;} }
+ h1, h2 {text-align: center; margin-top: 83px; float: left; width: 100%; margin-bottom: 73px;
+ color: #5e5e5e; font-size: 30px; font-family: @fontH;}
+    h2 {margin-bottom:  55px; }
+    
+.section--reg--form--block {float: left; width: 100%; padding: 0 242px;
+    
+::-webkit-input-placeholder {color:@coltxt;}
+::-moz-placeholder          {color:@coltxt;}/* Firefox 19+ */
+:-moz-placeholder           {color:@coltxt;}/* Firefox 18- */
+:-ms-input-placeholder      {color:@coltxt;}
+    
+    
+.input-block {float: left; width: 50%; border: solid 9px transparent;
+input {display: block; width: 100%; border: solid 1px #dddddd; padding: 20px; color: @coltxt;}        
+}
+.input-block-big {width: 100%;}
+    
+.input-block-text {float: left; width: 100%; border: solid 9px transparent;
+::-webkit-input-placeholder {color:#dddddd;}
+::-moz-placeholder          {color:#dddddd;}/* Firefox 19+ */
+:-moz-placeholder           {color:#dddddd;}/* Firefox 18- */
+:-ms-input-placeholder      {color:#dddddd;}
+textarea {display: block; width: 100%; border: solid 1px #dddddd; padding: 20px; color: @coltxt;
+ height: 240px; font-size: 15px;}}        
+}    
+    
+.section--reg--akkaunt {float: left; width: 100%; padding: 0 242px; margin-bottom: 70px;
+.section--reg--akkaunt--one {float: left; display: inline-table; width: 50%; box-shadow: 0px 18px 27px 0px rgba(209, 209, 209, 0.004);
+border: solid 9px #fafafa; height: 300px; background: @coltxt; position: relative;
+.ph-image {position: absolute; display: block; width: 100%; height: 100%; top:0px; left:0px;
+.bgCC; opacity: 0.55; }
+.phbg{position: absolute; width: 100%; height: 100%; top:0px; left:0px; opacity: 0.75; background: #18db61; display: none;}
+.ak-title {text-align: center; .middle; font-size: 26px; font-family: @fontB; color: #fff;}
+.stickizz {position: absolute; display: block; top:27px; right: 27px; height: 25px; width: 60px;
+border-radius: 25px; background: #fff; border: solid 2px #fff; cursor: pointer;
+.stick-off {display: inline-block; float: right; width: 21px; height: 21px; border-radius: 25px; background:#f0334e;} 
+.stick-txt-l {display: inline-block; float: left;   font-family: @fontH; color: @coltxt;
+font-size: 11px; padding: 5px 3px;}  
+.stick-txt-r {display: none; float: right;   font-family: @fontH; color: @coltxt;
+font-size: 11px; padding: 5px 3px;  }    
+}   
+    
+    
+} 
+.active-akk {
+.phbg {display: block;}
+    
+.stickizz {
+.stick-off {display: inline-block; float: left; width: 21px; height: 21px; border-radius: 25px; background:#18db61}
+.stick-txt-l {display: none; float: left;}  
+.stick-txt-r {display: inline-block; float: right;   font-family: @fontH; color: @coltxt;
+font-size: 11px; padding: 5px 4px;  }      
+    }
+}
+    
+}
+
+.terms-of-use { float: left; width: 100%; text-align: center; margin-bottom: 70px;
+input {display: inline-block; width: 20px; height: 20px;  border: solid 1px #dddddd; border-radius: 10px;
+margin-right: 20px; margin-bottom: -6px; 
+} 
+span {display: inline-block; top:-10px;    top: -5px;  position: relative;    a{font-family: @fontB; color: @coltxt;}}
+}
+
+.capcha {float: left; width: 100%; text-align: center;}
+.log-in {margin-top: 15px;
+p {float: left; display: block;margin-top: 15px; text-align: center; width: 100%;
+a { font-size: 16px; color: @colfirm2; }
+    }   
+}
+.g-recaptcha{display: inline-block;}
+a, input {min-width: 250px; margin: 0 10px;}
+}
+
+.feed-capcha {margin-top: 35px;}
+
+
+
+
+@media screen and (min-width:1024px) and (max-width:1279px)  {
+    
+.section--reg--form .section--reg--form--block {
+    padding: 0 85px;
+}
+    
+.section--reg--form .section--reg--akkaunt {
+    padding: 0 85px;
+}
+    
+}
+
+@media screen and (min-width:768px) and (max-width:1023px)  {
+    
+    
+    
+.section--reg--form .section--reg--form--block {
+    padding: 0 45px;
+}
+    
+.section--reg--form .section--reg--akkaunt {
+    padding: 0 45px;
+}
+      
+    
+}
+
+@media screen and (min-width:600px) and (max-width:767px)  {
+    
+    
+.section--reg--form .section--reg--form--block {
+    padding: 0 25px;
+}
+    
+.section--reg--form .section--reg--akkaunt {
+    padding: 0 25px;
+}
+      
+.section--reg--form a, .section--reg--form input {
+    min-width: 250px;
+    margin: 0 0px;
+}    
+    
+} 
+
+@media screen and (min-width:420px) and (max-width:599px)  {
+    
+    
+    
+.section--reg--form .section--reg--form--block {
+    padding: 0 0px;
+}
+    
+.section--reg--form .section--reg--akkaunt {
+    padding: 0 0px;
+}
+    
+.section--reg--form .section--reg--form--block .input-block {
+    width: 100%;
+    border: solid 7px transparent;
+}
+    
+    
+.section--reg--form h1, .section--reg--form h2 {
+    margin-top: 53px;
+    float: left;
+    width: 100%;
+    margin-bottom: 43px;
+    color: #5e5e5e;
+    font-size: 24px;
+}
+    
+.section--reg--form h1, .section--reg--form h3 {
+    margin-top: 53px;
+    float: left;
+    width: 100%;
+    margin-bottom: 43px;
+    color: #5e5e5e;
+    font-size: 24px;
+}
+    
+    
+.section--reg--form .section--reg--akkaunt .section--reg--akkaunt--one {
+    width: 100%;
+    border: solid 7px #fafafa;
+    height: 300px;
+
+}
+    
+.section--reg--form .terms-of-use {
+    text-align: left;
+}
+    
+.section--reg--form .terms-of-use input {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: solid 1px #dddddd;
+    border-radius: 10px;
+    margin: 0 15px;
+    margin-bottom: -6px;
+    float: left;
+}
+    
+.section--reg--form .terms-of-use span {
+    float: right;
+    width: 80%;
+}
+    
+}
+
+@media screen and (max-width:419px){
+    
+    
+    
+    
+.section--reg--form .section--reg--form--block {
+    padding: 0 0px;
+}
+    
+.section--reg--form .section--reg--akkaunt {
+    padding: 0 0px;
+}
+    
+.section--reg--form .section--reg--form--block .input-block {
+    width: 100%;
+    border: solid 7px transparent;
+}
+    
+    
+.section--reg--form h1, .section--reg--form h2 {
+    margin-top: 53px;
+    float: left;
+    width: 100%;
+    margin-bottom: 43px;
+    color: #5e5e5e;
+    font-size: 24px;
+}
+    
+.section--reg--form h1, .section--reg--form h3 {
+    margin-top: 53px;
+    float: left;
+    width: 100%;
+    margin-bottom: 43px;
+    color: #5e5e5e;
+    font-size: 24px;
+}
+    
+    
+.section--reg--form .section--reg--akkaunt .section--reg--akkaunt--one {
+    width: 100%;
+    border: solid 7px #fafafa;
+    height: 300px;
+
+}
+    
+.section--reg--form .terms-of-use {
+    text-align: left;
+}
+    
+.section--reg--form .terms-of-use input {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: solid 1px #dddddd;
+    border-radius: 10px;
+    margin: 0 15px;
+    margin-bottom: -6px;
+    float: left;
+}
+    
+.section--reg--form .terms-of-use span {
+    float: right;
+    width: 80%;
+}
+
+.section--reg--form a, .section--reg--form input {
+    min-width: 250px;
+    margin: 0 0px;
+}  
+    
+.section--reg--form .log-in p a {
+    font-size: 12px;
+    color: #2ea0f0;
+}
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

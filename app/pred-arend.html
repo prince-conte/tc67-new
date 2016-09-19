@@ -1,0 +1,845 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>home</title>
+<meta name="title" content="" />
+<meta name="description" content="" />
+<meta content="" property="og:url" />
+<meta content="" property="og:image" />
+<meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="css/index.css">
+<!--build:css css/styles.min.css-->
+<link rel="stylesheet" type="text/css" href="css/fonts.css">   
+<link rel="stylesheet" type="text/css" href="css/hamb.css">
+<link rel="stylesheet" type="text/css" href="css/animations.css"> 
+<link rel="stylesheet" type="text/css" href="css/style.css"> 
+<link rel="stylesheet" href="css/jquery-ui-1.8.19.custom.css">
+    
+<!-- endbuild --> 
+<script src='https://www.google.com/recaptcha/api.js'></script>   
+    
+
+<link href="css/font-awesome.css" rel="stylesheet">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+<script src="external/jquery.hotkeys.js"></script>
+<script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
+<script src="external/google-code-prettify/prettify.js"></script>
+<script src="js/bootstrap-wysiwyg.js"></script>
+    
+    <style>
+
+        
+    </style>   
+    
+    
+    
+<script>
+  $(function(){
+    function initToolbarBootstrapBindings() {
+      var fonts = ['Serif', 'Sans', 'Arial', 'Arial Black', 'Courier', 
+            'Courier New', 'Comic Sans MS', 'Helvetica', 'Impact', 'Lucida Grande', 'Lucida Sans', 'Tahoma', 'Times',
+            'Times New Roman', 'Verdana'],
+            fontTarget = $('[title=Font]').siblings('.dropdown-menu');
+      $.each(fonts, function (idx, fontName) {
+          fontTarget.append($('<li><a data-edit="fontName ' + fontName +'" style="font-family:\''+ fontName +'\'">'+fontName + '</a></li>'));
+      });
+      $('a[title]').tooltip({container:'body'});
+    	$('.dropdown-menu input').click(function() {return false;})
+		    .change(function () {$(this).parent('.dropdown-menu').siblings('.dropdown-toggle').dropdown('toggle');})
+        .keydown('esc', function () {this.value='';$(this).change();});
+
+      $('[data-role=magic-overlay]').each(function () { 
+        var overlay = $(this), target = $(overlay.data('target')); 
+        overlay.css('opacity', 0).css('position', 'absolute').offset(target.offset()).width(target.outerWidth()).height(target.outerHeight());
+      });
+      if ("onwebkitspeechchange"  in document.createElement("input")) {
+        var editorOffset = $('#editor').offset();
+        $('#voiceBtn').css('position','absolute').offset({top: editorOffset.top, left: editorOffset.left+$('#editor').innerWidth()-35});
+      } else {
+        $('#voiceBtn').hide();
+      }
+	};
+	function showErrorAlert (reason, detail) {
+		var msg='';
+		if (reason==='unsupported-file-type') { msg = "Unsupported format " +detail; }
+		else {
+			console.log("error uploading file", reason, detail);
+		}
+		$('<div class="alert"> <button type="button" class="close" data-dismiss="alert">&times;</button>'+ 
+		 '<strong>File upload error</strong> '+msg+' </div>').prependTo('#alerts');
+	};
+    initToolbarBootstrapBindings();  
+	$('#editor').wysiwyg({ fileUploadError: showErrorAlert} );
+    window.prettyPrint && prettyPrint();
+  });
+</script>
+
+    
+<script src="https://api-maps.yandex.ru/2.0-stable/?load=package.standard&lang=ru-RU" type="text/javascript"></script>
+    
+<script type="text/javascript">
+  ymaps.ready(init);
+    var myMap,
+        myPlacemark;
+
+    function init(){     
+        myMap = new ymaps.Map ("map", {
+            center: [54.78411273, 32.03829173],
+            zoom: 12
+        });
+        
+        // Создание экземпляра элемента управления
+myMap.controls.add(
+   new ymaps.control.ZoomControl()
+);
+        
+  
+    var searchControl = new ymaps.control.SearchControl({
+     options: {
+         float: 'right',
+         floatIndex: 100,
+         noPlacemark: true
+     }
+});
+myMap.controls.add(searchControl);
+        
+
+        
+        
+
+// Обращение к конструктору класса элемента
+// управления по ключу
+//myMap.controls.add('typeSelector');
+
+       // myPlacemark = new ymaps.Placemark([54.78411273, 32.03829173], { 
+          //  hintContent: '', 
+        //    balloonContent: '' 
+      //  });
+
+  //      myMap.geoObjects.add(myPlacemark);
+    }
+</script>
+    
+</head>
+<body class="body-ct">
+<progress id="progressbar" value="0" max="100"></progress> 
+    
+<a id="hamb" class="hamburger hamburger--squeeze slideLeft">
+<div class="hamburger-box">
+<div class="hamburger-inner"></div>
+</div>
+</a>     
+ 
+<a id="hamb-mobile" class="hamburger hamburger--squeeze">
+<div class="hamburger-box">
+<div class="hamburger-inner"></div>
+</div>
+</a>      
+    
+<a id="hamb-t" class="hamburger hamburger--squeeze slideLeft">
+<span></span>
+</a>
+    
+<div class="wrapper wrap-ct"> 
+<header class="wrap-head">
+<div class="phbgh"></div>    
+<nav>
+<div class="content">   
+<a class="logo-block">
+<h1 class="logo">ТЦ67 - портал о торговой 
+недвижимости</h1> 
+<span>портал о торговой<br> 
+недвижимости</span>    
+</a> 
+    
+    
+<ul class="top-menu">
+<li><a>Войти</a></li>
+<li><a class="login"><span>Стать арендатором</span></a></li>
+</ul>    
+</div> 
+
+</nav>  
+</header>  
+ 
+<div class="inner inner-ct">
+    
+<section class="tc-menu">
+<div class="content">
+<ul>
+    
+<!-- один пункт -->    
+<li>
+<a class="one">
+<!-- icon -->
+<div class="icon">
+
+<!-- icon -->    
+<i class="im--ico1"></i>    
+    
+    
+</div>  
+    
+<div class="one-desc">
+
+<span class="title">торговые центры</span>    
+    
+</div>    
+
+    
+</a>    
+</li>    
+<!-- один пункт -->     
+     
+<!-- один пункт -->    
+<li>
+<a class="one">
+<!-- icon -->
+<div class="icon">
+<!-- icon -->    
+<i class="im--ico2"></i>  
+    
+    
+</div>  
+    
+<div class="one-desc">
+
+<span class="title">магазины</span>    
+    
+</div>    
+
+    
+</a>    
+</li>    
+<!-- один пункт -->     
+    
+<!-- один пункт -->    
+<li>
+<a class="one">
+<!-- icon -->
+<div class="icon">
+
+<!-- icon -->    
+<i class="im--ico3"></i>    
+    
+    
+</div>  
+    
+<div class="one-desc">
+
+<span class="title">предложения аренды</span>    
+    
+</div>    
+
+    
+</a>    
+</li>    
+<!--    
+<!-- один пункт -->    
+<li>
+<a class="one">
+<!-- icon -->
+<div class="icon">
+
+<!-- icon -->    
+<i class="im--ico4"></i>  
+    
+    
+</div>  
+    
+<div class="one-desc">
+
+<span class="title">Скидки</span>    
+    
+</div>    
+
+    
+</a>    
+</li>    
+<!--    
+<!-- один пункт -->    
+<li>
+<a class="one">
+<!-- icon -->
+<div class="icon">
+
+<!-- icon -->    
+<i class="im--ico5"></i>  
+    
+    
+</div>  
+    
+<div class="one-desc">
+
+<span class="title">Информация</span>    
+    
+</div>    
+
+    
+</a>    
+</li>    
+<!--    
+<!-- один пункт -->    
+<li>
+<a class="one">
+<!-- icon -->
+<div class="icon">
+
+<!-- icon -->    
+<i class="im--ico6"></i>   
+    
+    
+</div>  
+    
+<div class="one-desc">
+
+<span class="title">предложения аренды</span>    
+    
+</div>    
+
+    
+</a>    
+</li>    
+<!-- один пункт -->    
+    
+</ul>    
+    
+</div> 
+</section>
+    
+<section class="section--lk--form">
+<div class="content">
+    
+<!-- left-menu -->  
+    
+<div class="float--left--menu">
+<div class="left--menu--block">
+<div class="title---block">
+<span>Виктор Семенов</span>   
+</div> 
+<ul>
+<li class="active"><a href="#">Профиль</a></li>    
+<li><a href="#">Предложения аренды</a></li>    
+<li><a href="#">Заявки на аренду</a></li>    
+<li><a href="#">Пользовательское соглашение</a></li>    
+<li><a href="#">Првила размещения рекламы</a></li>    
+<li><a href="#">Выход из учетной записи</a></li>    
+</ul>
+</div>
+</div>  
+    
+<form class="float-content">
+
+<h1>Контактная информация</h1>
+<div class="section--reg--form--block">
+
+<div class="input-block"><input type="text" placeholder="Название бренда*"></div>    
+<div class="input-block"><input type="text" placeholder="Город*"></div>    
+  
+<div class="input-block"><input type="text" placeholder="Площадь от, кв.м.*"></div>    
+<div class="input-block"><input type="text" placeholder="Площадь до, кв.м.*"></div>    
+  
+<div class="input-block"><input type="password" placeholder="Арендная ставка за кв.м. в год"></div>     
+    
+</div>      
+
+<br>    
+<br> 
+<div id="map"></div> 
+<br>    
+<br>    
+    
+    
+    
+    
+    
+<h2>Описание</h2>    
+<p>Опишите вашу компанию и каким требованиям должна удовлетворять предлагаемая площадь</p>    
+   
+<!-- editor -->    
+  <div class="hero-unit">
+
+	<!---
+	Please read this before copying the toolbar:
+
+	* One of the best things about this widget is that it does not impose any styling on you, and that it allows you 
+	* to create a custom toolbar with the options and functions that are good for your particular use. This toolbar
+	* is just an example - don't just copy it and force yourself to use the demo styling. Create your own. Read 
+	* this page to understand how to customise it:
+    * https://github.com/mindmup/bootstrap-wysiwyg/blob/master/README.md#customising-
+	--->
+	<div id="alerts"></div>
+    <div class="btn-toolbar" data-role="editor-toolbar" data-target="#editor">
+      <div class="btn-group">
+          <ul class="dropdown-menu">
+          </ul>
+        </div>
+      <div class="btn-group">
+        <a class="btn" data-edit="bold"><i class="icon-bold"></i></a>
+        <a class="btn" data-edit="italic"><i class="icon-italic"></i></a>
+        <a class="btn" data-edit="strikethrough"><i class="icon-strikethrough"></i></a>
+      </div>
+      <div class="btn-group">
+        <a class="btn" data-edit="insertunorderedlist"><i class="icon-list-ul"></i></a>
+        <a class="btn" data-edit="insertorderedlist"><i class="icon-list-ol"></i></a>
+      </div>
+
+      <div class="btn-group">
+        <a class="btn" data-edit="undo"><i class="icon-undo"></i></a>
+        <a class="btn" data-edit="redo"><i class="icon-repeat"></i></a>
+      </div>
+      <input type="text" data-edit="inserttext" id="voiceBtn" x-webkit-speech="">
+    </div>
+
+    <div id="editor">
+      Опишите вашу компанию
+    </div>
+  </div>
+    
+<!-- editor -->    
+    
+<h2>Прикрепить логотип</h2>    
+<p>Прикрепите логотип вашей компании размером до 500px (jpeg/png)</p> 
+
+<div class="img--load--block">
+<div class="middle">    
+<script src="http://yui.yahooapis.com/3.17.2/build/yui/yui-min.js"></script>
+<script src="js/cropbox.js"></script>
+<div class="container">
+    <div class="imageBox">
+        <div class="thumbBox"></div>
+        <div class="spinner" style="display: none">Loading...</div>
+    </div>
+    <div class="action">
+        <a class="fileUpload"><span>выбрать изображение</span><input type="file" id="file" class="upload"></a>
+        <div class="zoooms">
+        <input type="button" id="btnCrop" value="Сохранить" style="float: right">
+        <input type="button" id="btnZoomIn" value="+" style="float: right">
+        <input type="button" id="btnZoomOut" value="-" style="float: right">
+        </div>    
+    </div>
+    <div class="cropped">
+
+    </div>
+</div>
+
+</div>
+</div> 
+    
+    
+
+<h2>Загрузить фото</h2>    
+<p>Прикрепите от 3 до 5 фотографий о компании в формате pnp или jpg.</p> 
+
+<div id="photo-block" class="img--load--block load--block-big">
+<div class="middle">    
+<output id="list"></output> 
+    
+<div class="fileUpload btn btn-primary">
+<span>Загрузить фото</span>
+<input type="file" id="files" name="files[]" multiple  class="upload" />   
+<br>    
+   
+</div>
+</div>
+</div> 
+
+<div class="terms-of-use">
+<input type="checkbox" required="">
+<span>Я ознакомлен и согласен <a target="_blank" href="#">с правилами размещения объявлений</a> на сайте.</span> 
+</div>    
+<div class="block-buttons">
+<a class="button">
+<span>Добавить</span>    
+</a> 
+</div>    
+</form>    
+</div>        
+</section>
+  
+    
+    
+    
+<section class="cat-tc-one">
+    
+ 
+<div class="content tcw2">   
+<!-- title bar -->
+<div class="title-bar">
+<h2 class="center-align recom">Рекомендуем обратить внимание </h2>    
+</div>    
+<!-- title bar -->
+    
+<!-- display catalog -->  
+<div id="a-table-tx" class="a-table">
+
+    
+    
+ 
+<!-- post(1скидка) --> 
+<div class="one-tc">
+ 
+<div class="one mag--one">
+<div class="image">
+<a class="sc-image"  style="background-image: url(img/hero-29bbca6a-df8f-4e84-9282-1f4cb2cad754-0-472x310.jpg);">
+<div class="phbg"></div> 
+
+</a>    
+</div> 
+    
+<div class="top-info">
+<div class="but-blue"><span>Лучшее</span></div>        
+</div>
+
+</div>
+<div class="one-info mag--one-info">
+<div class="mag">
+<div class="mag--ava"><img src="img/ava1.jpg"></div>
+<div class="mag--title">
+<div class="middle">
+<h5>Русское золото</h5>
+<span class="mag--desc">Ювелирные изделия</span>
+</div>
+</div>
+</div>
+    
+    
+<div class="shops">
+<strong>Скидки:</strong> <a href="#">Оливки, маслины, каперсы</a>   
+</div>   
+  
+        
+<div class="shops">
+<strong>Акция действительна до: </strong> <span class="gr-txt"> 31 июля 2016</span>   
+</div>   
+  
+    
+    
+<a class="foot-ar">
+<div class="numb"><span>9</span></div><div class="desc"><span>Скидок у магазина</span></div>
+</a>     
+</div>
+    
+    
+</div>  
+<!-- post(1магазин) -->     
+    
+<!-- post(1скидка) --> 
+<div class="one-tc">
+ 
+<div class="one mag--one">
+<div class="image">
+<a class="sc-image"  style="background-image: url(img/hero-29bbca6a-df8f-4e84-9282-1f4cb2cad754-0-472x310.jpg);">
+<div class="phbg"></div> 
+
+</a>    
+</div> 
+    
+<div class="top-info">
+<div class="but-blue"><span>Лучшее</span></div>        
+</div>
+
+</div>
+<div class="one-info mag--one-info">
+<div class="mag">
+<div class="mag--ava"><img src="img/ava1.jpg"></div>
+<div class="mag--title">
+<div class="middle">
+<h5>Русское золото</h5>
+<span class="mag--desc">Ювелирные изделия</span>
+</div>
+</div>
+</div>
+    
+    
+<div class="shops">
+<strong>Скидки:</strong> <a href="#">Оливки, маслины, каперсы</a>   
+</div>   
+  
+        
+<div class="shops">
+<strong>Акция действительна до: </strong> <span class="gr-txt"> 31 июля 2016</span>   
+</div>   
+  
+    
+    
+<a class="foot-ar">
+<div class="numb"><span>9</span></div><div class="desc"><span>Скидок у магазина</span></div>
+</a>     
+</div>
+    
+    
+</div>  
+<!-- post(1магазин) -->     
+    
+<!-- post(1скидка) --> 
+<div class="one-tc">
+ 
+<div class="one mag--one">
+<div class="image">
+<a class="sc-image"  style="background-image: url(img/hero-29bbca6a-df8f-4e84-9282-1f4cb2cad754-0-472x310.jpg);">
+<div class="phbg"></div> 
+
+</a>    
+</div> 
+    
+<div class="top-info">
+<div class="but-blue"><span>Лучшее</span></div>        
+</div>
+
+</div>
+<div class="one-info mag--one-info">
+<div class="mag">
+<div class="mag--ava"><img src="img/ava1.jpg"></div>
+<div class="mag--title">
+<div class="middle">
+<h5>Русское золото</h5>
+<span class="mag--desc">Ювелирные изделия</span>
+</div>
+</div>
+</div>
+    
+    
+<div class="shops">
+<strong>Скидки:</strong> <a href="#">Оливки, маслины, каперсы</a>   
+</div>   
+  
+        
+<div class="shops">
+<strong>Акция действительна до: </strong> <span class="gr-txt"> 31 июля 2016</span>   
+</div>   
+  
+    
+    
+<a class="foot-ar">
+<div class="numb"><span>9</span></div><div class="desc"><span>Скидок у магазина</span></div>
+</a>     
+</div>
+    
+    
+</div>  
+<!-- post(1магазин) -->     
+   
+
+    
+    
+    
+<!-- display catalog -->  
+</div>
+ 
+
+    
+    
+</div>
+</section>
+ 
+<footer>
+<div class="content">
+    
+<div class="f-block-tx a-left">
+<h4>Каталог торговых центров</h4>
+<ul>
+<a>Список ТЦ</a>
+<a>ТЦ на карте</a>    
+</ul> 
+ 
+<h4>Каталог магазинов</h4> 
+<ul>
+<a>Список магазинов</a>
+<a>Магазины на карте</a>    
+</ul>        
+</div>    
+    
+ 
+    
+<div class="f-block-tx b-left">
+<h4>Каталог заявок на аренду</h4>
+<ul>
+<a>Список всех заявок</a>
+   
+</ul> 
+ 
+<h4>Каталог предложений аренды</h4> 
+<ul>
+<a>Список предложений аренды</a>
+<a>Предложения аренды на карте  </a>    
+</ul>        
+</div>     
+     
+<div class="f-block-tx a-right">
+<h4>Путеводитель <br>
+по скидкам</h4>
+<ul>
+
+   
+</ul> 
+ 
+<h4>Информационный гид</h4> 
+<ul>
+<a>Новости</a> 
+<a>Полезное</a> 
+<a>Аналитика</a> 
+<a>Справочник предпринимателя</a> 
+</ul>        
+</div>     
+    
+<div class="f-block-tx b-right">
+<h4>Местоположение</h4>
+<ul>
+<a>г. Смоленск, ул. Кловская 19-а</a>
+
+</ul> 
+ 
+<h4>Мобильное приложение</h4> 
+<ul>
+<li><a><img src="img/appstore.png"></a></li>
+<li><a><img src="img/appgoogle.png"></a></li>
+</ul>        
+</div>     
+ 
+    
+    
+<div class="foot-info">
+<div class="logo-block">
+<h1 class="logo">ТЦ67 - портал о торговой 
+недвижимости</h1> 
+
+<span>© 2015 ТЦ67 — все торговые центры <br> 
+Смоленска и Смоленской области в одном месте.  </span>   
+<span class="copy-des"><a>*Использование сайта, в том числе подача объявлений, означает согласие <br>
+с пользовательским соглашением.</a></span>
+</div>     
+ 
+<div class="linked-block">
+<div class="social">    
+<a class="link"><i class="fa fa-facebook" aria-hidden="true"></i></a> 
+<a class="link"><i class="fa fa-vk" aria-hidden="true"></i></a> 
+<a class="link"><i class="fa fa-twitter" aria-hidden="true"></i></a> 
+</div>
+    
+<a class="phone-block-f">+7 (4812) 300-200</a>    
+</div>    
+ 
+<div class="end-block">
+<a class="button cv-blue">
+<span>Задать вопрос</span>    
+</a>  
+    
+<span class="parus">
+Разработка — <a target="_blank" href="http://qwertydesign.ru/"><span class="red-txt">QWERTY</span>DESIGN</a>   
+</span>
+</div>    
+    
+</div> 
+    
+    
+</div>    
+    
+</footer>    
+</div>    
+    
+    
+ <!--mobile menu-->
+<div id="mbile-web" class="popup_block"><div class="fon"></div>
+<div class="menu-pos">
+<div class="menu">
+<ul>
+<li><a>Главная</a></li>
+<li><a>О сервисе</a></li>
+<li><a>Помощь</a></li>
+<li><a>Регистрация</a></li>
+<li><a>Войти</a></li>
+</ul>
+</div> 
+</div>
+</div>            
+<!--mobile menu-->      
+</div>
+
+    
+    
+<script>
+  function handleFileSelect(evt) {
+    var files = evt.target.files; // FileList object
+
+    // Loop through the FileList and render image files as thumbnails.
+    for (var i = 0, f; f = files[i]; i++) {
+
+      // Only process image files.
+      if (!f.type.match('image.*')) {
+        continue;
+      }
+
+      var reader = new FileReader();
+
+      // Closure to capture the file information.
+      reader.onload = (function(theFile) {
+        return function(e) {
+          // Render thumbnail.
+          var span = document.createElement('span');
+          span.innerHTML = ['<img class="thumb" src="', e.target.result,
+                            '" title="', escape(theFile.name), '"/>'].join('');
+          document.getElementById('list').insertBefore(span, null);
+        };
+      })(f);
+
+      // Read in the image file as a data URL.
+      reader.readAsDataURL(f);
+    }
+  }
+
+  document.getElementById('files').addEventListener('change', handleFileSelect, false);
+</script>
+   
+
+<script type="text/javascript">
+    YUI().use('node', 'crop-box', function(Y){
+        var options =
+        {
+            imageBox: '.imageBox',
+            thumbBox: '.thumbBox',
+            spinner: '.spinner',
+            imgSrc: 'avatar.png'
+        }
+        var cropper = new Y.cropbox(options);
+        Y.one('#file').on('change', function(){
+            var reader = new FileReader();
+            reader.onload = function(e) {
+                options.imgSrc = e.target.result;
+                cropper = new Y.cropbox(options);
+            }
+            reader.readAsDataURL(this.get('files')._nodes[0]);
+            this.get('files')._nodes = [];
+        })
+        Y.one('#btnCrop').on('click', function(){
+            var img = cropper.getDataURL()
+            Y.one('.cropped').append('<img src="'+img+'">');
+        })
+        Y.one('#btnZoomIn').on('click', function(){
+            cropper.zoomIn();
+        })
+        Y.one('#btnZoomOut').on('click', function(){
+            cropper.zoomOut();
+        })
+    })
+</script>
+
+
+<script src="js/responsiveslides.min.js"></script>
+<script src="js/jquery.equalheights.js"></script> 
+<script src="js/jquery.smoothscroll.js"></script>
+<script src="js/paralax.js"></script>
+<script src="js/sl-b.js"></script> 
+<script src="js/valid-form.js"></script> 
+<script type="text/javascript" src="js/jquery-ui-1.8.19.custom.min.js"></script> 
+<script src="js/any.js"></script>
+
+
+
+<link rel="stylesheet" href="css/jquery.Jcrop.css" type="text/css" />    
+    
+    
+</body>
+</html>
