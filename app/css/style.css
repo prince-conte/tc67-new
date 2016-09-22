@@ -917,11 +917,18 @@ progress[value]::-webkit-progress-value {
   .button span {
     position: relative;
     display: block;
-    font-size: 14px;
+    font-size: 11px;
     font-family: 'ProximaNovaBold', sans-serif;
     padding: 10px;
   }
+  .button:hover span {
+    font-size: 11px;
+  }
   .button span {
+    font-size: 11px;
+    padding: 10px;
+  }
+  .button span:hover {
     font-size: 11px;
     padding: 10px;
   }
@@ -6334,6 +6341,9 @@ h2.recom {
   margin-bottom: 70px;
   min-height: 750px;
 }
+.section--lk--form .content .float-content .block-buttons .button {
+  float: right;
+}
 .section--lk--form .content .float-content .title-bar {
   float: left;
   width: 100%;
@@ -6984,6 +6994,12 @@ div[data-role="editor-toolbar"] {
   }
 }
 @media screen and (min-width: 420px) and (max-width: 599px) {
+  .float-content .button-bar {
+    float: left;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 25px;
+  }
   .section--lk--form .float--left--menu {
     width: 100%;
   }
@@ -7157,6 +7173,16 @@ div[data-role="editor-toolbar"] {
   }
   .section--lk--form .content .float-content .title-bar h2 a {
     display: none;
+  }
+  .block-buttons .button {
+    float: right;
+    width: 100%;
+  }
+  .float-content .button-bar {
+    float: left;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 25px;
   }
 }
 .page--inform {
