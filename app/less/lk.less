@@ -198,11 +198,17 @@ h2 { margin: 55px 9px 30px;}
     
 .input-block {float: left; width: 100%; border: solid 9px transparent;
 input {display: block; width: 50%; border: solid 1px #dddddd; padding: 20px; color: @coltxt;}  
+
+    
 .button {margin: 0px; width: 250px;}
 .blue {margin: 0px; width: 250px; background: @colfirm2; border-color: @colfirm2;
 span{color:#fff}}
 .blue:hover {background: #178bdc; border-color: #178bdc;}
 }
+    
+    
+    
+    
     
 .input-block-text {float: left; width: 100%; border: solid 9px transparent;
 ::-webkit-input-placeholder {color:#dddddd;}
@@ -221,8 +227,35 @@ textarea {display: block; width: 100%; border: solid 1px #dddddd; padding: 20px;
 :-ms-input-placeholder      {color:@coltxt;}
     
     
-.input-block {float: left; width: 50%; border: solid 9px transparent;
-input {display: block; width: 100%; border: solid 1px #dddddd; padding: 20px; color: @coltxt;}        
+.input-block {float: left; width: 50%; border: solid 9px transparent; position: relative;
+input {display: block; width: 100%; border: solid 1px #dddddd; padding: 20px; color: @coltxt;}   
+.check  {float: left; width: auto; padding: 10px; border-radius: 8px; margin-right: 15px; width: 20px; height: 21px;} 
+.ui-in {
+    position: relative;
+    float: left;
+    height: 60px;
+    width: 100%;
+    background: url(../img/ui-b.svg);
+    background-position: right center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    border: solid 1px #dddddd;
+.stadt {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: block;
+    width: 100%;
+    padding: 0px 23px;
+    background: transparent;
+select {
+    width: 150%;
+    height: 60px;
+    padding: 00px 0px;
+    background: transparent;
+}
+}
+}
 }
     
 .input-block-text {float: left; width: 100%; border: solid 9px transparent;
@@ -289,6 +322,7 @@ font-size: 11px; padding: 5px 4px;  }
     font-size: 14px;
     line-height: 1.4;
     width: 100%;
+    box-sizing: border-box;
     
 }
 #voiceBtn {
@@ -360,6 +394,41 @@ div[data-role="editor-toolbar"] {
 } 
 @media screen and (min-width:600px) and (max-width:767px) {
     
+.section--reg--form--block .input-block {
+    float: left;
+    width: 100%;
+    border: solid 9px transparent;
+    position: relative;
+}    
+    
+.img--load--block {
+    float: left;
+    width: 100%;
+    height: 245px;
+    display: table;
+    text-align: center;
+    border: dotted 1px #c9c9c9;
+    border-radius: 10px;
+}  
+    
+.section--lk--form .content .terms-of-use input {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: solid 1px #dddddd;
+    border-radius: 10px;
+    margin-right: 20px;
+    margin-bottom: -6px;
+    float: left;
+}
+    
+.section--lk--form .content .terms-of-use span {
+    display: inline-block;
+    top: -17px;
+    position: relative;
+    float: left;
+    left: 40px;
+}
     
     
 .section--lk--form .float--left--menu {
@@ -381,7 +450,42 @@ div[data-role="editor-toolbar"] {
 }
 @media screen and (min-width:420px) and (max-width:599px) {
     
+.section--reg--form--block .input-block {
+    float: left;
+    width: 100%;
+    border: solid 9px transparent;
+    position: relative;
+}    
     
+.img--load--block {
+    float: left;
+    width: 100%;
+    height: 245px;
+    display: table;
+    text-align: center;
+    border: dotted 1px #c9c9c9;
+    border-radius: 10px;
+}  
+    
+.section--lk--form .content .terms-of-use input {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: solid 1px #dddddd;
+    border-radius: 10px;
+    margin-right: 20px;
+    margin-bottom: -6px;
+    float: left;
+}
+    
+.section--lk--form .content .terms-of-use span {
+    display: inline-block;
+    top: -17px;
+    position: relative;
+    float: left;
+    left: 40px;
+}
+       
 .float-content .button-bar {
     float: left;
     width: 100%;
@@ -421,6 +525,55 @@ div[data-role="editor-toolbar"] {
     
 } 
 @media screen and (max-width:419px) {
+    
+.section--lk--form h2 {
+    padding-left: 10px;
+}
+    
+    
+.section--lk--form h1 {
+    padding-left: 10px;
+}
+    
+    
+    
+.section--reg--form--block .input-block {
+    float: left;
+    width: 100%;
+    border: solid 9px transparent;
+    position: relative;
+}    
+    
+.img--load--block {
+    float: left;
+    width: 100%;
+    height: 245px;
+    display: table;
+    text-align: center;
+    border: dotted 1px #c9c9c9;
+    border-radius: 10px;
+}  
+    
+.section--lk--form .content .terms-of-use input {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: solid 1px #dddddd;
+    border-radius: 10px;
+    margin-right: 20px;
+    margin-bottom: -6px;
+    float: left;
+}
+    
+.section--lk--form .content .terms-of-use span {
+    display: inline-block;
+    top: -17px;
+    position: relative;
+    float: left;
+    left: 40px;
+}
+       
+    
     
     
 .section--lk--form .float--left--menu {
@@ -526,7 +679,7 @@ h2 {
     
    
 .section--lk--form .content .float-content {
-    padding: 30px 0px 0px;
+    padding: 30px 15px 0px;
     margin-bottom: -30px;
     min-height: 0px;
 }
@@ -598,6 +751,28 @@ h2 {
     width: 100%;
     text-align: center;
     margin-bottom: 25px;
+}
+   
+// upload 
+    
+    
+.img--load--block .action .zoooms input {
+    background: #2ea0f0;
+    border: solid 1px #2ea0f0;
+    color: #fff;
+    font-family: 'ProximaNovaBold', sans-serif;
+    font-size: 10px;
+    padding: 9px 15px;
+    margin: 5px;
+}
+
+.img--load--block .fileUpload span {
+    padding: 12px 40px;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'ProximaNovaBold', sans-serif;
+    display: inline-block;
+    font-size: 12px;
 }
     
 }  

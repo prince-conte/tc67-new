@@ -7,6 +7,9 @@
 .red-txt {color: #f33838;}
 
 .center-align{text-align: center; width: 100%;}
+
+
+// progress-bar ____________________________________
 progress {
     position:fixed;
     top:0px;
@@ -15,7 +18,6 @@ progress {
     height: 2px;
     z-index: 9999999999999999999;
 }
-
 progress[value] {
   /* Reset the default appearance */
   -webkit-appearance: none;
@@ -26,8 +28,6 @@ progress[value] {
   border: none;
   -color: transparent;
 }
-
-
 progress[value]::-moz-progress-bar { 
     background-color: @colfirm2;
 }
@@ -54,7 +54,8 @@ progress[value]::-webkit-progress-value {
     background-size: 35px 20px, 100% 100%, 100% 100%;
 }
 
-// progress bar
+// progress-bar ____________________________________
+
 
 .one{ .next {display: none !important;}
 .prev {display: none !important;}}
@@ -66,10 +67,15 @@ progress[value]::-webkit-progress-value {
     float: left;
 }
 
+// share isk _______________________________________
+
 .ya-share2__link {
     margin: 0 15px;
 }
 
+
+
+// buttons option global_______________________________________
 
 .button {position: relative; display: inline-block;  background-color: @colfirm;     
     -webkit-transition: all 0.3s ease-in-out;
@@ -96,7 +102,6 @@ span {position: relative; display: block; font-size: 14px; font-family: @fontB; 
 .button {border: solid 2px @colfirm; margin: 0 7px; width: 275px; }   
 .cv-blue {border-radius: 0px; background:#fff; color:@colfirm2;  border: solid 2px @colfirm2;
 span {color:@colfirm2;   text-align: center;}}
-    
 
 .button:hover {border: solid 2px #0dc652;  span {color:#fff}}
 .cv-blue:hover {border-radius: 0px; background:@colfirm2;  border: solid 2px @colfirm2; color:#fff; span {color:#fff}}
@@ -107,7 +112,7 @@ span {color:@colfirm2;   text-align: center;}}
 .button:hover {border: solid 2px #0dc652;  span {color:#fff}}
 .cv-blue:hover {border-radius: 0px; background:@colfirm2;  border: solid 2px @colfirm2; color:#fff; span {color:#fff}}
 
-// button global style
+// buttons option global _______________________________________
 
 .map-ad {position:relative; height: 14px;display: table; width: 100%; padding: 0px 0 10px;
 span {position: relative; display: table-cell; vertical-align: middle; color: #fff; 
@@ -118,22 +123,18 @@ img {position: relative; display:inline-block; vertical-align: middle; height: 1
 span {position: relative; display: inline-block; font-size:14px; color:#fff; line-height: 1.4; padding: 25px 45px 21px; float: left;}
 }
 
-// img hover vor one
+// img hover global style
+
 .image {position: absolute; display: block; width: 100%; height: 100%; top:0px; left:0px; overflow: hidden; border: solid 8px #fff; 
 .phbg {position: absolute; display: block; top: 0px; left: 0px; background: #000; opacity: .40; width: 100%; height: 100%; 
 -webkit-transition: all 1s ease-out; -o-transition: all 1s ease-out; transition: all 1s ease-out;}    
 .one-info {position: absolute; display: block; top: 0px; left: 0px; padding: 16px;}
-
 .sc-image {position: absolute; display: block; width: 101%; height: 101%; top: -0.5%; left: -0.5%;
 .bgCC;  -webkit-transition: all 1s ease-out; -o-transition: all 1s ease-out; transition: all 1s ease-out; 
 }}
-
 .one:hover {.phbg {opacity: 0.75;}
 .sc-image {-webkit-transform: scale(1.15); -ms-transform: scale(1.105); -o-transform: scale(1.15); transform: scale(1.15);}}
-
-
 .a-table {position: relative; display: block; float: left; width: 100%; } 
-
 .one {position: relative; display: inline-table; float: left; width: 25%; height: 240px; 
 .top-info {position: relative; display: block; width: 100%; padding: 20px 28px;
     
@@ -159,25 +160,18 @@ img {position: relative; display:inline-block; vertical-align: middle; height: 1
 }}}
 
 
-
-
-
-
-
-
-
-
-
-
+// body page
 
 .wrapper {display: block; width: 100%; top:100%; overflow: hidden;
+
+// sub-body page
 .inner {position: absolute; display: block; width: 100%; top:100%;}
 }
 
 .inner-ct {position: relative !important; min-height: 100% !important;}
 
 .wrap-ct {float: left; min-height: 100%; background: #eeeeee;}
-// основные блоки сетки
+// sub-body page
 
 .middle {position: relative; display: table-cell; vertical-align: middle;}
 .content {position: relative; display: block; margin: 0 auto; width: 1210px; height: 100%;}
