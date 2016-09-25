@@ -1,6 +1,11 @@
 @import "grundfile.less";
 
 
+.archiv {display: none;}
+
+.float-archiv {margin-bottom: 0px !important; padding-bottom: 70px !important;}
+
+
 #list {position: relative; display: block; width: 100%; float: left;
 span {position: relative; display: block; width: 100%; float: left;
 img {position: relative; display: block; width: 100%; float: left; margin-bottom: 10px;}    
@@ -24,13 +29,16 @@ h2.recom {text-align: center !important; width: 100% !important;}
     i.map {.bgCCC;  display: inline-block; width: 15px; height: 15px; background: url(../img/st-map.svg);}    
 }
 .line {float: left; width: 100%;}  
-.redact {font-size: 12px; color: @coltxt; background: #eeeeee; padding: 8px 14px; border-radius: 25px; margin-right: 10px; float: left;}       
+.redact {font-size: 12px; color: @coltxt; background: #eeeeee; padding: 8px 14px; border-radius: 25px; margin-right: 10px; float: left;
+margin-bottom: 10px;} 
+.redact:hover {background: @coltxt; color: #eeeeee; }    
+.del:hover {background: red; color: #eeeeee; }    
+
 } 
     
 .a-table    {background: #fafafa;}
 .content {
 .float-content {float: right;  padding: 30px 68px;   width: 835px; background: #fff;  margin-bottom: 70px;
-min-height: 750px;
     
 .block-buttons {
 .button {float: right}   
@@ -39,12 +47,19 @@ min-height: 750px;
 .title-bar { float: left; width: 100%; margin: 0px 0;  border-left: solid 0px;  border-right: solid 0px;
     
 h2 {
-    margin: 0px 0px 20px; font-weight: 300; color: #525252; font-size: 30px;
+    margin: 0px 0px 20px; font-weight: 300; color: #525252; font-size: 30px; .m-speed;
     
 a {font-size: 20px;padding: 10px 30px;margin-left: 25px;border-radius: 45px;
 }    
 }
 }
+    
+    
+.open-table{cursor: pointer}
+    .open-table:hover{h2, h1 {color: @colfirm;}}
+    
+    
+    
 .one-tc {width: 50%; margin: 10px 0; .one-info {border:solid 1px #e8e8e8;}
     
 .button {padding: 0px; margin: 0px; margin-top: 15px; width: 100%; text-align: center;}
@@ -53,7 +68,8 @@ a {font-size: 20px;padding: 10px 30px;margin-left: 25px;border-radius: 45px;
 .mag--but-block  {
     
     
-.redact {font-size: 12px; color: @coltxt; background: #eeeeee; padding: 8px 14px; border-radius: 25px; margin-right: 10px;}    
+.redact {font-size: 12px; color: @coltxt; background: #eeeeee; padding: 8px 14px; border-radius: 25px; margin-right: 10px;}
+.redact:hover {background: @coltxt; color: #eeeeee; }
 }  
 }   
     
@@ -82,6 +98,16 @@ span {display: inline-block; top:-10px;    top: -5px;  position: relative;    a{
 
 .lk{input {width: 378px !important;}}    
 .float--left--menu {float: left; width: 375px; min-height: 460px; background: #fff;
+    
+.a-table--body-vip {width: 100%;
+.line--title {background: #fff !important;}   
+.line--desc {background: #fff !important;}
+    
+    .one--teeser--stick {span {background: #fff !important;}}
+
+}  
+    
+    
 .left--menu--block {border: solid 1px #eeeeee; float: left; width:100%; border-top: 0px solid;
 .title---block {float: left; width: 100%; height: 105px; display: table; padding: 0 40px;   border-bottom: solid 1px #eeeeee;
 span {display:table-cell; vertical-align: middle; font-size: 18px; font-family: @fontB;}    
@@ -101,7 +127,7 @@ li:hover{background: @colfirm2; a{color: #fff;}}
     
 }  
     
-.img--load--block {float: left; width: 70%; height: 245px; display: table; text-align: center; border: dotted 1px #c9c9c9; border-radius: 10px;
+.img--load--block {float: left; width: 70%; min-height: 245px; display: table; text-align: center; border: dotted 1px #c9c9c9; border-radius: 10px;   
 img {position: relative; display: block; margin: 0 auto; width: auto;}
 .but-blue {background: @colfirm2; border: solid 1px @colfirm2; color:#fff; padding: 18px 45px; text-transform: uppercase; text-align: center; font-family: @fontB;}  
     
@@ -126,7 +152,44 @@ input {background: @colfirm2; border: solid 1px @colfirm2; color:#fff; font-fami
 } 
     
 }    
-   
+  
+.img-section {  overflow: hidden !important;}
+
+// Plategka
+
+
+.plat--block { float: left; width: 100%; min-height: 260px; display: block; border: dotted 1px #c9c9c9; border-radius: 10px;
+    
+.one-line {float: left; width: 100%; padding: 25px; border-bottom: dotted 1px #c9c9c9;
+    .premium {font-size: 24px; top:-2px !important; position: relative; font-family: @fontB;}    
+    .premium-cena {font-size: 24px; top:-2px !important; position: relative; font-family: @fontB; float: right; color: #5e5e5e;}    
+
+.bascet {float: left; width: 50%; height: 100%; display: inline-block; height: 100%;
+ span {font-size: 24px; b {font-family: @fontB;}}    
+} 
+    
+    
+a {span {color: @colfirm2}} 
+.itog {span {float: right;}}    
+}
+ 
+    .one-line:last-child {border-bottom: dotted 0px; }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .load--block-big {width: 100%; .fileUpload {margin: 28px;}
 
 }
@@ -140,8 +203,8 @@ input {background: @colfirm2; border: solid 1px @colfirm2; color:#fff; font-fami
 
 .container{float: left; width: 100%; position: relative;}
 .action{ width: 400px; height: 30px; margin: 10px 0;}
-.cropped>img {position: absolute; display: block; margin-right: 10px; right: -250px; top:0px;
-}
+.cropped{img {position: absolute; display: block; margin-right: 10px; right: -250px; top:0px;
+}}
         
 .imageBox
 {
@@ -258,13 +321,20 @@ select {
 }
 }
     
+.big {width: 100%;}
+    
+.in-do {
+label {display: inline-block; float: left; margin-right: 25px;font-size: 14px; color: @coltxt; padding: 20px; padding-left: 0px;}    
+input {display: inline-block; float: left; width: 150px; border: solid 1px #dddddd; padding: 20px; color: @coltxt;}}
+.ui-in {width: 60% !important;}    
 .input-block-text {float: left; width: 100%; border: solid 9px transparent;
 ::-webkit-input-placeholder {color:#dddddd;}
 ::-moz-placeholder          {color:#dddddd;}/* Firefox 19+ */
 :-moz-placeholder           {color:#dddddd;}/* Firefox 18- */
 :-ms-input-placeholder      {color:#dddddd;}
 textarea {display: block; width: 100%; border: solid 1px #dddddd; padding: 20px; color: @coltxt;
- height: 240px; font-size: 15px;}}        
+ height: 240px; font-size: 15px;}} 
+  
 }    
     
 .section--reg--akkaunt {float: left; width: 100%; padding: 0 0px; margin: 70px 0; margin-left: -9px;
@@ -311,7 +381,7 @@ font-size: 11px; padding: 5px 4px;  }
 	height: 250px;
 	background-color: white;
 	border-collapse: separate; 
-	border: 1px solid #f7f7f7; 
+    border: solid 1px #dddddd;
 	padding: 15px; 
 	box-sizing: content-box; 
 	border-top-right-radius: 2px; border-bottom-right-radius: 2px;
@@ -714,7 +784,7 @@ h2 {
     margin-bottom: 10px;
     border-bottom: solid 1px #e8e8e8;
     padding: 0 0px 15px;
-    height: 100px;
+    height: auto;
 }
     
 .cat-tc-one .one-tc .one-info .shops .but-blue {

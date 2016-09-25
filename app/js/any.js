@@ -1,9 +1,74 @@
  $(document).ready(function() {
    var homesl = 0; teesersl = 0; salesl = 0; intro = 6000; click = 0; tcsl = 0; liner = 0;
-
+        openTableCl1 = 0; openTableCl2 = 0; openTableCl3 = 0; openTableCl4 = 0;
+        
+     // open table archiv
+     
+     
+   $('#open-table1').click(function() {
+                
+                  if (openTableCl1 == 0) {
+                  $('#a-table-tx1').fadeIn(0);  
+                  openTableCl1 = 1
+                      
+                  } else {
+                  
+                  $('#a-table-tx1').fadeOut(0);  
+                  openTableCl1 = 0
+                      
+                  }
+                 
+             });
+     
+     
+   $('#open-table2').click(function() {
+                
+                  if (openTableCl2 == 0) {
+                  $('#a-table-tx2').fadeIn(0);  
+                  openTableCl2 = 1
+                      
+                  } else {
+                  
+                  $('#a-table-tx2').fadeOut(0);  
+                  openTableCl2 = 0
+                      
+                  }
+                 
+             });
+          
+   $('#open-table3').click(function() {
+                
+                  if (openTableCl3 == 0) {
+                  $('#a-table-tx3').fadeIn(0);  
+                  openTableCl3 = 1
+                      
+                  } else {
+                  
+                  $('#a-table-tx3').fadeOut(0);  
+                  openTableCl3 = 0
+                      
+                  }
+                 
+             });
+     
+          
+   $('#open-table4').click(function() {
+                
+                  if (openTableCl4 == 0) {
+                  $('#a-table-tx4').fadeIn(0);  
+                  openTableCl4 = 1
+                      
+                  } else {
+                  
+                  $('#a-table-tx4').fadeOut(0);  
+                  openTableCl4 = 0
+                      
+                  }
+                 
+             });
      
 
-    
+     // open table archiv 
 
 
      
