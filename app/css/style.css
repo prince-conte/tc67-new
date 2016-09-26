@@ -938,11 +938,14 @@ progress[value]::-webkit-progress-value {
   .home-table h1 br {
     display: none;
   }
+  .tc-menu {
+    display: none !important;
+  }
 }
 #hamb {
   position: fixed;
-  display: none;
-  top: 45px;
+  display: block;
+  top: 30px;
   right: 45px;
   z-index: 999999999;
   background: #2ea0f0;
@@ -951,8 +954,8 @@ progress[value]::-webkit-progress-value {
 }
 #hamb-mobile {
   position: absolute;
-  display: none;
-  top: 45px;
+  display: block;
+  top: 30px;
   right: 45px;
   z-index: 999999999;
   background: #2ea0f0;
@@ -1021,7 +1024,7 @@ header .phbgh {
 #hamb {
   position: fixed;
   display: none;
-  top: 45px;
+  top: 30px;
   right: 45px;
   z-index: 999999999;
   background: #2ea0f0;
@@ -1265,7 +1268,37 @@ nav .top-menu li .login:hover span {
   height: 50px;
   background: #fff;
 }
+@media screen and (max-width: 1380px) {
+  nav .top-menu {
+    position: relative;
+    display: inline-block;
+    float: right;
+    height: 120px;
+    margin-right: 110px;
+  }
+  .popup_block .menu-pos a {
+    font-size: 40px;
+    padding: 0 50px;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .popup_block .menu-pos a {
+    font-size: 35px;
+    padding: 0 50px;
+  }
+  nav .top-menu {
+    position: relative;
+    display: inline-block;
+    float: right;
+    height: 120px;
+    margin-right: 110px;
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+  .popup_block .menu-pos a {
+    font-size: 35px;
+    padding: 0 50px;
+  }
   #hamb-mobile {
     top: 15px;
     right: 25px;
@@ -1305,6 +1338,17 @@ nav .top-menu li .login:hover span {
   }
   .wrap-head {
     height: 90px;
+  }
+  .popup_block .menu-pos .menu {
+    vertical-align: top;
+    padding: 25px;
+    padding-top: 65px;
+  }
+  .popup_block .menu-pos a {
+    color: #fff;
+    font-size: 15px;
+    box-sizing: border-box;
+    padding: 0 5px;
   }
 }
 @media screen and (min-width: 420px) and (max-width: 599px) {
@@ -1418,6 +1462,17 @@ nav .top-menu li .login:hover span {
     height: 50px;
     background: #fff;
   }
+  .popup_block .menu-pos .menu {
+    vertical-align: top;
+    padding: 25px;
+    padding-top: 65px;
+  }
+  .popup_block .menu-pos a {
+    color: #fff;
+    font-size: 15px;
+    box-sizing: border-box;
+    padding: 0 5px;
+  }
 }
 @media screen and (max-width: 419px) {
   h2 {
@@ -1446,11 +1501,16 @@ nav .top-menu li .login:hover span {
   nav .top-menu {
     display: none;
   }
+  .popup_block .menu-pos .menu {
+    vertical-align: top;
+    padding: 25px;
+    padding-top: 65px;
+  }
   .popup_block .menu-pos a {
     color: #fff;
-    font-size: 24px;
+    font-size: 15px;
     box-sizing: border-box;
-    padding: 0 25px;
+    padding: 0 5px;
   }
   nav .logo-block {
     display: inline-block;
@@ -3535,6 +3595,10 @@ nav .top-menu li .login:hover span {
 .cat-tc-one .active-bar .s-line .stadt .search:hover {
   background: url(../img/search-hov.png);
 }
+.cat-tc-one .active-bar .search-s {
+  width: 308px !important;
+  border-right: solid 0px;
+}
 .cat-tc-one .active-bar .nav-inform {
   float: left;
   width: 100%;
@@ -4248,6 +4312,9 @@ nav .top-menu li .login:hover span {
     border-radius: 25px;
     padding-right: 25px;
   }
+  .cat-tc-one .active-bar .search-s {
+    width: 100% !important;
+  }
 }
 @media screen and (min-width: 600px) and (max-width: 767px) {
   .tc-menu li {
@@ -4336,6 +4403,9 @@ nav .top-menu li .login:hover span {
     border: solid 1px #e1e1e1;
     border-radius: 25px;
     padding-right: 25px;
+  }
+  .cat-tc-one .active-bar .search-s {
+    width: 100% !important;
   }
 }
 @media screen and (min-width: 420px) and (max-width: 599px) {
@@ -4427,6 +4497,9 @@ nav .top-menu li .login:hover span {
     border: solid 1px #e1e1e1;
     border-radius: 25px;
     padding-right: 25px;
+  }
+  .cat-tc-one .active-bar .search-s {
+    width: 100% !important;
   }
 }
 @media screen and (max-width: 419px) {
@@ -4537,6 +4610,9 @@ nav .top-menu li .login:hover span {
     border: solid 1px #e1e1e1;
     border-radius: 25px;
     padding-right: 25px;
+  }
+  .cat-tc-one .active-bar .search-s {
+    width: 100% !important;
   }
 }
 footer {
@@ -6476,6 +6552,14 @@ h2.recom {
   background: #fff;
   margin-bottom: 70px;
 }
+.section--lk--form .content .float-content article {
+  float: left;
+  width: 100%;
+  margin: 35px 0 20px;
+}
+.section--lk--form .content .float-content article p {
+  padding: 0px;
+}
 .section--lk--form .content .float-content .block-buttons .button {
   float: right;
 }
@@ -7039,7 +7123,7 @@ h2 {
   color: #232425;
 }
 .section--reg--form--block .ui-in {
-  width: 60% !important;
+  width: 100% !important;
 }
 .section--reg--form--block .input-block-text {
   float: left;
