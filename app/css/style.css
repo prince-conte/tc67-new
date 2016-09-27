@@ -1033,13 +1033,13 @@ header .phbgh {
 }
 fade {
   display: none;
-  background: #252525;
+  background: #3d4453;
   position: fixed;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
-  opacity: .95;
+  opacity: 1;
   z-index: 9999;
 }
 .popup_block {
@@ -1056,8 +1056,8 @@ fade {
 }
 .popup_block .fon {
   position: absolute;
-  background: #000;
-  opacity: 0.8;
+  background: #1f242c;
+  opacity: 1;
   z-index: 10000;
   display: block;
   top: 0px;
@@ -1079,15 +1079,20 @@ fade {
   box-sizing: border-box;
   padding: 25px;
 }
+.popup_block .menu-pos .menu ul {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+}
 .popup_block .menu-pos li {
   padding: 10px;
   color: #fff;
   letter-spacing: 2px;
-  text-align: left;
+  text-align: center;
 }
 .popup_block .menu-pos a {
-  color: #fff;
-  font-size: 55px;
+  color: rgba(126, 144, 156, 0.7);
+  font-size: 40px;
   box-sizing: border-box;
   padding: 0 50px;
   text-transform: uppercase;
@@ -1098,7 +1103,55 @@ fade {
   font-family: 'proxima_nova_ltlight', sans-serif;
 }
 .popup_block .menu-pos a:hover {
-  color: #2ea0f0;
+  color: #fff;
+}
+.socials-links {
+  float: left;
+  width: 100%;
+  display: block;
+  text-align: center;
+  margin-top: 25px;
+}
+.socials-links a {
+  display: inline-block;
+  margin: 0 10px;
+  padding: 25px !important;
+}
+.socials-links a i {
+  color: rgba(126, 144, 156, 0.7);
+  font-size: 32px;
+  display: block;
+}
+.socials-links a:hover i {
+  color: #fff;
+}
+.socials-links a:hover i.fa-android {
+  color: #77c159;
+}
+.socials-links a:hover i.fa-apple {
+  color: #f2f2f2;
+}
+.login-in {
+  position: absolute;
+  display: block;
+  top: 30px;
+  right: 135px;
+  z-index: 999999999;
+  background: #2ea0f0;
+  height: 60px;
+  border: solid 2px #fff;
+  color: #fff !important;
+  font-family: 'proxima_nova_ltlight', sans-serif;
+  text-transform: uppercase;
+  font-size: 18px !important;
+  background: transparent;
+  padding: 19px 50px  !important;
+  letter-spacing: 2px;
+}
+.login-in:hover {
+  background: #fff;
+  color: #2ea0f0 !important;
+  border: solid 2px #2ea0f0;
 }
 .map-ad {
   position: relative;
@@ -1281,9 +1334,9 @@ nav .top-menu li .login:hover span {
     padding: 0 50px;
   }
 }
-@media screen and (min-width: 1024px) and (max-width: 1279px) {
+@media screen and (min-width: 1000px) and (max-width: 1279px) {
   .popup_block .menu-pos a {
-    font-size: 35px;
+    font-size: 25px;
     padding: 0 50px;
   }
   nav .top-menu {
@@ -1296,8 +1349,17 @@ nav .top-menu li .login:hover span {
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .popup_block .menu-pos a {
-    font-size: 35px;
-    padding: 0 50px;
+    font-size: 25px;
+    padding: 0 20px;
+  }
+  .login-in {
+    top: 16px;
+    right: 112px;
+    height: 60px;
+    color: #fff !important;
+    font-size: 16px !important;
+    padding: 19px 30px !important;
+    letter-spacing: 2px;
   }
   #hamb-mobile {
     top: 15px;
@@ -1340,15 +1402,26 @@ nav .top-menu li .login:hover span {
     height: 90px;
   }
   .popup_block .menu-pos .menu {
-    vertical-align: top;
     padding: 25px;
     padding-top: 65px;
   }
   .popup_block .menu-pos a {
-    color: #fff;
     font-size: 15px;
     box-sizing: border-box;
     padding: 0 5px;
+  }
+  .popup_block .menu-pos a {
+    font-size: 25px;
+    padding: 0 20px;
+  }
+  .login-in {
+    top: 16px;
+    right: 112px;
+    height: 60px;
+    color: #fff !important;
+    font-size: 16px !important;
+    padding: 19px 30px !important;
+    letter-spacing: 2px;
   }
 }
 @media screen and (min-width: 420px) and (max-width: 599px) {
@@ -1463,15 +1536,26 @@ nav .top-menu li .login:hover span {
     background: #fff;
   }
   .popup_block .menu-pos .menu {
-    vertical-align: top;
     padding: 25px;
     padding-top: 65px;
   }
   .popup_block .menu-pos a {
-    color: #fff;
-    font-size: 15px;
+    font-size: 14px;
     box-sizing: border-box;
     padding: 0 5px;
+  }
+  .popup_block .menu-pos a {
+    font-size: 22px;
+    padding: 0 20px;
+  }
+  .login-in {
+    top: 16px;
+    right: 112px;
+    height: 60px;
+    color: #fff !important;
+    font-size: 16px !important;
+    padding: 19px 30px !important;
+    letter-spacing: 2px;
   }
 }
 @media screen and (max-width: 419px) {
@@ -1500,17 +1584,6 @@ nav .top-menu li .login:hover span {
   }
   nav .top-menu {
     display: none;
-  }
-  .popup_block .menu-pos .menu {
-    vertical-align: top;
-    padding: 25px;
-    padding-top: 65px;
-  }
-  .popup_block .menu-pos a {
-    color: #fff;
-    font-size: 15px;
-    box-sizing: border-box;
-    padding: 0 5px;
   }
   nav .logo-block {
     display: inline-block;
@@ -1590,6 +1663,36 @@ nav .top-menu li .login:hover span {
     display: block;
     height: 50px;
     background: #fff;
+  }
+  .popup_block .menu-pos .menu {
+    padding: 25px;
+    padding-top: 65px;
+  }
+  .popup_block .menu-pos a {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+  .login-in {
+    top: 4px;
+    left: 5px;
+    height: 48px;
+    color: rgba(126, 144, 156, 0.7) !important;
+    font-size: 14px !important;
+    padding: 14px 30px !important;
+    letter-spacing: 2px;
+    right: auto;
+    border: solid 2px rgba(126, 144, 156, 0.7);
+  }
+  .socials-links a {
+    padding: 0px !important;
+  }
+  .socials-links {
+    margin-top: 10px;
+  }
+  .socials-links a i {
+    color: rgba(126, 144, 156, 0.7);
+    font-size: 20px;
+    display: block;
   }
 }
 .home {
@@ -2053,6 +2156,13 @@ nav .top-menu li .login:hover span {
   .home-arenda .a-table h2 {
     text-align: center;
     padding: 0 25px 35px;
+  }
+  .block-buttons .button {
+    margin: 8px auto;
+    width: 180px;
+    display: block;
+    position: relative;
+    float: none;
   }
 }
 .teeser {

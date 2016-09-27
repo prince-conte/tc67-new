@@ -17,17 +17,39 @@ header .phbgh { position: fixed; display: none; height: 0px; width: 100%; top:0p
 
 #hamb {position: fixed; display: none; top:30px; right: 45px; z-index: 999999999; background: @colfirm2; height: 60px; width: 60px; }
 
-fade{display:none;background:#252525;position:fixed;left:0;top:0;width:100%;height:100%;opacity:.95;z-index:9999;}
+fade{display:none;background:#3d4453;position:fixed;left:0;top:0;width:100%;height:100%;opacity:1;z-index:9999;}
 .popup_block{display:none;top:0px;float:left;position:fixed;width:100%;height:100%;z-index: 999998;background-position:CENTER CENTER !important;background-repeat:no-repeat !important;background-size:COVER !important;}
-.popup_block .fon{position:absolute;background:#000;opacity:0.8;z-index:10000;display:block;top:0px;left:0px;width:100%;height:100%;}
+.popup_block .fon{position:absolute;background:#1f242c;opacity:1;z-index:10000;display:block;top:0px;left:0px;width:100%;height:100%;}
 .popup_block .menu-pos{position:absolute;display:table;width:100%;height:100%;z-index:111111;}
-.popup_block .menu-pos .menu{display:table-cell;vertical-align:middle;margin:0 auto;box-sizing:border-box;padding:25px;}
-.popup_block .menu-pos li{padding:10px;color:#fff;letter-spacing:2px;text-align:left;}
-.popup_block .menu-pos a{color:#fff;font-size:55px; box-sizing:border-box;padding:0 50px;text-transform:uppercase;-webkit-transition:all 0.3s;-moz-transition:all 0.3s;-o-transition:all 0.3s;transition:all 0.3s; font-family: @fontH;}
-.popup_block .menu-pos a:hover{color:@colfirm2;}
+.popup_block .menu-pos .menu{display:table-cell;vertical-align:middle;margin:0 auto;box-sizing:border-box;padding:25px;
+    ul {position: relative; display: block; margin: 0 auto; }
+}
+.popup_block .menu-pos li{padding:10px;color:#fff;letter-spacing:2px;text-align:center;}
+.popup_block .menu-pos a{color: rgba(126,144,156,.7); font-size:40px; box-sizing:border-box;padding:0 50px;text-transform:uppercase;-webkit-transition:all 0.3s;-moz-transition:all 0.3s;-o-transition:all 0.3s;transition:all 0.3s; font-family: @fontH;}
+.popup_block .menu-pos a:hover{color:#fff;}
+
+
+.socials-links {float: left; width: 100%; display: block; text-align: center; margin-top: 25px;
+a {display: inline-block;  margin: 0 10px; padding: 25px !important; i {color: rgba(126,144,156,.7); font-size: 32px; display: block;}}
+a:hover{i {color:#fff;}
+i.fa-android{color: #77c159}
+i.fa-apple  {color: #f2f2f2} 
+}
+}
+
+.login-in {position: absolute; display: block; display: block; top: 30px; right: 135px; z-index: 999999999; background: #2ea0f0; height: 60px; 
+border: solid 2px #fff; color: #fff !important; font-family: @fontH; text-transform: uppercase; font-size: 18px !important; background: transparent; padding: 19px 50px  !important;
+letter-spacing: 2px;
+}
+
+.login-in:hover {background: #fff; color: @colfirm2 !important; border: solid 2px @colfirm2;}
+
+
 
 
 // mobile-menu
+
+
 
 
 
@@ -104,12 +126,12 @@ nav .top-menu {
 
 
 
-@media screen and (min-width:1024px) and (max-width:1279px)   {
+@media screen and (min-width:1000px) and (max-width:1279px)   {
     
 .popup_block .menu-pos a {
-    font-size: 35px;
+    font-size: 25px;
     padding: 0 50px;
-}   
+} 
     
     
 nav .top-menu {
@@ -126,9 +148,19 @@ nav .top-menu {
 @media screen and (min-width:768px) and (max-width:1023px)   {
   
 .popup_block .menu-pos a {
-    font-size: 35px;
-    padding: 0 50px;
+    font-size: 25px;
+    padding: 0 20px;
 }   
+    
+.login-in {
+    top: 16px;
+    right: 112px;
+    height: 60px;
+    color: #fff !important;
+    font-size: 16px !important;
+    padding: 19px 30px !important;
+    letter-spacing: 2px;
+}
 
 #hamb-mobile {
     top: 15px;
@@ -186,17 +218,34 @@ nav .top-menu {
 }    
     
 .popup_block .menu-pos .menu {
-    vertical-align: top;
     padding: 25px;
     padding-top: 65px;
 }
  
 .popup_block .menu-pos a {
-    color: #fff;
     font-size: 15px;
     box-sizing: border-box;
     padding: 0 5px;
+}  
+    
+    
+  
+.popup_block .menu-pos a {
+    font-size: 25px;
+    padding: 0 20px;
 }   
+    
+.login-in {
+    top: 16px;
+    right: 112px;
+    height: 60px;
+    color: #fff !important;
+    font-size: 16px !important;
+    padding: 19px 30px !important;
+    letter-spacing: 2px;
+}
+ 
+    
 
 }
 
@@ -344,19 +393,36 @@ nav .top-menu {
     background: #fff;
 }
     
+ 
 .popup_block .menu-pos .menu {
-    vertical-align: top;
     padding: 25px;
     padding-top: 65px;
 }
  
 .popup_block .menu-pos a {
-    color: #fff;
-    font-size: 15px;
+    font-size: 14px;
     box-sizing: border-box;
     padding: 0 5px;
-}     
-
+}  
+    
+    
+  
+.popup_block .menu-pos a {
+    font-size: 22px;
+    padding: 0 20px;
+}   
+    
+.login-in {
+    top: 16px;
+    right: 112px;
+    height: 60px;
+    color: #fff !important;
+    font-size: 16px !important;
+    padding: 19px 30px !important;
+    letter-spacing: 2px;
+}
+ 
+  
 }
 
 
@@ -396,18 +462,7 @@ nav .top-menu {
     display: none;
 } 
     
-.popup_block .menu-pos .menu {
-    vertical-align: top;
-    padding: 25px;
-    padding-top: 65px;
-}
- 
-.popup_block .menu-pos a {
-    color: #fff;
-    font-size: 15px;
-    box-sizing: border-box;
-    padding: 0 5px;
-}   
+
     
 nav .logo-block {
     display: inline-block;
@@ -509,6 +564,47 @@ nav .top-menu {
     height: 50px;
     background: #fff;
 }
+    
+    
+    
+ 
+.popup_block .menu-pos .menu {
+    padding: 25px;
+    padding-top: 65px;
+}
+ 
+    
+    
+  
+.popup_block .menu-pos a {
+    font-size: 14px;
+    padding: 0 10px;
+}   
+    
+.login-in {
+    top: 4px;
+    left: 5px;
+    height: 48px;
+    color: rgba(126, 144, 156, 0.7) !important;
+    font-size: 14px !important;
+    padding: 14px 30px !important;
+    letter-spacing: 2px;
+    right: auto;
+    border: solid 2px rgba(126, 144, 156, 0.7);
+}
+    
+    .socials-links a {padding: 0px !important;}   
+    
+    .socials-links {margin-top: 10px;}
+    
+    
+    
+.socials-links a i {
+    color: rgba(126, 144, 156, 0.7);
+    font-size: 20px;
+    display: block;
+}
+ 
 
 
 }
