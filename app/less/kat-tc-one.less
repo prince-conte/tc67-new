@@ -1,21 +1,24 @@
 @import "grundfile.less";
 
+.cena {display: inline-table !important ;  border: solid 1px @colfirm2; position: relative;
+select {  padding: 0 10px !important;}  } 
+
 .cat-tc-one {width: 100%; padding: 30px 0; float: left; background: #fafafa;
 
-.active-bar {float: left; width: 100%; height: 80px; background: #fff; box-shadow: 0px 4px 18px 0px rgba(227, 227, 227, 0.47);
+.active-bar {float: left; width: 100%; height: 80px; background: #fff; border: solid 2px @colfirm2;
     
 .ui-in {position: relative; float: left; height: 100%; width: 216px;  border-right: solid 1px #e9e9e9; background: url(../img/ui-b.svg); background-position: right center; background-repeat: no-repeat; overflow: hidden;}    
 .stadt{position: absolute; top:0px; left:0px; display: block; width: 100%;  padding: 0px 35px;  background:transparent;}
 select {width: 150%; height: 100%; height: 80px;    padding: 30px 0px; background: transparent;}    
 .r-line {width: 470px;} 
 .r-non-styck {background: transparent}
-.m-line {width: 308px;}
-.m-line2 {width: 331px;}
+.m-line {width: 304px;}
+.m-line2 {width: 329px;}
 .m-line:last-child { border: solid 0px}
 .m-line2:last-child { border: solid 0px}
 select::after {content: ''; position: absolute; top:0px; left:0px; width: 215px; height: 100%; background: transparent;}
 
-.s-line {width: 432px; background: transparent; display: table;
+.s-line {width: 430px; background: transparent; display: table;
 .stadt {.middle;
 label {float: left; margin-top: 18px}    
 .sale--inp {float: right; position: relative;
@@ -27,7 +30,7 @@ input {background: transparent; font-size: 14px; color: @coltxt; padding: 16px 2
 }    
 } 
     
-.search-s {width: 308px !important;     border-right: solid 0px;}    
+.search-s {width: 302px !important;     border-right: solid 0px;}    
     
     
 .nav-inform { float: left; width: 100%; height: 100%; text-align: center;
@@ -272,11 +275,11 @@ a:hover {opacity: 0.75; border: solid 1px @colfirm2;}
 } 
     
 .cat-tc-one .active-bar .m-line {
-    width: 308px;
+    width: 304px;
 }
     
 .cat-tc-one .active-bar .m-line2 {
-    width: 267px;
+    width: 265px;
 }
     
 .cat-tc-one .one-tc {
@@ -309,7 +312,20 @@ a:hover {opacity: 0.75; border: solid 1px @colfirm2;}
 
 
 @media screen and (min-width:768px) and (max-width:1023px)   {
+    
+    .cat-tc-one .title-bar .button-bar {width: 100%;}  
+.cena {display: inline-table !important ; float: none !important; border: solid 1px @colfirm2; 
+select {  padding: 0 10px !important;}  } 
 
+.cat-tc-one .title-bar .button-bar {
+    float: left;
+    margin-top: 20px;
+}
+    
+.cat-tc-one .title-bar .button-bar .button {
+    margin-left: 0px;
+}    
+    
     
 .tc-menu li {
     width: 50%;
@@ -421,6 +437,19 @@ a:hover {opacity: 0.75; border: solid 1px @colfirm2;}
 
 @media screen and (min-width:600px) and (max-width:767px)   {
 
+.cena {display: inline-table !important ; float: none !important; margin-top: 15px !important; border: solid 1px @colfirm2; position: relative; top:4px;
+select {  padding: 0 10px !important;}  }       
+
+.cat-tc-one .title-bar .button-bar {
+    float: left;
+    margin-top: 20px;
+}
+    
+.cat-tc-one .title-bar .button-bar .button {
+    margin-left: 0px;
+}    
+  
+    
     
 .tc-menu li {
     width: 100%;
@@ -449,7 +478,7 @@ a:hover {opacity: 0.75; border: solid 1px @colfirm2;}
  
     
 .cat-tc-one .active-bar {
-    height: 240px;
+    height: auto;
 }    
   
 .cat-tc-one .title-bar .button-bar .but-cat {
@@ -548,6 +577,20 @@ a:hover {opacity: 0.75; border: solid 1px @colfirm2;}
 
 @media screen and (min-width:420px) and (max-width:599px)   {
 
+.cena {display: inline-table !important ; float: none !important; margin-top: 15px !important; border: solid 1px @colfirm2; position: relative; top:4px;
+select {  padding: 0 10px !important;}  }       
+
+.cat-tc-one .title-bar .button-bar {
+    float: left;
+    margin-top: 20px;
+}
+    
+.cat-tc-one .title-bar .button-bar .button {
+    margin-left: 0px;
+}    
+  
+    
+    
 .tc-menu .content {
     padding-left: 15px;
     padding-right: 15px;
@@ -581,7 +624,7 @@ a:hover {opacity: 0.75; border: solid 1px @colfirm2;}
  
     
 .cat-tc-one .active-bar {
-    height: 320px;
+    height: auto;
 }    
   
 .cat-tc-one .title-bar .button-bar .but-cat {
@@ -678,6 +721,19 @@ a:hover {opacity: 0.75; border: solid 1px @colfirm2;}
 
 
 @media screen and (max-width:419px)   { 
+    
+.cena {display: inline-table !important ; float: none !important; margin-top: 15px !important; border: solid 1px @colfirm2; position: relative; top:4px;
+select {  padding: 0 10px !important;}  }       
+
+.cat-tc-one .title-bar .button-bar {
+    float: left;
+    margin-top: 20px;
+}
+    
+.cat-tc-one .title-bar .button-bar .button {
+    margin-left: 0px;
+}    
+  
 
 .wrapper .inner-ct {
     top: 0px;
@@ -722,7 +778,7 @@ a:hover {opacity: 0.75; border: solid 1px @colfirm2;}
  
     
 .cat-tc-one .active-bar {
-    height: 320px;
+    height: auto;
 }    
   
 .cat-tc-one .title-bar .button-bar .but-cat {
@@ -829,5 +885,7 @@ a:hover {opacity: 0.75; border: solid 1px @colfirm2;}
 .cat-tc-one .active-bar .search-s {
     width: 100% !important;
 }    
+  
+    .cat-tc-one .one-tc .one-info .mag .mag--title {margin-top: 18px;}   
     
 }
