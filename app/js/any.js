@@ -1,6 +1,34 @@
  $(document).ready(function() {
-   var homesl = 0; teesersl = 0; salesl = 0; intro = 6000; click = 0; tcsl = 0; liner = 0;
+   var homesl = 0; teesersl = 0; salesl = 0; intro = 6000; click = 0;  click2 = 0; tcsl = 0; liner = 0;
         openTableCl1 = 0; openTableCl2 = 0; openTableCl3 = 0; openTableCl4 = 0;
+
+// scroll to      
+     
+$(".sc").click(function () {
+var elementClick = $(this).attr("href")
+var destination = $(elementClick).offset().top;
+jQuery("html:not(:animated),body:not(:animated)").animate({scrollTop: destination}, 500);
+return false;
+});
+     
+  
+     
+     
+     
+     
+     // message form
+     
+     $('#message').click(function() {
+     $('#mess').fadeIn(500);      
+     });
+         
+
+         
+     $('#mess-close').click(function() {
+     $('#mess').fadeOut(500);      
+     });        
+     
+     
         
      // open table archiv
      
@@ -174,15 +202,23 @@ if ($(this).scrollTop() > (800)){
              $('.hamburger--squeeze').removeClass('is-active');
              $('#fade').fadeOut();
              $('#mbile-web').fadeOut();
+             $('#mbile-web2').fadeOut();
              $('#hamb').removeClass('close');
                click = 0;
               }    
                   
               }}
 
-    
 
-
+          });      
+          
+           $('#catalog').click(function() {
+            
+             $('.hamburger--squeeze').addClass('is-active');
+             $('#fade').fadeIn();
+             $('#mbile-web').fadeIn();
+             $('#hamb').addClass('close');
+            click = 1;
           });      
      
              $('#hamb-mobile').click(function() {

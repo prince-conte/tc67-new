@@ -90,15 +90,15 @@ select {
   transform: rotate(-42deg);
 }
 .pov4 {
-  -moz-transform: rotate(-132deg);
+  -moz-transform: rotate(84deg);
   /* Для Firefox */
-  -ms-transform: rotate(132deg);
+  -ms-transform: rotate(84deg);
   /* Для IE */
-  -webkit-transform: rotate(132deg);
+  -webkit-transform: rotate(84deg);
   /* Для Safari, Chrome, iOS */
-  -o-transform: rotate(132deg);
+  -o-transform: rotate(84deg);
   /* Для Opera */
-  transform: rotate(132deg);
+  transform: rotate(84deg);
 }
 .pov5 {
   -moz-transform: rotate(180deg);
@@ -357,6 +357,14 @@ ul,
 li {
   list-style-type: none;
 }
+@keyframes title--to {
+  50% {
+    transform: translate(0px, 0px);
+  }
+  100% {
+    transform: translate(0px, 10px);
+  }
+}
 .body-ct {
   position: relative;
   height: 100%;
@@ -373,6 +381,20 @@ li {
 .center-align {
   text-align: center;
   width: 100%;
+}
+.top-info .map-ad {
+  float: left !important;
+}
+.top-info .map-ad span {
+  float: left;
+}
+.top-info .type {
+  width: auto !important;
+}
+.top-info .type span {
+  display: inline-block;
+  padding: 10px;
+  padding-left: 0px;
 }
 progress {
   position: fixed;
@@ -967,6 +989,18 @@ h2 a {
     padding: 8px 23px;
     margin-left: 0px;
     border-radius: 45px;
+  }
+  .top-info .map-ad {
+    float: left !important;
+  }
+  .top-info .map-ad span {
+    float: left;
+  }
+  .top-info .type {
+    width: auto !important;
+  }
+  .top-info .type span {
+    font-size: 12px;
   }
 }
 #hamb {
@@ -1761,7 +1795,7 @@ nav .top-menu li .login:hover span {
 .home .sl-txt {
   position: absolute;
   display: block;
-  bottom: 45px;
+  bottom: 140px;
   left: 0px;
   width: 100%;
   height: 100px;
@@ -1844,9 +1878,32 @@ nav .top-menu li .login:hover span {
   background-image: -webkit-linear-gradient(-90deg, rgba(0, 0, 0, 0.56078) 0%, rgba(2, 2, 2, 0.28) 37%, rgba(3, 3, 3, 0.24) 47%, rgba(6, 6, 6, 0) 100%);
   background-image: -ms-linear-gradient(-90deg, rgba(0, 0, 0, 0.56078) 0%, rgba(2, 2, 2, 0.28) 37%, rgba(3, 3, 3, 0.24) 47%, rgba(6, 6, 6, 0) 100%);
 }
+.home .styck-button-block {
+  float: left;
+  width: 100%;
+  margin-top: 45px;
+}
+.home .styck-button {
+  position: relative;
+  display: block;
+  width: 45px;
+  height: 45px;
+  margin: 0 auto;
+  background-position: CENTER CENTER !important;
+  background-repeat: no-repeat !important;
+  background-size: contain!important;
+  background: url(../img/fleche-bottom.png);
+  animation: title--to 0.7s linear 0s infinite alternate forwards;
+}
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
   .home {
-    min-height: 600px;
+    min-height: 800px;
+  }
+  .wrapper .inner {
+    position: absolute;
+    display: block;
+    width: 100%;
+    top: 1000px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -1854,7 +1911,13 @@ nav .top-menu li .login:hover span {
     font-size: 30px;
   }
   .home {
-    min-height: 600px;
+    min-height: 800px;
+  }
+  .wrapper .inner {
+    position: absolute;
+    display: block;
+    width: 100%;
+    top: 800px;
   }
 }
 @media screen and (min-width: 600px) and (max-width: 767px) {
@@ -1919,10 +1982,7 @@ nav .top-menu li .login:hover span {
     font-size: 20px;
   }
   .home .sl-txt .sl-txt-block .sl-inf .sl {
-    position: relative;
-    display: inline-block;
-    float: left;
-    width: 100%;
+    display: none;
   }
   .home .sl-txt {
     bottom: 105px;
@@ -1952,11 +2012,19 @@ nav .top-menu li .login:hover span {
     float: left;
     width: 100%;
   }
-  .home .sl-txt {
-    display: none;
+  .home .sl-txt article {
+    display: none !important;
   }
   .home-table h1 br {
     display: none;
+  }
+  .nav-sl {
+    display: none !important;
+  }
+  .home .styck-button-block {
+    float: left;
+    width: 100%;
+    margin-top: 15px;
   }
 }
 .home-arenda {
@@ -3715,6 +3783,9 @@ nav .top-menu li .login:hover span {
 .tc-menu li .active i.im--ico6 {
   background: url(../img/tc-ico6.svg);
 }
+.border-none {
+  border: solid 0px !important;
+}
 .cena {
   display: inline-table !important;
   border: solid 1px #2ea0f0;
@@ -4186,7 +4257,7 @@ nav .top-menu li .login:hover span {
   background: url(../img/eye.png);
 }
 .cat-tc-one .one-tc .mag--one-info {
-  height: 285px;
+  height: auto;
 }
 .cat-tc-one .one-tc .mag--one-info-mag--page {
   height: 325px;
@@ -5736,6 +5807,29 @@ footer .foot-info .end-block .parus a:hover {
 .rslides ul {
   width: 100% !important;
   float: left;
+}
+.rslides .parallax-wtf {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 100%;
+  height: 560px;
+  left: 0;
+  top: 0;
+  background-position: top CENTER !important;
+  background-repeat: no-repeat !important;
+  background-size: COVER !important;
+}
+.rslides .parallax-wtf .phbg {
+  background-image: -moz-linear-gradient(90deg, rgba(0, 0, 0, 0.56078) 0%, rgba(2, 2, 2, 0.28) 37%, rgba(3, 3, 3, 0.24) 47%, rgba(6, 6, 6, 0) 100%);
+  background-image: -webkit-linear-gradient(90deg, rgba(0, 0, 0, 0.56078) 0%, rgba(2, 2, 2, 0.28) 37%, rgba(3, 3, 3, 0.24) 47%, rgba(6, 6, 6, 0) 100%);
+  background-image: -ms-linear-gradient(90deg, rgba(0, 0, 0, 0.56078) 0%, rgba(2, 2, 2, 0.28) 37%, rgba(3, 3, 3, 0.24) 47%, rgba(6, 6, 6, 0) 100%);
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
 }
 .rslides .parallax {
   -webkit-backface-visibility: hidden;
@@ -8153,5 +8247,379 @@ div[data-role="editor-toolbar"] {
   }
   .page--inform article li {
     padding: 0 25px 0 30px;
+  }
+}
+#mess {
+  /* Firefox 19+ */
+  /* Firefox 18- */
+}
+#mess .phbg {
+  position: absolute;
+  display: block;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  background: #000;
+  opacity: .75;
+}
+#mess .mes-tabs {
+  position: absolute;
+  display: table;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+}
+#mess .mes-tabs .mess {
+  position: relative;
+  display: block;
+  vertical-align: middle;
+  margin: 0 auto;
+  width: 450px;
+  height: 525px;
+  border-radius: 10px;
+  border: solid 2px #2ea0f0;
+  background: #fff;
+}
+#mess .mes-tabs .mess .block-buttons {
+  padding: 15px;
+}
+#mess .mes-tabs .mess .mess-display {
+  position: absolute;
+  display: table;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  border-radius: 10px;
+  padding: 25px;
+}
+#mess .mes-tabs .mess #tanks {
+  display: none;
+  text-align: center;
+  background: #fff;
+}
+#mess .mes-tabs .mess #tanks .ad {
+  position: absolute;
+  display: table;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  border-radius: 10px;
+}
+#mess .mes-tabs .mess #tanks img {
+  display: inline-block;
+  width: auto;
+  margin-bottom: 25px;
+}
+#mess .mes-tabs .mess #tanks span {
+  float: left;
+  display: block;
+  width: 100%;
+  font-size: 18px;
+  font-family: 'proxima_nova_ltlight', sans-serif;
+}
+#mess .mes-tabs .mess .close-mess {
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 40px;
+  top: -50px;
+  right: -54px;
+  background: #2ea0f0;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+#mess .mes-tabs .mess .close-mess span {
+  position: absolute;
+  display: block;
+  width: 65%;
+  height: 1px;
+  background: #fff;
+  -moz-transform: rotate(45deg);
+  /* Для Firefox */
+  -ms-transform: rotate(45deg);
+  /* Для IE */
+  -webkit-transform: rotate(45deg);
+  /* Для Safari, Chrome, iOS */
+  -o-transform: rotate(45deg);
+  /* Для Opera */
+  transform: rotate(45deg);
+  top: 19px;
+  left: 7px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+#mess .mes-tabs .mess .close-mess span::before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: #fff;
+  -moz-transform: rotate(-90deg);
+  /* Для Firefox */
+  -ms-transform: rotate(-90deg);
+  /* Для IE */
+  -webkit-transform: rotate(-90deg);
+  /* Для Safari, Chrome, iOS */
+  -o-transform: rotate(-90deg);
+  /* Для Opera */
+  transform: rotate(-90deg);
+  top: 0px;
+  left: 0px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+#mess .mes-tabs .mess .close-mess:hover {
+  background: #fff;
+}
+#mess .mes-tabs .mess .close-mess:hover span {
+  background: #000;
+}
+#mess .mes-tabs .mess .close-mess:hover span::before {
+  background: #000;
+}
+#mess ::-webkit-input-placeholder {
+  color: #232425;
+}
+#mess ::-moz-placeholder {
+  color: #232425;
+}
+#mess :-moz-placeholder {
+  color: #232425;
+}
+#mess :-ms-input-placeholder {
+  color: #232425;
+}
+#mess .input-block {
+  float: left;
+  width: 100%;
+  border: solid 9px transparent;
+}
+#mess .input-block input {
+  display: block;
+  width: 100%;
+  border: solid 1px #dddddd;
+  padding: 20px;
+  color: #232425;
+}
+#mess .input-block textarea {
+  display: block;
+  width: 100%;
+  border: solid 1px #dddddd;
+  padding: 20px;
+  color: #232425;
+  height: 150px;
+  resize: none;
+}
+#mess .input-block .button {
+  margin: 0px;
+  width: 250px;
+}
+#mess .input-block .blue {
+  margin: 0px;
+  width: 250px;
+  background: #2ea0f0;
+  border-color: #2ea0f0;
+}
+#mess .input-block .blue span {
+  color: #fff;
+}
+#mess .input-block .blue:hover {
+  background: #178bdc;
+  border-color: #178bdc;
+}
+#mess .input-block .ui-in {
+  position: relative;
+  float: left;
+  height: 60px;
+  width: 100%;
+  background: url(../img/ui-b.svg);
+  background-position: right center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  border: solid 1px #dddddd;
+}
+#mess .input-block .ui-in .stadt {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: block;
+  width: 100%;
+  padding: 0px 23px;
+  background: transparent;
+}
+#mess .input-block .ui-in .stadt select {
+  width: 150%;
+  height: 60px;
+  padding: 00px 0px;
+  background: transparent;
+}
+#mess .input-block-text {
+  float: left;
+  width: 100%;
+  border: solid 9px transparent;
+  /* Firefox 19+ */
+  /* Firefox 18- */
+}
+#mess .input-block-text ::-webkit-input-placeholder {
+  color: #dddddd;
+}
+#mess .input-block-text ::-moz-placeholder {
+  color: #dddddd;
+}
+#mess .input-block-text :-moz-placeholder {
+  color: #dddddd;
+}
+#mess .input-block-text :-ms-input-placeholder {
+  color: #dddddd;
+}
+#mess .input-block-text textarea {
+  display: block;
+  width: 100%;
+  border: solid 1px #dddddd;
+  padding: 20px;
+  color: #232425;
+  height: 240px;
+  font-size: 15px;
+}
+@media screen and (min-width: 600px) and (max-width: 767px) {
+  #mess .input-block input {
+    padding: 10px;
+  }
+  #mess .input-block .ui-in {
+    height: 38px;
+  }
+  #mess .input-block .ui-in .stadt select {
+    height: 36px;
+  }
+  #mess .input-block .ui-in .stadt {
+    padding: 0px 10px;
+  }
+  #mess .input-block textarea {
+    height: 90px;
+  }
+  #mess .mes-tabs .mess {
+    position: relative;
+    display: block;
+    vertical-align: middle;
+    margin: 0 auto;
+    width: 450px;
+    height: 390px;
+    border-radius: 0px;
+    border: solid 2px #2ea0f0;
+    background: #fff;
+  }
+  .mess .input-button {
+    font-size: 14px;
+    padding: 13px 35px;
+  }
+  #mess .mes-tabs .mess .block-buttons {
+    padding: 8px;
+  }
+  #mess .mes-tabs .mess .mess-display {
+    padding: 45px 25px 25px;
+    border-radius: 0px;
+  }
+  #mess .mes-tabs .mess .close-mess {
+    top: 0px;
+    right: 0px;
+  }
+}
+@media screen and (min-width: 420px) and (max-width: 599px) {
+  #mess .input-block input {
+    padding: 10px;
+  }
+  #mess .input-block .ui-in {
+    height: 38px;
+  }
+  #mess .input-block .ui-in .stadt select {
+    height: 36px;
+  }
+  #mess .input-block .ui-in .stadt {
+    padding: 0px 10px;
+  }
+  #mess .input-block textarea {
+    height: 90px;
+  }
+  #mess .mes-tabs .mess {
+    position: relative;
+    display: block;
+    vertical-align: middle;
+    margin: 0 auto;
+    width: 450px;
+    height: 390px;
+    border-radius: 0px;
+    border: solid 2px #2ea0f0;
+    background: #fff;
+  }
+  .mess .input-button {
+    font-size: 14px;
+    padding: 13px 35px;
+  }
+  #mess .mes-tabs .mess .block-buttons {
+    padding: 8px;
+  }
+  #mess .mes-tabs .mess .mess-display {
+    padding: 45px 25px 25px;
+    border-radius: 0px;
+  }
+  #mess .mes-tabs .mess .close-mess {
+    top: 0px;
+    right: 0px;
+  }
+}
+@media screen and (max-width: 419px) {
+  #mess .input-block input {
+    padding: 10px;
+  }
+  #mess .input-block .ui-in {
+    height: 38px;
+  }
+  #mess .input-block .ui-in .stadt select {
+    height: 36px;
+  }
+  #mess .input-block .ui-in .stadt {
+    padding: 0px 10px;
+  }
+  #mess .input-block textarea {
+    height: 90px;
+  }
+  #mess .mes-tabs .mess {
+    position: absolute;
+    display: block;
+    top: 0px;
+    left: 0px;
+    vertical-align: middle;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    border-radius: 0px;
+    border: solid 2px #2ea0f0;
+    background: #fff;
+  }
+  .mess .input-button {
+    font-size: 14px;
+    padding: 13px 35px;
+  }
+  #mess .mes-tabs .mess .block-buttons {
+    padding: 8px;
+  }
+  #mess .mes-tabs .mess .mess-display {
+    padding: 45px 25px 25px;
+    border-radius: 0px;
+  }
+  #mess .mes-tabs .mess .close-mess {
+    top: 0px;
+    right: 0px;
   }
 }

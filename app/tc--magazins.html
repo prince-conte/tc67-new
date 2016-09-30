@@ -217,12 +217,12 @@
 <ul class="rslides" id="slider4">
  
 
-<li class=" parallax" style="background: url(images/11.jpg)"><div class="phbg"></div></li>
-<li class=" parallax" style="background: url(images/1.jpg)"><div class="phbg"></div></li>
-<li class=" parallax" style="background: url(images/2.jpg)"><div class="phbg"></div></li>
-<li class=" parallax" style="background: url(images/3.jpg)"><div class="phbg"></div></li>
-<li class=" parallax" style="background: url(images/4.jpg)"><div class="phbg"></div></li>
-<li class=" parallax" style="background: url(images/5.jpg)"><div class="phbg"></div></li>
+<li class="parallax-wtf" style="background: url(images/11.jpg)"><div class="phbg"></div></li>
+<li class="parallax-wtf" style="background: url(images/1.jpg)"><div class="phbg"></div></li>
+<li class="parallax-wtf" style="background: url(images/2.jpg)"><div class="phbg"></div></li>
+<li class="parallax-wtf" style="background: url(images/3.jpg)"><div class="phbg"></div></li>
+<li class="parallax-wtf" style="background: url(images/4.jpg)"><div class="phbg"></div></li>
+<li class="parallax-wtf" style="background: url(images/5.jpg)"><div class="phbg"></div></li>
      
 
           
@@ -242,7 +242,7 @@
 <a id="tel" class="tc--page--info--tel">
 <span id="false"><i></i> Показать телефон</span> 
 <span id="true"><i></i> +7 (4812) 66-66-66</span></a>
-<a class="tc--page--info--mail"><i></i> Написать сообщение</a>
+<a id="message" class="tc--page--info--mail"><i></i> Написать сообщение</a>
 </div>
       
 <div class="tc--page--info--buttons">
@@ -606,6 +606,58 @@
 </footer>    
 </div>    
     
+ 
+<!--mess--> 
+<div id="mess" class="popup_block">
+<div class="phbg"></div>
+<div class="mes-tabs">
+<div class="middle">
+<div class="mess">
+<form class="mess-display">
+<div class="input-block"><input placeholder="Имя" required></div>    
+<div class="input-block"><input id="phones" placeholder="Телефон" required></div> 
+<div class="input-block">
+<div class="ui-in">  
+<div class="stadt">
+<select>
+<option>Тема сообщения</option>   
+<option>Вопрос</option>   
+<option>Жалобы и предложения</option>      
+<option>Другое</option>      
+</select>  
+</div> 
+</div>   
+</div>     
+<div class="input-block">
+<textarea></textarea>
+</div>
+<div class="block-buttons"><input type="submit" class="input-button blue" value="Отправить"></div>      
+   
+<a id="mess-close" class="close-mess">
+<span></span>    
+</a>  
+</form>
+    
+<div id="tanks" class="mess-display">
+<div class="ad"> 
+<div class="middle">
+<img src="img/tanks.png">
+<span>Спасибо за обращение!</span>    
+</div> 
+</div>   
+</div>  
+    
+    
+</div>   
+</div>
+</div>    
+<!--mess--> 
+    
+    
+    
+    
+    
+    
     
  <!--mobile menu-->
 <div id="mbile-web" class="popup_block"><div class="fon"></div>
@@ -693,6 +745,7 @@
 <script src="js/jquery.smoothscroll.js"></script>
 <script src="js/paralax.js"></script>
 <script src="js/sl-b.js"></script> 
+<script src="js/valid-form.js"></script> 
 <script type="text/javascript" src="js/jquery-ui-1.8.19.custom.min.js"></script>    
 <script>
 	$(function() {
@@ -714,6 +767,7 @@
 	});
 </script>
 <script src="js/any.js"></script>
+
 
 </body>
 </html>

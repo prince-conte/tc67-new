@@ -1,6 +1,12 @@
 @import "grundfile.less";
 
 
+@keyframes title--to {
+  50% {  transform: translate(0px, 0px); }
+  100% {  transform: translate(0px, 10px); }
+}
+
+
 
 .body-ct {position: relative; height: 100%;}
 
@@ -10,6 +16,10 @@
 
 .center-align{text-align: center; width: 100%;}
 
+
+.top-info {.map-ad {float: left !important; span{float: left;}}
+.type {width: auto !important; span{display: inline-block; padding: 10px; padding-left: 0px;}}
+}
 
 
 // progress-bar ____________________________________
@@ -412,6 +422,8 @@ h2 a {
     border-radius: 45px;
 }
 
-
+.top-info {.map-ad {float: left !important; span{float: left;}}
+    .type {width: auto !important; span{font-size: 12px;}}
+}
 }
 

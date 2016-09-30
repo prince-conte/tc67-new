@@ -2,10 +2,14 @@
 .home {position: absolute; display: block; top:0px; left: 0px; width: 100%; height: 100%; .bgTC; background: url(../img/home.jpg); min-height: 800px;
 .home-table {position: relative; display: table;  height: 100%; 
 h1 {position: relative; display: block; text-align: center; color: #fff; padding-bottom: 50px;}
-article {.middle; margin: 0 auto; text-align: center;}}
+article {.middle; margin: 0 auto; text-align: center;}
+
+    
+  
+}
 
 // slider  
-.sl-txt {position: absolute; display: block; bottom: 45px; left: 0px; width: 100%; height: 100px; 
+.sl-txt {position: absolute; display: block; bottom: 140px; left: 0px; width: 100%; height: 100px; 
 .sl-txt-block {position: relative; display: block; margin: 0 auto; width: 610px; height: 100%; 
 .sl-inf {position: absolute; display: none; width: 100%; height: 100%;
 .sl {position: relative; display: inline-block; float: left; width: 50%;
@@ -24,20 +28,45 @@ a {position: relative; display: block; width: 8px; height: 8px; background: #fff
     
  .fade {position: absolute; display: block; top:0px; left:0px; width: 100%; height: 296px;z-index: 99;       
  background-image: -moz-linear-gradient( -90deg, rgba(0,0,0,0.56078) 0%, rgba(2,2,2,0.28) 37%, rgba(3,3,3,0.24) 47%, rgba(6,6,6,0) 100%);background-image: -webkit-linear-gradient( -90deg, rgba(0,0,0,0.56078) 0%, rgba(2,2,2,0.28) 37%, rgba(3,3,3,0.24) 47%, rgba(6,6,6,0) 100%);background-image: -ms-linear-gradient( -90deg, rgba(0,0,0,0.56078) 0%, rgba(2,2,2,0.28) 37%, rgba(3,3,3,0.24) 47%, rgba(6,6,6,0) 100%);}
+    
+    
+.styck-button-block {float: left; width: 100%; margin-top: 45px;}    
+.styck-button {position: relative; display: block; width: 45px; height: 45px; margin: 0 auto; .bgCCC; background: url(../img/fleche-bottom.png);
+animation: title--to .7s linear 0s infinite alternate  forwards;    
+    
+}  
+    
+    
+    
 }
 
 
 
 
 @media screen and (min-width:1024px) and (max-width:1279px)   {  
-    .home { min-height: 600px;}
+    .home { min-height: 800px;}
+    
+.wrapper .inner {
+    position: absolute;
+    display: block;
+    width: 100%;
+    top: 1000px;
+} 
+    
 }
 
 @media screen and (min-width:768px) and (max-width:1023px)   {
    
 .home .home-table h1 {font-size: 30px;}
   
-.home { min-height: 600px;}
+.home { min-height: 800px;}
+    
+.wrapper .inner {
+    position: absolute;
+    display: block;
+    width: 100%;
+    top: 800px;
+}
     
 }
 
@@ -123,14 +152,6 @@ font-size: 20px;
 
 
 
-
-
-
-  
-
- 
-
-
 }
 
 @media screen and (max-width:419px)   {
@@ -141,10 +162,7 @@ font-size: 20px;
 
    
 .home .sl-txt .sl-txt-block .sl-inf .sl {
-    position: relative;
-    display: inline-block;
-    float: left;
-    width: 100%;
+    display: none;
 }
     
 .home .sl-txt {
@@ -185,13 +203,19 @@ font-size: 20px;
 
 }
     
-.home .sl-txt {
-    display: none;
+.home .sl-txt article {
+    display: none !important;
 }
     
 .home-table h1 br{
     display: none;
 }
-
+    
+.nav-sl {display: none !important;}
+.home .styck-button-block {
+    float: left;
+    width: 100%;
+    margin-top: 15px;
+}
 
 }
