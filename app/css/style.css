@@ -396,6 +396,12 @@ li {
   padding: 10px;
   padding-left: 0px;
 }
+article p {
+  line-height: 1.8 !important;
+}
+.non-marg-t {
+  margin-top: 0px !important;
+}
 progress {
   position: fixed;
   top: 0px;
@@ -4287,6 +4293,7 @@ nav .top-menu li .login:hover span {
   display: inline-block;
   width: 14px;
   height: 14px;
+  margin-right: 10px;
   background-position: CENTER CENTER !important;
   background-repeat: no-repeat !important;
   background-size: contain!important;
@@ -5895,7 +5902,7 @@ footer .foot-info .end-block .parus a:hover {
   width: 50%;
   border-left: solid  20px #fff;
   border-right: solid  20px #fff;
-  height: 300px;
+  height: 400px;
 }
 .home--tc--content .home--tc--content-info .tc--content-info-one #map {
   width: 100%;
