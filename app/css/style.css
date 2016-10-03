@@ -794,6 +794,12 @@ progress[value]::-webkit-progress-value {
   -o-transition: all 1s ease-out;
   transition: all 1s ease-out;
 }
+.mag--title {
+  width: 275px !important;
+}
+.float-content .mag--title {
+  width: 210px !important;
+}
 .wrapper {
   display: block;
   width: 100%;
@@ -2468,7 +2474,7 @@ nav .top-menu li .login:hover span {
 .a-table--body-vip .one--teeser--block .tees-border .img {
   float: left;
   margin: 20px 0 10px;
-  border: solid 30px transparent;
+  border: solid 30px #fafafa;
   border-top: solid 0px transparent;
   border-bottom: solid 0px transparent;
   width: 100%;
@@ -4041,6 +4047,9 @@ nav .top-menu li .login:hover span {
 .cat-tc-one .title-bar .button-bar .but-cat .mid .m-active {
   background: url(../img/map-ico-a.svg);
 }
+.cat-tc-one .title-bar .button-bar select {
+  background: transparent;
+}
 .cat-tc-one .one-tc {
   display: inline-block;
   float: left;
@@ -4203,6 +4212,7 @@ nav .top-menu li .login:hover span {
   height: 100%;
   display: inline-table;
   padding-left: 12px;
+  width: 275px;
 }
 .cat-tc-one .one-tc .one-info .mag .mag--title h5 {
   font-size: 16px;
@@ -5823,7 +5833,7 @@ footer .foot-info .end-block .parus a:hover {
   height: 560px;
   left: 0;
   top: 0;
-  background-position: top CENTER !important;
+  background-position: CENTER CENTER !important;
   background-repeat: no-repeat !important;
   background-size: COVER !important;
 }
