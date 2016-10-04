@@ -1,6 +1,13 @@
  $(document).ready(function() {
    var homesl = 0; teesersl = 0; salesl = 0; intro = 6000; click = 0;  click2 = 0; tcsl = 0; liner = 0;
         openTableCl1 = 0; openTableCl2 = 0; openTableCl3 = 0; openTableCl4 = 0; openTableCl5 = 0; openTableCl6 = 0;
+        openSub_tableCl1_1 = 0; openSub_tableCl1_2 = 0; openSub_tableCl1_3 = 0;  
+        openSub_tableCl2_1 = 0; openSub_tableCl2_2 = 0; openSub_tableCl2_3 = 0; 
+        openSub_tableCl3_1 = 0; openSub_tableCl3_2 = 0; openSub_tableCl3_3 = 0; 
+        openSub_tableCl4_1 = 0; openSub_tableCl4_2 = 0; openSub_tableCl4_3 = 0; 
+        openSub_tableCl5_1 = 0; openSub_tableCl5_2 = 0; openSub_tableCl5_3 = 0; 
+        openSub_tableCl6_1 = 0; openSub_tableCl6_2 = 0; openSub_tableCl6_3 = 0; 
+       
 
 // scroll to      
      
@@ -12,6 +19,11 @@ return false;
 });
      
   
+
+     
+     
+     
+     
      
      
      
@@ -26,7 +38,205 @@ return false;
          
      $('#mess-close').click(function() {
      $('#mess').fadeOut(500);      
-     });        
+     }); 
+     
+     
+     
+     // open sub-table archiv__________________________________________________________________________________________//
+     
+     // 1
+     
+     $('#title-table-button1_1').click(function() {      
+     if (openSub_tableCl1_1 == 0) {
+     $('#table-min1_1').fadeIn(0);
+      openSub_tableCl1_1 = 1;          
+     } else {
+      $('#table-min1_1').fadeOut(0);
+      openSub_tableCl1_1 = 0;} 
+     });
+     
+       
+     $('#title-table-button1_2').click(function() {      
+     if (openSub_tableCl1_2 == 0) {
+     $('#table-min1_2').fadeIn(0);
+      openSub_tableCl1_2 = 1;          
+     } else {
+      $('#table-min1_2').fadeOut(0);
+      openSub_tableCl1_2 = 0;} 
+     });
+     
+        
+     $('#title-table-button1_3').click(function() {      
+     if (openSub_tableCl1_3 == 0) {
+     $('#table-min1_3').fadeIn(0);
+      openSub_tableCl1_3 = 1;          
+     } else {
+      $('#table-min1_3').fadeOut(0);
+      openSub_tableCl1_3 = 0;} 
+     });
+     
+     
+         
+     // 2
+     
+     $('#title-table-button2_1').click(function() {      
+     if (openSub_tableCl2_1 == 0) {
+     $('#table-min2_1').fadeIn(0);
+      openSub_tableCl2_1 = 1;          
+     } else {
+      $('#table-min2_1').fadeOut(0);
+      openSub_tableCl2_1 = 0;} 
+     });
+     
+       
+     $('#title-table-button2_2').click(function() {      
+     if (openSub_tableCl2_2 == 0) {
+     $('#table-min2_2').fadeIn(0);
+      openSub_tableCl2_2 = 1;          
+     } else {
+      $('#table-min2_2').fadeOut(0);
+      openSub_tableCl2_2 = 0;} 
+     });
+     
+        
+     $('#title-table-button2_3').click(function() {      
+     if (openSub_tableCl2_3 == 0) {
+     $('#table-min2_3').fadeIn(0);
+      openSub_tableCl2_3 = 1;          
+     } else {
+      $('#table-min2_3').fadeOut(0);
+      openSub_tableCl2_3 = 0;} 
+     });
+     
+     
+          
+         
+     // 3
+     
+     $('#title-table-button3_1').click(function() {      
+     if (openSub_tableCl3_1 == 0) {
+     $('#table-min3_1').fadeIn(0);
+      openSub_tableCl3_1 = 1;          
+     } else {
+      $('#table-min3_1').fadeOut(0);
+      openSub_tableCl3_1 = 0;} 
+     });
+     
+       
+     $('#title-table-button3_2').click(function() {      
+     if (openSub_tableCl3_2 == 0) {
+     $('#table-min3_2').fadeIn(0);
+      openSub_tableCl3_2 = 1;          
+     } else {
+      $('#table-min3_2').fadeOut(0);
+      openSub_tableCl3_2 = 0;} 
+     });
+     
+        
+     $('#title-table-button3_3').click(function() {      
+     if (openSub_tableCl3_3 == 0) {
+     $('#table-min3_3').fadeIn(0);
+      openSub_tableCl3_3 = 1;          
+     } else {
+      $('#table-min3_3').fadeOut(0);
+      openSub_tableCl3_3 = 0;} 
+     });
+              
+     // 4
+     
+     $('#title-table-button4_1').click(function() {      
+     if (openSub_tableCl4_1 == 0) {
+     $('#table-min4_1').fadeIn(0);
+      openSub_tableCl4_1 = 1;          
+     } else {
+      $('#table-min4_1').fadeOut(0);
+      openSub_tableCl4_1 = 0;} 
+     });
+     
+       
+     $('#title-table-button4_2').click(function() {      
+     if (openSub_tableCl4_2 == 0) {
+     $('#table-min4_2').fadeIn(0);
+      openSub_tableCl4_2 = 1;          
+     } else {
+      $('#table-min4_2').fadeOut(0);
+      openSub_tableCl4_2 = 0;} 
+     });
+     
+        
+     $('#title-table-button4_3').click(function() {      
+     if (openSub_tableCl4_3 == 0) {
+     $('#table-min4_3').fadeIn(0);
+      openSub_tableCl4_3 = 1;          
+     } else {
+      $('#table-min4_3').fadeOut(0);
+      openSub_tableCl4_3 = 0;} 
+     });
+     
+                 
+     // 5
+     
+     $('#title-table-button5_1').click(function() {      
+     if (openSub_tableCl5_1 == 0) {
+     $('#table-min5_1').fadeIn(0);
+      openSub_tableCl5_1 = 1;          
+     } else {
+      $('#table-min5_1').fadeOut(0);
+      openSub_tableCl5_1 = 0;} 
+     });
+     
+       
+     $('#title-table-button5_2').click(function() {      
+     if (openSub_tableCl5_2 == 0) {
+     $('#table-min5_2').fadeIn(0);
+      openSub_tableCl5_2 = 1;          
+     } else {
+      $('#table-min5_2').fadeOut(0);
+      openSub_tableCl5_2 = 0;} 
+     });
+     
+        
+     $('#title-table-button5_3').click(function() {      
+     if (openSub_tableCl5_3 == 0) {
+     $('#table-min5_3').fadeIn(0);
+      openSub_tableCl5_3 = 1;          
+     } else {
+      $('#table-min5_3').fadeOut(0);
+      openSub_tableCl5_3 = 0;} 
+     });
+     
+                     
+     // 6
+     
+     $('#title-table-button6_1').click(function() {      
+     if (openSub_tableCl6_1 == 0) {
+     $('#table-min6_1').fadeIn(0);
+      openSub_tableCl6_1 = 1;          
+     } else {
+      $('#table-min6_1').fadeOut(0);
+      openSub_tableCl6_1 = 0;} 
+     });
+     
+       
+     $('#title-table-button6_2').click(function() {      
+     if (openSub_tableCl6_2 == 0) {
+     $('#table-min6_2').fadeIn(0);
+      openSub_tableCl6_2 = 1;          
+     } else {
+      $('#table-min6_2').fadeOut(0);
+      openSub_tableCl6_2 = 0;} 
+     });
+     
+        
+     $('#title-table-button6_3').click(function() {      
+     if (openSub_tableCl6_3 == 0) {
+     $('#table-min6_3').fadeIn(0);
+      openSub_tableCl6_3 = 1;          
+     } else {
+      $('#table-min6_3').fadeOut(0);
+      openSub_tableCl6_3 = 0;} 
+     });
+     
      
      
         
@@ -567,7 +777,7 @@ $(window).scroll(function () {
 
 
 
-
+	$('#redactor_content').redactor();
 
 
 

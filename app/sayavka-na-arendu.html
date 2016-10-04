@@ -25,60 +25,8 @@
 
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-<script src="external/jquery.hotkeys.js"></script>
-<script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
-<script src="external/google-code-prettify/prettify.js"></script>
-<script src="js/bootstrap-wysiwyg.js"></script>
-    
-    <style>
 
-        
-    </style>   
-    
-    
-    
-<script>
-  $(function(){
-    function initToolbarBootstrapBindings() {
-      var fonts = ['Serif', 'Sans', 'Arial', 'Arial Black', 'Courier', 
-            'Courier New', 'Comic Sans MS', 'Helvetica', 'Impact', 'Lucida Grande', 'Lucida Sans', 'Tahoma', 'Times',
-            'Times New Roman', 'Verdana'],
-            fontTarget = $('[title=Font]').siblings('.dropdown-menu');
-      $.each(fonts, function (idx, fontName) {
-          fontTarget.append($('<li><a data-edit="fontName ' + fontName +'" style="font-family:\''+ fontName +'\'">'+fontName + '</a></li>'));
-      });
-      $('a[title]').tooltip({container:'body'});
-    	$('.dropdown-menu input').click(function() {return false;})
-		    .change(function () {$(this).parent('.dropdown-menu').siblings('.dropdown-toggle').dropdown('toggle');})
-        .keydown('esc', function () {this.value='';$(this).change();});
 
-      $('[data-role=magic-overlay]').each(function () { 
-        var overlay = $(this), target = $(overlay.data('target')); 
-        overlay.css('opacity', 0).css('position', 'absolute').offset(target.offset()).width(target.outerWidth()).height(target.outerHeight());
-      });
-      if ("onwebkitspeechchange"  in document.createElement("input")) {
-        var editorOffset = $('#editor').offset();
-        $('#voiceBtn').css('position','absolute').offset({top: editorOffset.top, left: editorOffset.left+$('#editor').innerWidth()-35});
-      } else {
-        $('#voiceBtn').hide();
-      }
-	};
-	function showErrorAlert (reason, detail) {
-		var msg='';
-		if (reason==='unsupported-file-type') { msg = "Unsupported format " +detail; }
-		else {
-			console.log("error uploading file", reason, detail);
-		}
-		$('<div class="alert"> <button type="button" class="close" data-dismiss="alert">&times;</button>'+ 
-		 '<strong>File upload error</strong> '+msg+' </div>').prependTo('#alerts');
-	};
-    initToolbarBootstrapBindings();  
-	$('#editor').wysiwyg({ fileUploadError: showErrorAlert} );
-    window.prettyPrint && prettyPrint();
-  });
-</script>
-
-    
     
     
 </head>
@@ -479,44 +427,9 @@
 <p>Опишите вашу компанию и каким требованиям должна удовлетворять предлагаемая площадь</p>    
 </article>   
 <!-- editor -->    
-  <div class="hero-unit">
-
-	<!---
-	Please read this before copying the toolbar:
-
-	* One of the best things about this widget is that it does not impose any styling on you, and that it allows you 
-	* to create a custom toolbar with the options and functions that are good for your particular use. This toolbar
-	* is just an example - don't just copy it and force yourself to use the demo styling. Create your own. Read 
-	* this page to understand how to customise it:
-    * https://github.com/mindmup/bootstrap-wysiwyg/blob/master/README.md#customising-
-	--->
-	<div id="alerts"></div>
-    <div class="btn-toolbar" data-role="editor-toolbar" data-target="#editor">
-      <div class="btn-group">
-          <ul class="dropdown-menu">
-          </ul>
-        </div>
-      <div class="btn-group">
-        <a class="btn" data-edit="bold"><i class="icon-bold"></i></a>
-        <a class="btn" data-edit="italic"><i class="icon-italic"></i></a>
-        <a class="btn" data-edit="strikethrough"><i class="icon-strikethrough"></i></a>
-      </div>
-      <div class="btn-group">
-        <a class="btn" data-edit="insertunorderedlist"><i class="icon-list-ul"></i></a>
-        <a class="btn" data-edit="insertorderedlist"><i class="icon-list-ol"></i></a>
-      </div>
-
-      <div class="btn-group">
-        <a class="btn" data-edit="undo"><i class="icon-undo"></i></a>
-        <a class="btn" data-edit="redo"><i class="icon-repeat"></i></a>
-      </div>
-      <input type="text" data-edit="inserttext" id="voiceBtn" x-webkit-speech="">
-    </div>
-
-    <div id="editor">
-      Опишите вашу компанию
-    </div>
-  </div>
+<textarea id="redactor_content" name="content">
+<p>Описание вашей компании</p>
+</textarea>
     
 <!-- editor -->    
     
@@ -1008,11 +921,13 @@
 <script src="js/sl-b.js"></script> 
 <script src="js/valid-form.js"></script> 
 <script type="text/javascript" src="js/jquery-ui-1.8.19.custom.min.js"></script> 
+<script src="js/redactor.js"></script>
 <script src="js/any.js"></script>
 
 
 
-   
+
+
     
     
 </body>
