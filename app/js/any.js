@@ -36,8 +36,8 @@ return false;
          
 
          
-     $('#mess-close').click(function() {
-     $('#mess').fadeOut(500);      
+     $('.close-mess').click(function() {
+     $('.popup_block').fadeOut(500);      
      }); 
      
      

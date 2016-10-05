@@ -62,7 +62,7 @@ h2.recom {text-align: center !important; width: 100% !important;}
     i.map {.bgCCC;  display: inline-block; width: 15px; height: 15px; background: url(../img/st-map.svg);}    
 }
 .line {float: left; width: 100%;}  
-.redact {font-size: 12px; color: @coltxt; background: #eeeeee; padding: 8px 14px; border-radius: 25px; margin-right: 10px; float: left;
+.redact {font-size: 12px; color: @coltxt; background: #eeeeee; padding: 8px 14px; border-radius: 25px; margin-right: 10px; float: left; 
 margin-bottom: 10px;} 
 .redact:hover {background: @coltxt; color: #eeeeee; }    
 .del:hover {background: red; color: #eeeeee; }    
@@ -98,18 +98,20 @@ a {font-size: 20px;padding: 10px 30px;margin-left: 25px;border-radius: 45px;
     
     
     
-.one-tc {width: 50%; margin: 10px 0;
+.one-tc {width: 50%; margin: 10px 0; height: auto;
 border-left: solid 10px #fff; border-right: solid 10px #fff;   
 .one-info {border:solid 1px #e8e8e8;}
     
 .button {padding: 0px; margin: 0px; margin-top: 15px; width: 100%; text-align: center;}
 .mag--one-info {height: auto;}   
     
-.mag--but-block  {
+.mag--but-block  {float: left; display: block; width: 100%;
     
     
-.redact {font-size: 12px; color: @coltxt; background: #eeeeee; padding: 8px 14px; border-radius: 25px; margin-right: 10px;}
+.redact {font-size: 12px; color: @coltxt; background: #eeeeee; padding: 8px 14px; border-radius: 25px; margin: 5px; display: inline-block; float: left;}
 .redact:hover {background: @coltxt; color: #eeeeee; }
+.delete:hover {background:red; color: #fff; }    
+    
 }  
 }   
     
@@ -867,6 +869,7 @@ h2 {
     margin-top: 8px;
     display: inline-block;
     font-size: 12px;
+    padding: 6px 15px;
 }  
     
 .cat-tc-one .one-tc .tc--content-info-one .mag--but-block {

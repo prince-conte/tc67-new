@@ -1,4 +1,4 @@
-#mess{
+#mess, #mess-txt {z-index: 99999999999999999999;
 .phbg {position: absolute; display: block; width: 100%; top:0px; left:0px; height: 100%; width: 100%; background: #000; opacity: .75;}  
 .mes-tabs {position: absolute; display: table; top:0px; left:0px; width: 100%; height: 100%; 
 .mess {position: relative; display: block; vertical-align: middle; margin: 0 auto; width: 450px; height: 525px;  border-radius: 10px;
@@ -10,7 +10,7 @@ border: solid 2px @colfirm2; background: #fff;
 img {display: inline-block; width: auto; margin-bottom: 25px;}
 span {float: left; display: block; width: 100%; font-size: 18px; font-family: @fontH;}    
 }
-.close-mess {position: absolute; display: block; width: 40px; height: 40px; top: -50px; right: -54px; background: @colfirm2; .m-speed;
+.close-mess {position: absolute; display: block; width: 40px; height: 40px; top: -50px; right: -54px; background: @colfirm2; .m-speed; z-index: 99999999999999999;
 span {position: absolute; display: block; width: 65%; height: 1px; background: #fff; .pov1; top: 19px; left: 7px; .m-speed;}
 span::before {content: ''; position: absolute; display: block; width: 100%; height: 1px; background: #fff; .pov2; top: 0px; left: 0px; .m-speed;}
 
@@ -22,7 +22,16 @@ span::before {background: #000;}
 }    
 
 
+} 
+    
+.mess-info {height: auto; min-height: 320px; background: #fff;
+.mess-info-txt  {float: left; width: 100%; padding: 25px;}
+.title {float: left; width: 100%; margin: 10px 0 20px; text-align: center; font-family: @fontH; font-size: 28px;}    
+p {float: left; width: 100%; font-size: 16px;
+a {color: @colfirm}    
+a:hover {color: @colfirm2}    
 }    
+}
     
 }   
     
@@ -96,8 +105,6 @@ textarea {display: block; width: 100%; border: solid 1px #dddddd; padding: 20px;
 
 
 
-
-
 @media screen and (min-width:600px) and (max-width:767px) {
    
 #mess .input-block input {
@@ -130,6 +137,7 @@ textarea {display: block; width: 100%; border: solid 1px #dddddd; padding: 20px;
     border-radius: 0px;
     border: solid 2px #2ea0f0;
     background: #fff;
+    border-radius: 0px;
 }
     
 .mess .input-button {
@@ -152,8 +160,55 @@ textarea {display: block; width: 100%; border: solid 1px #dddddd; padding: 20px;
     right: 0px;
 }
     
+    
+#mess-txt .mes-tabs .mess-info {
+    background: #fff;
+    position: absolute;
+    display: block;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    border-radius: 0px;
+} 
+    
+#mess-txt .mes-tabs .mess-info .mess-info-txt {
+    float: left;
+    width: 100%;
+    padding: 25px;
+    margin-top: 25px;
+}
+
+    
+#mess-txt .mes-tabs .mess .close-mess {
+    top: 0px;
+    right: 0px;
+}    
+    
+    
 } 
 @media screen and (min-width:420px) and (max-width:599px) {
+    
+    
+    
+#mess-txt .mes-tabs .mess-info {
+    background: #fff;
+    position: absolute;
+    display: block;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+} 
+    
+#mess-txt .mes-tabs .mess-info .mess-info-txt {
+    float: left;
+    width: 100%;
+    padding: 25px;
+    margin-top: 25px;
+}
+
+  
     
 #mess .input-block input {
     padding: 10px;
@@ -205,7 +260,13 @@ textarea {display: block; width: 100%; border: solid 1px #dddddd; padding: 20px;
 #mess .mes-tabs .mess .close-mess {
     top: 0px;
     right: 0px;
-}   
+}  
+    
+    
+#mess-txt .mes-tabs .mess .close-mess {
+    top: 0px;
+    right: 0px;
+} 
     
 }  
 @media screen and (max-width:419px) {
@@ -265,6 +326,32 @@ textarea {display: block; width: 100%; border: solid 1px #dddddd; padding: 20px;
     right: 0px;
 }  
     
+    
+    
+    
+#mess-txt .mes-tabs .mess-info {
+    background: #fff;
+    position: absolute;
+    display: block;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    border-radius: 0px;
+} 
+    
+#mess-txt .mes-tabs .mess-info .mess-info-txt {
+    float: left;
+    width: 100%;
+    padding: 25px;
+    margin-top: 25px;
+}
+    
+    
+#mess-txt .mes-tabs .mess .close-mess {
+    top: 0px;
+    right: 0px;
+}    
     
     
 } 
