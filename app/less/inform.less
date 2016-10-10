@@ -3,16 +3,35 @@
 .page--inform {float: left; width: 100%; background: #fafafa; padding-bottom: 65px;
     .content { .content--float {width: 100%; background: #fff; float: left; padding-bottom: 58px;}}    
 h1 {text-align: center; color: @coltxt !important; padding-bottom: 25px; font-size: 30px !important; font-family: @fontH !important;} 
-
+h2 {text-align: center; color: @coltxt !important; padding-bottom: 25px; font-size: 24px !important; font-family: @fontH !important;} 
+.left {text-align: left;}
 article {padding: 78px 0px 25px; float: left; width: 100%;
 p {margin: 20px 0; line-height: 1.8 !important;  float: left; width: 100%; display: block; font-size: 14px; font-family: @fonttxt !important; padding: 0 180px;} 
     img {padding:0 85px; margin: 20px 0;} 
 b {font-family: @fontB}
+.title-in-tc { font-size: 22px;}
+.title-in-tc-big { font-size: 28px;}
 li {padding: 0 185px 0 205px;  line-height: 1.8 !important; display: block; font-size: 14px !important;
  span {padding-left: 20px;  line-height: 1.8 !important;  float: left; width: 100%; display: block; float: left; width: 100%; font-family: @fontH !important;}
 }
-    a {font-family: @fontB !important; color:@colfirm2 !important; font-size: 14px !important;}
+    a {font-family: @fontB !important; color:@colfirm2; font-size: 14px !important; .m-speed;}
+    
+    a:hover {color: @colfirm;}
     }
+    
+    
+
+// spisok mark    
+.spisok { float: left; width: 100%; padding:0 180px 10px;; 
+li { position: relative; float: left; width: 100%; font-size: 17px; padding: 6px 0; padding-left: 22px;
+    a:hover {color: @colfirm;}   
+}  
+li::before { content: ''; position: absolute; left: 0px; top: 15px; width: 8px; height: 8px; background: @coltxt; border-radius:  50%;}    
+    
+}  
+    
+    
+    
 }
 .news {h1 {text-align: center; color: #525252 !important; padding-bottom: 25px; font-size: 30px !important; font-family: @fontB !important;}}
 .social--but {text-align: center; float: left; width: 100%; margin:0px 0;
@@ -36,6 +55,12 @@ li {padding: 0 185px 0 205px;  line-height: 1.8 !important; display: block; font
     padding: 0 25px 0 30px;
 }
     
+.page--inform .spisok {
+    float: left;
+    width: 100%;
+    padding: 0 25px 10px;
+}
+    
 }
 
 
@@ -51,6 +76,12 @@ li {padding: 0 185px 0 205px;  line-height: 1.8 !important; display: block; font
     padding: 0 25px 0 30px;
 }
     
+.page--inform .spisok {
+    float: left;
+    width: 100%;
+    padding: 0 25px 10px;
+}
+    
 }
 
 
@@ -63,6 +94,12 @@ li {padding: 0 185px 0 205px;  line-height: 1.8 !important; display: block; font
     
 .page--inform article li {
     padding: 0 25px 0 30px;
+}
+    
+.page--inform .spisok {
+    float: left;
+    width: 100%;
+    padding: 0 25px 10px;
 }
     
 }
@@ -87,6 +124,11 @@ li {padding: 0 185px 0 205px;  line-height: 1.8 !important; display: block; font
 .page--inform article li {
     padding: 0 25px 0 30px;
 }
-    
+   
+.page--inform .spisok {
+    float: left;
+    width: 100%;
+    padding: 0 25px 10px;
+}
     
 }

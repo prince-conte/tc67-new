@@ -402,6 +402,28 @@ article p {
 .non-marg-t {
   margin-top: 0px !important;
 }
+.spisok {
+  float: left;
+  width: 100%;
+  padding-bottom: 8px;
+}
+.spisok li {
+  position: relative;
+  float: left;
+  width: 100%;
+  font-size: 17px;
+  padding: 6px 0;
+  padding-left: 17px;
+}
+.spisok li::before {
+  content: '';
+  position: absolute;
+  left: 0px;
+  top: 16px;
+  width: 6px;
+  height: 6px;
+  background: #46688b;
+}
 progress {
   position: fixed;
   top: 0px;
@@ -793,6 +815,7 @@ progress[value]::-webkit-progress-value {
   -webkit-transition: all 1s ease-out;
   -o-transition: all 1s ease-out;
   transition: all 1s ease-out;
+  background-image: url(../img/nophoto.jpg);
 }
 .mag--title {
   width: 275px !important;
@@ -841,6 +864,9 @@ h2 a {
   padding: 10px 30px;
   margin-left: 25px;
   border-radius: 45px;
+}
+.sc-image {
+  background-image: url(../img/nophoto.jpg);
 }
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
   .content {
@@ -2519,6 +2545,19 @@ nav .top-menu li .login:hover span {
   .teeser {
     padding: 80px 0 0;
     height: 410px;
+  }
+  .teeser .midi h2 {
+    color: #fff;
+    padding: 13px;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'ProximaNovaBold', sans-serif;
+  }
+  .teeser-left {
+    display: none !important;
+  }
+  .teeser-right {
+    display: none !important;
   }
 }
 .a-table--body {
@@ -4863,6 +4902,9 @@ nav .top-menu li .login:hover span {
   .cat-tc-one .active-bar .search-s {
     width: 100% !important;
   }
+  .ui-in {
+    border-right: solid 0px #2ea0f0 !important;
+  }
 }
 @media screen and (min-width: 420px) and (max-width: 599px) {
   .cena {
@@ -4974,6 +5016,9 @@ nav .top-menu li .login:hover span {
   }
   .cat-tc-one .active-bar .search-s {
     width: 100% !important;
+  }
+  .ui-in {
+    border-right: solid 0px #2ea0f0 !important;
   }
 }
 @media screen and (max-width: 419px) {
@@ -5108,6 +5153,9 @@ nav .top-menu li .login:hover span {
   }
   .cat-tc-one .one-tc .one-info .mag .mag--title {
     margin-top: 18px;
+  }
+  .ui-in {
+    border-right: solid 0px #2ea0f0 !important;
   }
 }
 footer {
@@ -8328,6 +8376,16 @@ div[data-role="editor-toolbar"] {
   font-size: 30px !important;
   font-family: 'proxima_nova_ltlight', sans-serif !important;
 }
+.page--inform h2 {
+  text-align: center;
+  color: #232425 !important;
+  padding-bottom: 25px;
+  font-size: 24px !important;
+  font-family: 'proxima_nova_ltlight', sans-serif !important;
+}
+.page--inform .left {
+  text-align: left;
+}
 .page--inform article {
   padding: 78px 0px 25px;
   float: left;
@@ -8350,6 +8408,12 @@ div[data-role="editor-toolbar"] {
 .page--inform article b {
   font-family: 'ProximaNovaBold', sans-serif;
 }
+.page--inform article .title-in-tc {
+  font-size: 22px;
+}
+.page--inform article .title-in-tc-big {
+  font-size: 28px;
+}
 .page--inform article li {
   padding: 0 185px 0 205px;
   line-height: 1.8 !important;
@@ -8366,8 +8430,41 @@ div[data-role="editor-toolbar"] {
 }
 .page--inform article a {
   font-family: 'ProximaNovaBold', sans-serif !important;
-  color: #2ea0f0 !important;
+  color: #2ea0f0;
   font-size: 14px !important;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.page--inform article a:hover {
+  color: #18db61;
+}
+.page--inform .spisok {
+  float: left;
+  width: 100%;
+  padding: 0 180px 10px;
+}
+.page--inform .spisok li {
+  position: relative;
+  float: left;
+  width: 100%;
+  font-size: 17px;
+  padding: 6px 0;
+  padding-left: 22px;
+}
+.page--inform .spisok li a:hover {
+  color: #18db61;
+}
+.page--inform .spisok li::before {
+  content: '';
+  position: absolute;
+  left: 0px;
+  top: 15px;
+  width: 8px;
+  height: 8px;
+  background: #232425;
+  border-radius: 50%;
 }
 .news h1 {
   text-align: center;
@@ -8389,6 +8486,11 @@ div[data-role="editor-toolbar"] {
   .page--inform article li {
     padding: 0 25px 0 30px;
   }
+  .page--inform .spisok {
+    float: left;
+    width: 100%;
+    padding: 0 25px 10px;
+  }
 }
 @media screen and (min-width: 600px) and (max-width: 767px) {
   .page--inform article p {
@@ -8397,6 +8499,11 @@ div[data-role="editor-toolbar"] {
   .page--inform article li {
     padding: 0 25px 0 30px;
   }
+  .page--inform .spisok {
+    float: left;
+    width: 100%;
+    padding: 0 25px 10px;
+  }
 }
 @media screen and (min-width: 420px) and (max-width: 599px) {
   .page--inform article p {
@@ -8404,6 +8511,11 @@ div[data-role="editor-toolbar"] {
   }
   .page--inform article li {
     padding: 0 25px 0 30px;
+  }
+  .page--inform .spisok {
+    float: left;
+    width: 100%;
+    padding: 0 25px 10px;
   }
 }
 @media screen and (max-width: 419px) {
@@ -8422,15 +8534,18 @@ div[data-role="editor-toolbar"] {
   .page--inform article li {
     padding: 0 25px 0 30px;
   }
+  .page--inform .spisok {
+    float: left;
+    width: 100%;
+    padding: 0 25px 10px;
+  }
 }
-#mess,
-#mess-txt {
+.mess__block {
   z-index: 99999999999999999999;
   /* Firefox 19+ */
   /* Firefox 18- */
 }
-#mess .phbg,
-#mess-txt .phbg {
+.mess__block .phbg {
   position: absolute;
   display: block;
   top: 0px;
@@ -8440,8 +8555,7 @@ div[data-role="editor-toolbar"] {
   background: #000;
   opacity: .75;
 }
-#mess .mes-tabs,
-#mess-txt .mes-tabs {
+.mess__block .mes-tabs {
   position: absolute;
   display: table;
   top: 0px;
@@ -8449,8 +8563,7 @@ div[data-role="editor-toolbar"] {
   width: 100%;
   height: 100%;
 }
-#mess .mes-tabs .mess,
-#mess-txt .mes-tabs .mess {
+.mess__block .mes-tabs .mess {
   position: relative;
   display: block;
   vertical-align: middle;
@@ -8461,12 +8574,10 @@ div[data-role="editor-toolbar"] {
   border: solid 2px #2ea0f0;
   background: #fff;
 }
-#mess .mes-tabs .mess .block-buttons,
-#mess-txt .mes-tabs .mess .block-buttons {
+.mess__block .mes-tabs .mess .block-buttons {
   padding: 15px;
 }
-#mess .mes-tabs .mess .mess-display,
-#mess-txt .mes-tabs .mess .mess-display {
+.mess__block .mes-tabs .mess .mess-display {
   position: absolute;
   display: table;
   width: 100%;
@@ -8476,14 +8587,12 @@ div[data-role="editor-toolbar"] {
   border-radius: 10px;
   padding: 25px;
 }
-#mess .mes-tabs .mess #tanks,
-#mess-txt .mes-tabs .mess #tanks {
+.mess__block .mes-tabs .mess #tanks {
   display: none;
   text-align: center;
   background: #fff;
 }
-#mess .mes-tabs .mess #tanks .ad,
-#mess-txt .mes-tabs .mess #tanks .ad {
+.mess__block .mes-tabs .mess #tanks .ad {
   position: absolute;
   display: table;
   width: 100%;
@@ -8492,22 +8601,19 @@ div[data-role="editor-toolbar"] {
   top: 0px;
   border-radius: 10px;
 }
-#mess .mes-tabs .mess #tanks img,
-#mess-txt .mes-tabs .mess #tanks img {
+.mess__block .mes-tabs .mess #tanks img {
   display: inline-block;
   width: auto;
   margin-bottom: 25px;
 }
-#mess .mes-tabs .mess #tanks span,
-#mess-txt .mes-tabs .mess #tanks span {
+.mess__block .mes-tabs .mess #tanks span {
   float: left;
   display: block;
   width: 100%;
   font-size: 18px;
   font-family: 'proxima_nova_ltlight', sans-serif;
 }
-#mess .mes-tabs .mess .close-mess,
-#mess-txt .mes-tabs .mess .close-mess {
+.mess__block .mes-tabs .mess .close-mess {
   position: absolute;
   display: block;
   width: 40px;
@@ -8521,8 +8627,7 @@ div[data-role="editor-toolbar"] {
   transition: all 0.3s;
   z-index: 99999999999999999;
 }
-#mess .mes-tabs .mess .close-mess span,
-#mess-txt .mes-tabs .mess .close-mess span {
+.mess__block .mes-tabs .mess .close-mess span {
   position: absolute;
   display: block;
   width: 65%;
@@ -8544,8 +8649,7 @@ div[data-role="editor-toolbar"] {
   -o-transition: all 0.3s;
   transition: all 0.3s;
 }
-#mess .mes-tabs .mess .close-mess span::before,
-#mess-txt .mes-tabs .mess .close-mess span::before {
+.mess__block .mes-tabs .mess .close-mess span::before {
   content: '';
   position: absolute;
   display: block;
@@ -8568,32 +8672,26 @@ div[data-role="editor-toolbar"] {
   -o-transition: all 0.3s;
   transition: all 0.3s;
 }
-#mess .mes-tabs .mess .close-mess:hover,
-#mess-txt .mes-tabs .mess .close-mess:hover {
+.mess__block .mes-tabs .mess .close-mess:hover {
   background: #fff;
 }
-#mess .mes-tabs .mess .close-mess:hover span,
-#mess-txt .mes-tabs .mess .close-mess:hover span {
+.mess__block .mes-tabs .mess .close-mess:hover span {
   background: #000;
 }
-#mess .mes-tabs .mess .close-mess:hover span::before,
-#mess-txt .mes-tabs .mess .close-mess:hover span::before {
+.mess__block .mes-tabs .mess .close-mess:hover span::before {
   background: #000;
 }
-#mess .mes-tabs .mess-info,
-#mess-txt .mes-tabs .mess-info {
+.mess__block .mes-tabs .mess-info {
   height: auto;
   min-height: 320px;
   background: #fff;
 }
-#mess .mes-tabs .mess-info .mess-info-txt,
-#mess-txt .mes-tabs .mess-info .mess-info-txt {
+.mess__block .mes-tabs .mess-info .mess-info-txt {
   float: left;
   width: 100%;
   padding: 25px;
 }
-#mess .mes-tabs .mess-info .title,
-#mess-txt .mes-tabs .mess-info .title {
+.mess__block .mes-tabs .mess-info .title {
   float: left;
   width: 100%;
   margin: 10px 0 20px;
@@ -8601,52 +8699,42 @@ div[data-role="editor-toolbar"] {
   font-family: 'proxima_nova_ltlight', sans-serif;
   font-size: 28px;
 }
-#mess .mes-tabs .mess-info p,
-#mess-txt .mes-tabs .mess-info p {
+.mess__block .mes-tabs .mess-info p {
   float: left;
   width: 100%;
   font-size: 16px;
 }
-#mess .mes-tabs .mess-info p a,
-#mess-txt .mes-tabs .mess-info p a {
+.mess__block .mes-tabs .mess-info p a {
   color: #18db61;
 }
-#mess .mes-tabs .mess-info p a:hover,
-#mess-txt .mes-tabs .mess-info p a:hover {
+.mess__block .mes-tabs .mess-info p a:hover {
   color: #2ea0f0;
 }
-#mess ::-webkit-input-placeholder,
-#mess-txt ::-webkit-input-placeholder {
+.mess__block ::-webkit-input-placeholder {
   color: #232425;
 }
-#mess ::-moz-placeholder,
-#mess-txt ::-moz-placeholder {
+.mess__block ::-moz-placeholder {
   color: #232425;
 }
-#mess :-moz-placeholder,
-#mess-txt :-moz-placeholder {
+.mess__block :-moz-placeholder {
   color: #232425;
 }
-#mess :-ms-input-placeholder,
-#mess-txt :-ms-input-placeholder {
+.mess__block :-ms-input-placeholder {
   color: #232425;
 }
-#mess .input-block,
-#mess-txt .input-block {
+.mess__block .input-block {
   float: left;
   width: 100%;
   border: solid 9px transparent;
 }
-#mess .input-block input,
-#mess-txt .input-block input {
+.mess__block .input-block input {
   display: block;
   width: 100%;
   border: solid 1px #dddddd;
   padding: 20px;
   color: #232425;
 }
-#mess .input-block textarea,
-#mess-txt .input-block textarea {
+.mess__block .input-block textarea {
   display: block;
   width: 100%;
   border: solid 1px #dddddd;
@@ -8655,29 +8743,24 @@ div[data-role="editor-toolbar"] {
   height: 150px;
   resize: none;
 }
-#mess .input-block .button,
-#mess-txt .input-block .button {
+.mess__block .input-block .button {
   margin: 0px;
   width: 250px;
 }
-#mess .input-block .blue,
-#mess-txt .input-block .blue {
+.mess__block .input-block .blue {
   margin: 0px;
   width: 250px;
   background: #2ea0f0;
   border-color: #2ea0f0;
 }
-#mess .input-block .blue span,
-#mess-txt .input-block .blue span {
+.mess__block .input-block .blue span {
   color: #fff;
 }
-#mess .input-block .blue:hover,
-#mess-txt .input-block .blue:hover {
+.mess__block .input-block .blue:hover {
   background: #178bdc;
   border-color: #178bdc;
 }
-#mess .input-block .ui-in,
-#mess-txt .input-block .ui-in {
+.mess__block .input-block .ui-in {
   position: relative;
   float: left;
   height: 60px;
@@ -8688,8 +8771,7 @@ div[data-role="editor-toolbar"] {
   overflow: hidden;
   border: solid 1px #dddddd;
 }
-#mess .input-block .ui-in .stadt,
-#mess-txt .input-block .ui-in .stadt {
+.mess__block .input-block .ui-in .stadt {
   position: absolute;
   top: 0px;
   left: 0px;
@@ -8698,39 +8780,32 @@ div[data-role="editor-toolbar"] {
   padding: 0px 23px;
   background: transparent;
 }
-#mess .input-block .ui-in .stadt select,
-#mess-txt .input-block .ui-in .stadt select {
+.mess__block .input-block .ui-in .stadt select {
   width: 150%;
   height: 60px;
   padding: 00px 0px;
   background: transparent;
 }
-#mess .input-block-text,
-#mess-txt .input-block-text {
+.mess__block .input-block-text {
   float: left;
   width: 100%;
   border: solid 9px transparent;
   /* Firefox 19+ */
   /* Firefox 18- */
 }
-#mess .input-block-text ::-webkit-input-placeholder,
-#mess-txt .input-block-text ::-webkit-input-placeholder {
+.mess__block .input-block-text ::-webkit-input-placeholder {
   color: #dddddd;
 }
-#mess .input-block-text ::-moz-placeholder,
-#mess-txt .input-block-text ::-moz-placeholder {
+.mess__block .input-block-text ::-moz-placeholder {
   color: #dddddd;
 }
-#mess .input-block-text :-moz-placeholder,
-#mess-txt .input-block-text :-moz-placeholder {
+.mess__block .input-block-text :-moz-placeholder {
   color: #dddddd;
 }
-#mess .input-block-text :-ms-input-placeholder,
-#mess-txt .input-block-text :-ms-input-placeholder {
+.mess__block .input-block-text :-ms-input-placeholder {
   color: #dddddd;
 }
-#mess .input-block-text textarea,
-#mess-txt .input-block-text textarea {
+.mess__block .input-block-text textarea {
   display: block;
   width: 100%;
   border: solid 1px #dddddd;
@@ -8740,22 +8815,22 @@ div[data-role="editor-toolbar"] {
   font-size: 15px;
 }
 @media screen and (min-width: 600px) and (max-width: 767px) {
-  #mess .input-block input {
+  .mess__block .input-block input {
     padding: 10px;
   }
-  #mess .input-block .ui-in {
+  .mess__block .input-block .ui-in {
     height: 38px;
   }
-  #mess .input-block .ui-in .stadt select {
+  .mess__block .input-block .ui-in .stadt select {
     height: 36px;
   }
-  #mess .input-block .ui-in .stadt {
+  .mess__block .input-block .ui-in .stadt {
     padding: 0px 10px;
   }
-  #mess .input-block textarea {
+  .mess__block .input-block textarea {
     height: 90px;
   }
-  #mess .mes-tabs .mess {
+  .mess__block .mes-tabs .mess {
     position: relative;
     display: block;
     vertical-align: middle;
@@ -8770,18 +8845,18 @@ div[data-role="editor-toolbar"] {
     font-size: 14px;
     padding: 13px 35px;
   }
-  #mess .mes-tabs .mess .block-buttons {
+  .mess__block .mes-tabs .mess .block-buttons {
     padding: 8px;
   }
-  #mess .mes-tabs .mess .mess-display {
+  .mess__block .mes-tabs .mess .mess-display {
     padding: 45px 25px 25px;
     border-radius: 0px;
   }
-  #mess .mes-tabs .mess .close-mess {
+  .mess__block .mes-tabs .mess .close-mess {
     top: 0px;
     right: 0px;
   }
-  #mess-txt .mes-tabs .mess-info {
+  .mess__block .mes-tabs .mess-info {
     background: #fff;
     position: absolute;
     display: block;
@@ -8791,19 +8866,19 @@ div[data-role="editor-toolbar"] {
     height: 100%;
     border-radius: 0px;
   }
-  #mess-txt .mes-tabs .mess-info .mess-info-txt {
+  .mess__block .mes-tabs .mess-info .mess-info-txt {
     float: left;
     width: 100%;
     padding: 25px;
     margin-top: 25px;
   }
-  #mess-txt .mes-tabs .mess .close-mess {
+  .mess__block .mes-tabs .mess .close-mess {
     top: 0px;
     right: 0px;
   }
 }
 @media screen and (min-width: 420px) and (max-width: 599px) {
-  #mess-txt .mes-tabs .mess-info {
+  .mess__block .mes-tabs .mess-info {
     background: #fff;
     position: absolute;
     display: block;
@@ -8812,28 +8887,28 @@ div[data-role="editor-toolbar"] {
     width: 100%;
     height: 100%;
   }
-  #mess-txt .mes-tabs .mess-info .mess-info-txt {
+  .mess__block .mes-tabs .mess-info .mess-info-txt {
     float: left;
     width: 100%;
     padding: 25px;
     margin-top: 25px;
   }
-  #mess .input-block input {
+  .mess__block .input-block input {
     padding: 10px;
   }
-  #mess .input-block .ui-in {
+  .mess__block .input-block .ui-in {
     height: 38px;
   }
-  #mess .input-block .ui-in .stadt select {
+  .mess__block .input-block .ui-in .stadt select {
     height: 36px;
   }
-  #mess .input-block .ui-in .stadt {
+  .mess__block .input-block .ui-in .stadt {
     padding: 0px 10px;
   }
-  #mess .input-block textarea {
+  .mess__block .input-block textarea {
     height: 90px;
   }
-  #mess .mes-tabs .mess {
+  .mess__block .mes-tabs .mess {
     position: relative;
     display: block;
     vertical-align: middle;
@@ -8848,39 +8923,39 @@ div[data-role="editor-toolbar"] {
     font-size: 14px;
     padding: 13px 35px;
   }
-  #mess .mes-tabs .mess .block-buttons {
+  .mess__block .mes-tabs .mess .block-buttons {
     padding: 8px;
   }
-  #mess .mes-tabs .mess .mess-display {
+  .mess__block .mes-tabs .mess .mess-display {
     padding: 45px 25px 25px;
     border-radius: 0px;
   }
-  #mess .mes-tabs .mess .close-mess {
+  .mess__block .mes-tabs .mess .close-mess {
     top: 0px;
     right: 0px;
   }
-  #mess-txt .mes-tabs .mess .close-mess {
+  .mess__block .mes-tabs .mess .close-mess {
     top: 0px;
     right: 0px;
   }
 }
 @media screen and (max-width: 419px) {
-  #mess .input-block input {
+  .mess__block .input-block input {
     padding: 10px;
   }
-  #mess .input-block .ui-in {
+  .mess__block .input-block .ui-in {
     height: 38px;
   }
-  #mess .input-block .ui-in .stadt select {
+  .mess__block .input-block .ui-in .stadt select {
     height: 36px;
   }
-  #mess .input-block .ui-in .stadt {
+  .mess__block .input-block .ui-in .stadt {
     padding: 0px 10px;
   }
-  #mess .input-block textarea {
+  .mess__block .input-block textarea {
     height: 90px;
   }
-  #mess .mes-tabs .mess {
+  .mess__block .mes-tabs .mess {
     position: absolute;
     display: block;
     top: 0px;
@@ -8897,18 +8972,18 @@ div[data-role="editor-toolbar"] {
     font-size: 14px;
     padding: 13px 35px;
   }
-  #mess .mes-tabs .mess .block-buttons {
+  .mess__block .mes-tabs .mess .block-buttons {
     padding: 8px;
   }
-  #mess .mes-tabs .mess .mess-display {
+  .mess__block .mes-tabs .mess .mess-display {
     padding: 45px 25px 25px;
     border-radius: 0px;
   }
-  #mess .mes-tabs .mess .close-mess {
+  .mess__block .mes-tabs .mess .close-mess {
     top: 0px;
     right: 0px;
   }
-  #mess-txt .mes-tabs .mess-info {
+  .mess__block .mes-tabs .mess-info {
     background: #fff;
     position: absolute;
     display: block;
@@ -8918,13 +8993,13 @@ div[data-role="editor-toolbar"] {
     height: 100%;
     border-radius: 0px;
   }
-  #mess-txt .mes-tabs .mess-info .mess-info-txt {
+  .mess__block .mes-tabs .mess-info .mess-info-txt {
     float: left;
     width: 100%;
     padding: 25px;
     margin-top: 25px;
   }
-  #mess-txt .mes-tabs .mess .close-mess {
+  .mess__block .mes-tabs .mess .close-mess {
     top: 0px;
     right: 0px;
   }

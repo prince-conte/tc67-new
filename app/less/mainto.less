@@ -26,6 +26,20 @@ article p {line-height: 1.8 !important;}
 
 .non-marg-t {margin-top: 0px !important;}
 
+
+
+
+
+// spisok mark    
+.spisok { float: left; width: 100%; padding-bottom: 8px;  
+li { position: relative; float: left; width: 100%; font-size: 17px; padding: 6px 0; padding-left: 17px;}  
+li::before { content: ''; position: absolute; left: 0px; top: 16px; width: 6px; height: 6px; background: #46688b; }    
+    
+}  
+    
+
+
+
 // progress-bar ____________________________________
 progress {
     position:fixed;
@@ -173,7 +187,7 @@ img {position: relative; display:inline-block; vertical-align: middle; height: 1
 .one-info {position: absolute; display: block; top: 0px; left: 0px; padding: 16px;}
         
 .sc-image {position: absolute; display: block; width: 101%; height: 101%; top: -0.5%; left: -0.5%;
-.bgCC;  -webkit-transition: all 1s ease-out; -o-transition: all 1s ease-out; transition: all 1s ease-out; 
+.bgCC;  -webkit-transition: all 1s ease-out; -o-transition: all 1s ease-out; transition: all 1s ease-out; background-image:  url(../img/nophoto.jpg);
 }}}
 
 
@@ -214,7 +228,7 @@ h2 {a {
 
 
 
-
+.sc-image {background-image: url(../img/nophoto.jpg); }
 
 
 @media screen and (min-width:1024px) and (max-width:1279px)   {
