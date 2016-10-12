@@ -365,6 +365,10 @@ li {
     transform: translate(0px, 10px);
   }
 }
+.titl-home-tc {
+  text-align: center;
+  padding: 0 25px 55px;
+}
 .body-ct {
   position: relative;
   height: 100%;
@@ -863,7 +867,9 @@ progress[value]::-webkit-progress-value {
 }
 h2 a {
   font-size: 20px;
-  background: #eeeeee;
+  background: #2ea0f0 !important;
+  font-family: 'ProximaNovaBold', sans-serif !important;
+  color: #fff !important;
   display: inline-block;
   padding: 10px 30px;
   margin-left: 25px;
@@ -961,7 +967,8 @@ h2 a {
   }
   h2 a {
     font-size: 16px;
-    background: #eeeeee;
+    background: #2ea0f0;
+    font-family: 'ProximaNovaBold', sans-serif;
     display: inline-block;
     padding: 10px 30px;
     margin-left: 0px;
@@ -1024,7 +1031,8 @@ h2 a {
   }
   h2 a {
     font-size: 16px;
-    background: #eeeeee;
+    background: #2ea0f0;
+    font-family: 'ProximaNovaBold', sans-serif;
     display: inline-block;
     padding: 8px 23px;
     margin-left: 0px;
@@ -6047,7 +6055,7 @@ footer .foot-info .end-block .parus a:hover {
   width: 100%;
   min-height: 550px;
   padding-bottom: 100px;
-  background: #fafafa;
+  background: #edeef0;
 }
 .home--tc--content .content--float {
   position: relative;
@@ -6089,7 +6097,7 @@ footer .foot-info .end-block .parus a:hover {
   font-size: 14px;
   display: inline-block;
   float: left;
-  font-family: 'proxima_nova_ltlight', sans-serif;
+  font-family: 'ProximaNovaRegular', sans-serif;
   background: #fff;
   padding-right: 3px;
   padding-bottom: 3px;
@@ -6101,7 +6109,7 @@ footer .foot-info .end-block .parus a:hover {
   float: right;
   font-family: 'proxima_nova_ltlight', sans-serif;
   background: #fff;
-  color: #939393;
+  color: #232425;
   padding-bottom: 3px;
   padding-left: 3px;
 }
