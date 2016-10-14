@@ -5112,7 +5112,7 @@ nav .top-menu li .login:hover span {
     width: 100%;
   }
   .cat-tc-one .title-bar h2 {
-    font-size: 18px;
+    font-size: 26px;
     position: relative;
     text-align: center;
     float: none;
@@ -5742,6 +5742,17 @@ footer .foot-info .end-block .parus a:hover {
     padding-top: 35px;
   }
 }
+.ph_cat_bg {
+  background: #edeef0 !important;
+}
+.ph_cat_bg .one-tc {
+  border-left: solid 10px #edeef0 !important;
+  border-right: solid 10px #edeef0 !important;
+}
+.ph_cat_bg .title-bar {
+  border-left: solid 10px #edeef0 !important;
+  border-right: solid 10px #edeef0 !important;
+}
 .home--tc--page {
   float: left;
   width: 100%;
@@ -6021,7 +6032,7 @@ footer .foot-info .end-block .parus a:hover {
   height: 560px;
   left: 0;
   top: 0;
-  background-position: top CENTER !important;
+  background-position: CENTER CENTER !important;
   background-repeat: no-repeat !important;
   background-size: COVER !important;
 }
@@ -6189,6 +6200,80 @@ footer .foot-info .end-block .parus a:hover {
   float: left;
   width: 100%;
 }
+.table-mag-desktop {
+  float: left;
+  width: 100%;
+  margin: 25px 0;
+  background: #fff;
+  margin-top: 0px;
+  display: block;
+  border-left: solid 10px #edeef0 !important;
+  padding: 20px 25px 25px;
+  border-right: solid 10px #edeef0 !important;
+}
+.table-mag-desktop .line-mag {
+  float: left;
+  width: 100%;
+  font-size: 14px;
+  border-bottom: solid 1px #2ea0f0;
+}
+.table-mag-desktop .line-mag .addr {
+  float: left;
+  width: 25%;
+  display: inline-block;
+  padding: 10px;
+}
+.table-mag-desktop .line-mag .time {
+  float: left;
+  width: 25%;
+  display: inline-block;
+  padding: 10px;
+}
+.table-mag-desktop .line-mag .type {
+  float: left;
+  width: 15%;
+  display: inline-block;
+  padding: 10px;
+}
+.table-mag-desktop .line-mag .lico {
+  float: left;
+  width: 20%;
+  display: inline-block;
+  padding: 10px;
+}
+.table-mag-desktop .line-mag .tel {
+  float: left;
+  width: 15%;
+  display: inline-block;
+  padding: 10px;
+  cursor: pointer;
+}
+.table-mag-desktop .title {
+  font-family: 'ProximaNovaBold', sans-serif;
+}
+.table-mag-desktop .line-mag:hover {
+  background: #2ea0f0;
+}
+.table-mag-desktop .line-mag:hover div {
+  color: #fff;
+}
+.table-mag-desktop .title:hover {
+  background: #fff;
+}
+.table-mag-desktop .title:hover div {
+  color: #2ea0f0;
+}
+#a-table-tx-mag {
+  display: none;
+}
+#a-table-tx-sale {
+  display: none;
+}
+.floating-magaz {
+  float: left;
+  width: 100%;
+  display: none;
+}
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
   .home--tc--content .content--float {
     padding: 40px 25px;
@@ -6209,6 +6294,14 @@ footer .foot-info .end-block .parus a:hover {
   }
   .home--tc--page .tc--page--nav {
     height: 63px;
+  }
+  .table-mag-desktop {
+    display: none;
+  }
+  .floating-magaz {
+    float: left;
+    width: 100%;
+    display: block;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -6260,6 +6353,14 @@ footer .foot-info .end-block .parus a:hover {
   .magazines--block ul li {
     width: 50%;
     padding-right: 35px;
+  }
+  .table-mag-desktop {
+    display: none;
+  }
+  .floating-magaz {
+    float: left;
+    width: 100%;
+    display: block;
   }
 }
 @media screen and (min-width: 600px) and (max-width: 767px) {
@@ -6334,6 +6435,14 @@ footer .foot-info .end-block .parus a:hover {
   .magazines--block ul li {
     width: 50%;
     padding-right: 35px;
+  }
+  .table-mag-desktop {
+    display: none;
+  }
+  .floating-magaz {
+    float: left;
+    width: 100%;
+    display: block;
   }
 }
 @media screen and (min-width: 420px) and (max-width: 599px) {
@@ -6459,6 +6568,14 @@ footer .foot-info .end-block .parus a:hover {
   }
   .rslides .prev {
     display: none !important;
+  }
+  .table-mag-desktop {
+    display: none;
+  }
+  .floating-magaz {
+    float: left;
+    width: 100%;
+    display: block;
   }
 }
 @media screen and (max-width: 419px) {
@@ -6589,16 +6706,24 @@ footer .foot-info .end-block .parus a:hover {
     padding-right: 35px;
   }
   .cat-tc-one .one-tc .tc--content-info-one .one--table-line .line--title {
-    font-size: 10px;
+    font-size: 12px;
   }
   .cat-tc-one .one-tc .tc--content-info-one .one--table-line .line--desc {
-    font-size: 10px;
+    font-size: 12px;
   }
   .rslides .next {
     display: none !important;
   }
   .rslides .prev {
     display: none !important;
+  }
+  .table-mag-desktop {
+    display: none;
+  }
+  .floating-magaz {
+    float: left;
+    width: 100%;
+    display: block;
   }
 }
 .input-button {

@@ -7,6 +7,32 @@
         openSub_tableCl4_1 = 0; openSub_tableCl4_2 = 0; openSub_tableCl4_3 = 0; 
         openSub_tableCl5_1 = 0; openSub_tableCl5_2 = 0; openSub_tableCl5_3 = 0; 
         openSub_tableCl6_1 = 0; openSub_tableCl6_2 = 0; openSub_tableCl6_3 = 0; 
+        magClick = 0; magSale = 0;
+     
+     
+  $("#mag-click").click(function () { 
+  if (magClick == 0) {  
+    $('#a-table-tx-mag').fadeIn(0);  
+    magClick = 1;   
+  }
+   else {      
+    $('#a-table-tx-mag').fadeOut(0);  
+    magClick = 0;   
+  }
+      
+  });
+        
+  $("#sale-click").click(function () { 
+  if (magSale == 0) {  
+    $('#a-table-tx-sale').fadeIn(0);  
+    magSale = 1;   
+  }
+   else {      
+    $('#a-table-tx-sale').fadeOut(0);  
+    magSale = 0;   
+  }
+      
+  });
        
 
 // scroll to      

@@ -1,11 +1,18 @@
 @import "grundfile.less";
 
 
+.ph_cat_bg {background: #edeef0 !important;
+.one-tc {    border-left: solid 10px #edeef0 !important; border-right: solid 10px #edeef0 !important}
+.title-bar {    border-left: solid 10px #edeef0 !important; border-right: solid 10px #edeef0 !important}
+
+}
+
+
 .home--tc--page {float: left; width: 100%; position: relative; font-size: 0px; height: 560px;
 .content {height: 100%;}
 
    
-    
+
 
 
     
@@ -167,7 +174,7 @@ ul:last-child {border-bottom: solid 0px;}
   height: 560px;    
   left: 0;
   top: 0;
-  .bgTC; 
+  .bgCC; 
     
     
     .phbg {  background-image: -moz-linear-gradient( 90deg, rgba(0,0,0,0.56078) 0%, rgba(2,2,2,0.28) 37%, rgba(3,3,3,0.24) 47%, rgba(6,6,6,0) 100%);
@@ -251,6 +258,35 @@ p {font-size: 15px; float: left; width: 100%;}
 
 
 
+// 
+
+.table-mag-desktop {float: left; width: 100%; margin: 25px 0; background: #fff; margin-top: 0px; display: block; border-left: solid 10px #edeef0 !important; padding: 20px 25px 25px;
+    border-right: solid 10px #edeef0 !important;
+.line-mag {float: left; width: 100%;  font-size: 14px; border-bottom: solid 1px @colfirm2; 
+.addr {float: left; width: 25%; display: inline-block; padding: 10px; }    
+.time {float: left; width: 25%; display: inline-block; padding: 10px;}    
+.type {float: left; width: 15%; display: inline-block; padding: 10px;}    
+.lico {float: left; width: 20%; display: inline-block; padding: 10px;}    
+.tel{float: left; width: 15%; display: inline-block; padding: 10px; cursor: pointer}       
+}
+
+.title {font-family: @fontB;} 
+.line-mag:hover { background: @colfirm2; div {color: #fff}}
+.title:hover {background: #fff;  div {color: @colfirm2}} 
+}
+
+
+// tabs-mag-sale
+
+#a-table-tx-mag {display: none;}
+#a-table-tx-sale {display: none;}
+.floating-magaz {float: left; width: 100%; display: none;}
+
+
+
+
+
+
 
 @media screen and (min-width:1024px) and (max-width:1279px)   {
 
@@ -279,6 +315,9 @@ p {font-size: 15px; float: left; width: 100%;}
 .home--tc--page .tc--page--nav {
     height: 63px;
 }
+    
+.table-mag-desktop {display: none;}    
+.floating-magaz {float: left; width: 100%; display: block;}    
     
 }
 
@@ -354,6 +393,11 @@ h1 {
     width: 50%;
     padding-right: 35px;
 } 
+    
+    
+.table-mag-desktop {display: none;}    
+.floating-magaz {float: left; width: 100%; display: block;}    
+
     
 }
 
@@ -458,6 +502,11 @@ h1 {
     width: 50%;
     padding-right: 35px;
 } 
+    
+    
+.table-mag-desktop {display: none;}    
+.floating-magaz {float: left; width: 100%; display: block;}    
+
     
 }
 
@@ -620,6 +669,12 @@ h1 {
 }    
 .rslides .next {display: none !important;}
 .rslides .prev {display: none !important;}
+    
+    
+.table-mag-desktop {display: none;}    
+.floating-magaz {float: left; width: 100%; display: block;}    
+
+    
 }
 
 
@@ -786,10 +841,14 @@ h1 {
     padding-right: 35px;
 }
 
-.cat-tc-one .one-tc .tc--content-info-one .one--table-line .line--title {font-size: 10px}    
-.cat-tc-one .one-tc .tc--content-info-one .one--table-line .line--desc {font-size: 10px}    
+.cat-tc-one .one-tc .tc--content-info-one .one--table-line .line--title {font-size: 12px}    
+.cat-tc-one .one-tc .tc--content-info-one .one--table-line .line--desc {font-size: 12px}    
 .rslides .next {display: none !important;}
 .rslides .prev {display: none !important;}
+    
+.table-mag-desktop {display: none;}    
+.floating-magaz {float: left; width: 100%; display: block;}    
+
 
 }
 
