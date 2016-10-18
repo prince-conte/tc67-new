@@ -6105,7 +6105,7 @@ footer .foot-info .end-block .parus a:hover {
   font-size: 14px;
   display: inline-block;
   float: left;
-  font-family: 'ProximaNovaRegular', sans-serif;
+  font-family: 'ProximaNovaBold', sans-serif;
   background: #fff;
   padding-right: 3px;
   padding-bottom: 3px;
@@ -6137,7 +6137,7 @@ footer .foot-info .end-block .parus a:hover {
   margin: 20px 0 !important;
   float: left !important;
   width: 100% !important;
-  font-size: 14px !important;
+  font-size: 17px !important;
   font-family: 'proxima_nova_ltlight', sans-serif !important;
   font-weight: 300 !important;
 }
@@ -6508,11 +6508,13 @@ footer .foot-info .end-block .parus a:hover {
     min-width: 175px;
   }
   .home--tc--content .home--tc--content-info .tc--content-info-one .one--table-line .line--title {
-    font-size: 10px;
-    width: 50%;
+    font-size: 13px;
+    width: 100%;
+    font-family: 'ProximaNovaBold', sans-serif;
   }
   .home--tc--content .home--tc--content-info .tc--content-info-one .one--table-line .line--desc {
-    font-size: 10px;
+    font-size: 15px;
+    width: 100%;
   }
   .home--tc--content .home--tc--content-info {
     margin-left: 0px;
@@ -6526,7 +6528,7 @@ footer .foot-info .end-block .parus a:hover {
     display: none;
   }
   .home--tc--content article p {
-    font-size: 13px !important;
+    font-size: 16px !important;
   }
   .cat-tc-one .one-tc .one-info .mag .mag--title {
     float: left;
@@ -6641,11 +6643,13 @@ footer .foot-info .end-block .parus a:hover {
     min-width: 175px;
   }
   .home--tc--content .home--tc--content-info .tc--content-info-one .one--table-line .line--title {
-    font-size: 10px;
-    width: 50%;
+    font-size: 13px;
+    width: 100%;
+    font-family: 'ProximaNovaBold', sans-serif;
   }
   .home--tc--content .home--tc--content-info .tc--content-info-one .one--table-line .line--desc {
-    font-size: 10px;
+    font-size: 15px;
+    width: 100%;
   }
   .home--tc--content .home--tc--content-info {
     margin-left: 0px;
@@ -6660,7 +6664,7 @@ footer .foot-info .end-block .parus a:hover {
     display: none;
   }
   .home--tc--content article p {
-    font-size: 13px !important;
+    font-size: 16px !important;
   }
   .cat-tc-one .one-tc .one-info .mag .mag--title {
     float: left;
@@ -6721,6 +6725,14 @@ footer .foot-info .end-block .parus a:hover {
     float: left;
     width: 100%;
     display: block;
+  }
+  .home--tc--content .home--tc--content-info .tc--content-info-one .one--table-line {
+    height: 60px;
+  }
+  .home--tc--content article {
+    float: left;
+    width: 100%;
+    margin-top: 120px;
   }
 }
 .input-button {
