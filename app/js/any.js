@@ -10,6 +10,10 @@
         magClick = 0; magSale = 0;
      
      
+     
+
+     
+     
   $("#mag-click").click(function () { 
   if (magClick == 0) {  
     $('#a-table-tx-mag').fadeIn(0);  
@@ -413,112 +417,7 @@ return false;
      
      
      
-     
-     
-     
-$(function(){
-
-$('#hamb-t').on('click', function(e){
-  $('html,body').stop().animate({ scrollTop: $('header').offset().top }, 1000);
-  e.preventDefault();
-});
-
-});
-     
-     
-     
-     
-     
-  $(window).scroll(function() {
-if ($(this).scrollTop() > (750)){  
-    $('#hamb').fadeIn();
-
-  }
-  else{
-    $('#hamb').fadeOut();
-
-  }
-      
-      
-if ($(this).scrollTop() > (800)){  
-    $('#hamb-t').fadeIn();
-
-  }
-  else{
-    $('#hamb-t').fadeOut();
-
-  }
-});   
-     
-     
-     
-           $('#hamb').click(function() {
-            
-              if ( click ==0 ) 
-              {
-             $('.hamburger--squeeze').addClass('is-active');
-             $('#fade').fadeIn();
-             $('#mbile-web').fadeIn();
-             $('#hamb').addClass('close');
-              click = 1;
-              }
-              
-              else { if ( click == 1 )  {
-                  
-              {
-               
-             $('.hamburger--squeeze').removeClass('is-active');
-             $('#fade').fadeOut();
-             $('#mbile-web').fadeOut();
-             $('#mbile-web2').fadeOut();
-             $('#hamb').removeClass('close');
-               click = 0;
-              }    
-                  
-              }}
-
-
-          });      
-          
-           $('#catalog').click(function() {
-            
-             $('.hamburger--squeeze').addClass('is-active');
-             $('#fade').fadeIn();
-             $('#mbile-web').fadeIn();
-             $('#hamb').addClass('close');
-            click = 1;
-          });      
-     
-             $('#hamb-mobile').click(function() {
-            
-              if ( click ==0 ) 
-              {
-             $('.hamburger--squeeze').addClass('is-active');
-             $('#fade').fadeIn();
-             $('#mbile-web').fadeIn();
-             $('#hamb').addClass('close'); 
-              click = 1;
-              }
-              
-              else { if ( click == 1 )  {
-                  
-              {
-               
-             $('.hamburger--squeeze').removeClass('is-active');
-             $('#fade').fadeOut();
-             $('#mbile-web').fadeOut();
-             $('#hamb').removeClass('close');      
-               click = 0;
-              }    
-                  
-              }}
-
-    
-
-
-          });     
-     
-     
+ 
      
   var cycleTimer;
 
@@ -774,10 +673,124 @@ $('a.s-l').click(function() {
  
 
  
- 
+     
+     
+     
+$(function(){
+
+$('#hamb-t').on('click', function(e){
+  $('html,body').stop().animate({ scrollTop: $('header').offset().top }, 1000);
+  e.preventDefault();
+});
+
+});
+     
+     
+     
+     
+     
+  $(window).scroll(function() {
+if ($(this).scrollTop() > (750)){  
+    $('#hamb').fadeIn();
+
+  }
+  else{
+    $('#hamb').fadeOut();
+
+  }
+      
+      
+if ($(this).scrollTop() > (800)){  
+    $('#hamb-t').fadeIn();
+
+  }
+  else{
+    $('#hamb-t').fadeOut();
+
+  }
+});   
+     
+     
+     
+           $('#hamb').click(function() {
+            
+              if ( click == 0 ) 
+              {
+             $('.hamburger--squeeze').addClass('is-active');
+             $('#fade').fadeIn();
+             $('#mbile-web').fadeIn();
+             $('#hamb').addClass('close');
+            $('body').css('overflow' , 'hidden');
+            $('html').css('overflow-y' , 'hidden');
+              click = 1;
+                  
+              }
+              
+              else { if ( click == 1 )  {
+                  
+              {
+               
+             $('.hamburger--squeeze').removeClass('is-active');
+             $('#fade').fadeOut();
+             $('#mbile-web').fadeOut();
+             $('#mbile-web2').fadeOut();
+             $('body').css('overflow' , 'auto');
+             $('html').css('overflow-y' , 'auto');      
+             $('#hamb').removeClass('close');
+               click = 0;
+              }    
+                  
+              }}
 
 
+          });      
+          
+           $('#catalog').click(function() {
+            
+             $('.hamburger--squeeze').addClass('is-active');
+             $('#fade').fadeIn();
+             $('#mbile-web').fadeIn();
+             $('#hamb').addClass('close');
+             $('body').css('overflow' , 'hidden');
+             $('html').css('overflow-y' , 'hidden');   
+            click = 1;
+          });      
+     
+             $('#hamb-mobile').click(function() {
+            
+              if ( click ==0 ) 
+              {
+             $('.hamburger--squeeze').addClass('is-active');
+             $('#fade').fadeIn();
+             $('#mbile-web').fadeIn();
+             $('#hamb').addClass('close');
+            $('body').css('overflow-y' , 'hidden');
+            $('html').css('overflow-y' , 'hidden');
+                  
+              click = 1;
+              }
+              
+              else { if ( click == 1 )  {
+                  
+              {
+               
+             $('.hamburger--squeeze').removeClass('is-active');
+             $('#fade').fadeOut();
+             $('#mbile-web').fadeOut();
+            $('body').css('overflow-y' , 'auto');
+            $('html').css('overflow-y' , 'auto');
+             $('#hamb').removeClass('close');      
+               click = 0;
+              }    
+                  
+              }}
 
+    
+
+
+          });     
+     
+     
  
  
  
@@ -785,14 +798,20 @@ $('a.s-l').click(function() {
  });  
 
 
-$(window).scroll(function () {
+$(window).scroll(function scrollprogress () {
+    
+    
+    
+    
   var s = $(window).scrollTop(),
         d = $(document).height(),
         c = $(window).height();
         scrollPercent = (s / (d-c)) * 100;
         var position = scrollPercent;
+    
+    if (click == 0) {$("#progressbar").attr('value', position);}
 
-   $("#progressbar").attr('value', position);
+   
 
 });
 
