@@ -7,11 +7,33 @@
         openSub_tableCl4_1 = 0; openSub_tableCl4_2 = 0; openSub_tableCl4_3 = 0; 
         openSub_tableCl5_1 = 0; openSub_tableCl5_2 = 0; openSub_tableCl5_3 = 0; 
         openSub_tableCl6_1 = 0; openSub_tableCl6_2 = 0; openSub_tableCl6_3 = 0; 
-        magClick = 0; magSale = 0;
+        magClick = 0; magSale = 0; searchHeaderClick = 0;
      
      
+     
+// search
+     
+     $("#search-open").click(function () {  
+     
+    $('.search-block').addClass('active-serch');     
+     
+     });
+          
+     $("#close-search-block").click(function () {  
+     
+    $('.search-block').removeClass('active-serch');     
+     
+     });
+     
+    $("#search-h").focus(function () { 
+        
+    $('.inp-s').addClass('active');
+        
+    });
      
 
+  
+     
      
      
   $("#mag-click").click(function () { 

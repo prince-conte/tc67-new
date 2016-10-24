@@ -1,13 +1,13 @@
 @import "grundfile.less";
 
-#hamb { position: fixed; display: block; top: 30px; right: 45px; z-index: 999999999; background: #2ea0f0; height: 60px; width: 60px;}
+#hamb { position: fixed; display: block; top: 30px; right: 45px; z-index: 1999999999; background: #2ea0f0; height: 60px; width: 60px;}
 
-#hamb-mobile {position: absolute;display: block; top: 30px;right: 45px;z-index: 999999999;background: #2ea0f0;height: 60px;width: 60px;}
+#hamb-mobile {position: absolute;display: block; top: 30px;right: 45px;z-index: 1000001 !important ;background: #2ea0f0;height: 60px;width: 60px;}
 
 
 header .phbgh { position: fixed; display: none; height: 0px; width: 100%; top:0px; left:0px; background: #000; z-index: 99;}
 
-#hamb-t {position: fixed; display: none; bottom:45px; right: 45px; z-index: 999999999; background: @colfirm2; height: 60px; width: 60px;
+#hamb-t {position: fixed; display: none; bottom:45px; right: 45px; z-index: 1999999999; background: @colfirm2; height: 60px; width: 60px;
         opacity: 0.40;
     span {position: absolute; top: 19px; left: 22px; width: 2px; height: 34%; background: #fff; .pov1; }
     span::before {content: '';     position: absolute; top: -10px; left: 9px; height: 100%; width: 100%; background: #fff; .pov2;}
@@ -15,17 +15,17 @@ header .phbgh { position: fixed; display: none; height: 0px; width: 100%; top:0p
 
 #hamb-t:hover {opacity: 1;}
 
-#hamb {position: fixed; display: none; top:30px; right: 45px; z-index: 999999999; background: @colfirm2; height: 60px; width: 60px; }
+#hamb {position: fixed; display: none; top:30px; right: 45px; z-index: 1999999999; background: @colfirm2; height: 60px; width: 60px; }
 
 fade{display:none;background:#3d4453;position:fixed;left:0;top:0;width:100%;height:100%;opacity:1;z-index:9999;}
-.popup_block{display:none;top:0px;float:left;position:fixed;width:100%;height:100%;z-index: 999998;background-position:CENTER CENTER !important;background-repeat:no-repeat !important;background-size:COVER !important;}
+.popup_block{display:none;top:0px;float:left;position:fixed;width:100%;height:100%; z-index: 1000000;;background-position:CENTER CENTER !important;background-repeat:no-repeat !important;background-size:COVER !important;}
 .popup_block .fon{position:absolute;background:#1f242c;opacity:1;z-index:10000;display:block;top:0px;left:0px;width:100%;height:100%;}
 .popup_block .menu-pos{position:absolute;display:table;width:100%;height:100%;z-index:111111;}
 .popup_block .menu-pos .menu{display:table-cell;vertical-align:middle;margin:0 auto;box-sizing:border-box;padding:25px;
     ul {position: relative; display: block; margin: 0 auto; }
 }
 .popup_block .menu-pos li{padding:10px;color:#fff;letter-spacing:2px;text-align:center;}
-.popup_block .menu-pos a{color: #fff !important; font-size:40px; box-sizing:border-box;padding:0 50px;text-transform:uppercase;-webkit-transition:all 0.3s;-moz-transition:all 0.3s;-o-transition:all 0.3s;transition:all 0.3s; font-family: @fontH;}
+.popup_block .menu-pos a{color: #fff !important; font-size:34px; box-sizing:border-box;padding:0 50px;text-transform:uppercase;-webkit-transition:all 0.3s;-moz-transition:all 0.3s;-o-transition:all 0.3s;transition:all 0.3s; font-family: @fontH;}
 .popup_block .menu-pos a:hover{color:@colfirm2 !important;}
 
 
@@ -430,7 +430,12 @@ nav .top-menu {
 }
     
     
- 
+.popup_block .menu-pos li {
+    padding: 7px;
+    color: #fff;
+    letter-spacing: 2px;
+    text-align: center;
+} 
   
 }
 
@@ -613,8 +618,14 @@ nav .top-menu {
     font-size: 20px;
     display: block;
 }
- 
 
+    
+.popup_block .menu-pos li {
+    padding: 7px;
+    color: #fff;
+    letter-spacing: 2px;
+    text-align: center;
+}    
 
 }
 
@@ -678,6 +689,13 @@ nav .top-menu {
     width: 300px;
 }
     
+.popup_block .menu-pos li {
+    padding: 7px;
+    color: #fff;
+    letter-spacing: 2px;
+    text-align: center;
+}    
+    
 }
 
 
@@ -736,6 +754,12 @@ nav .top-menu {
     margin-left: -150px;
     width: 300px;
 }
- 
+
+.popup_block .menu-pos li {
+    padding: 4px;
+    color: #fff;
+    letter-spacing: 2px;
+    text-align: center;
+}    
     
 }

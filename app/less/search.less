@@ -1,0 +1,59 @@
+.search-block { position: fixed; left:0px; top:0px; transform: translate3d(0, -120px, 0); display: block; background-color: #ffffff; box-shadow: 0px 0px 18px 0px rgba(227, 227, 227, 0.52);
+height: 120px;  z-index: 999999;  width: 100%; .m-speed;
+    
+.content {height: 100%;} 
+    
+.search-block__floating {float: left; width: 100%; height: 100%; display: table; position: relative;}
+    
+.inp-s {position: relative; display: inline-block; float: left; width: 560px;  border: solid 1px #eeeeee; overflow: hidden; .med-speed;
+input{float: left; width: 100%; padding: 20px;}
+ a {position: absolute; display: block;   top: 15px; right: 15px; width: 30px; height: 30px; .bgCCC; background: url(../img/search.svg);}     
+    
+    }
+    
+    .button {float: left; padding: 17px 20px; font-family: @fontB; color: #fff; background: @colfirm2; border: solid 2px @colfirm2; text-transform: uppercase; font-size: 16px; letter-spacing: 2px; margin-left: 20px;}
+    .active {width: 1030px; border: solid 1px @colfirm2;}    
+    
+  
+}
+
+.active-serch {transform: translate3d(0, 0, 0);}
+
+
+
+
+
+@media screen and (min-width:1025px) and (max-width:1439px)   {
+    
+.search-block .active {
+    width: 900px;
+}  
+    
+} 
+@media screen and (min-width:1024px) and (max-width:1279px)   {
+    
+.search-block .active {
+    width: 560px;
+}  
+    
+} 
+@media screen and (min-width:768px) and (max-width:1023px) {
+    
+.search-block {display: none;}
+    
+} 
+@media screen and (min-width:600px) and (max-width:767px) {
+    
+.search-block {display: none;}    
+    
+}
+@media screen and (min-width:420px) and (max-width:599px) {
+    
+.search-block {display: none;}   
+    
+}
+@media screen and (max-width:419px) {
+    
+.search-block {display: none;}   
+    
+}

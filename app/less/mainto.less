@@ -22,12 +22,17 @@
 }
 
 
-article p {line-height: 1.8 !important;}
+
 
 .non-marg-t {margin-top: 0px !important;}
 
 
-
+article { width: 100%; font-size: 17px; color: @coltxt; line-height: 1.8 !important;
+p {margin: 20px 0 !important; float: left !important; width: 100% !important; font-size: 17px !important; font-family: @fontH !important; font-weight: 300 !important;  line-height: 1.8 !important;
+    a {color: @colfirm2  !important;}    
+    
+}    
+}   
 
 
 // spisok mark    
@@ -218,18 +223,12 @@ img {position: relative; display:inline-block; vertical-align: middle; height: 1
 
 h2 {
     
-a {
-    font-size: 20px;
-    background: @colfirm2 !important;
-    font-family: @fontB !important;
-    color: #fff !important;
-    display: inline-block;
-    padding: 10px 30px;
-    margin-left: 25px;
-    border-radius: 45px;
+a { font-size: 20px; background: @colfirm2 !important; font-family: @fontB !important; color: #fff !important; display: inline-block; padding: 10px 30px; margin-left: 25px; border-radius: 45px; border: solid 2px @colfirm2}
+    a:hover { background: #fff !important; color: @colfirm2 !important;}
+
+}
 
 
-    }}
 
 
 
@@ -264,11 +263,14 @@ a {
     
       
 .block-buttons .cv-blue {
-    width: 240px;
     border-radius: 0px;
     background: #fff;
     color: #2ea0f0;
     border: solid 2px #2ea0f0;
+}
+    .block-buttons .button {
+    border: solid 2px #18db61;
+    margin: 0px;
 }
     
 .button {
@@ -369,6 +371,29 @@ h2 a {
     border-radius: 45px;
 }
 
+.block-buttons .button {
+    float: right;
+    width: 100%;
+}  
+    
+    
+.block-buttons .cv-blue {
+    width: 100%;
+    float: left;
+    border-radius: 0px;
+    background: #fff;
+    color: #2ea0f0;
+    border: solid 2px #2ea0f0;
+    margin: 10px 0 !important;
+}
+    .block-buttons .button   {
+    margin: 0px;
+    width: 100%;
+    float: left;
+    margin: 10px 0 !important;
+}    
+        
+    
 }
 
 
@@ -455,5 +480,29 @@ h2 a {
 .top-info {.map-ad {float: left !important; span{float: left;}}
     .type {width: auto !important; span{font-size: 12px;}}
 }
+    
+.block-buttons .button {
+    float: right;
+    width: 100%;
+}   
+    
+    
+    
+.block-buttons .cv-blue {
+    width: 100%;
+    float: left;
+    border-radius: 0px;
+    background: #fff;
+    color: #2ea0f0;
+    border: solid 2px #2ea0f0;
+    margin: 10px 0 !important;
+}
+    .block-buttons .button   {
+    margin: 0px;
+    width: 100%;
+    float: left;
+    margin: 10px 0 !important;
+}    
+    
 }
 
