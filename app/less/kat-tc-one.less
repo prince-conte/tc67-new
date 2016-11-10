@@ -11,7 +11,7 @@ select {  padding: 0 10px !important;}  }
     
 .ui-in {position: relative; float: left; height: 100%; width: 216px;  border-right: solid 1px @colfirm2; background: url(../img/ui-b.svg); background-position: right center; background-repeat: no-repeat; overflow: hidden;}    
 .stadt{position: absolute; top:0px; left:0px; display: block; width: 100%;  padding: 0px 35px;  background:transparent;}
-select {width: 150%; height: 100%; height: 80px;    padding: 30px 0px; background: transparent;}    
+select {width: 110%; height: 100%; height: 80px;    padding: 30px 0px; background: transparent;}    
 .r-line {width: 470px;} 
 .r-non-styck {background: transparent}
 .m-line {width: 304px;}
@@ -30,6 +30,17 @@ input {background: transparent; font-size: 14px; color: @coltxt; padding: 16px 2
 .search { position: absolute; display: block; width: 16px; height: 16px; background: url(../img/serch.png); right: 25px; top:18px;}    
     .search:hover {background: url(../img/search-hov.png);}    
 
+.ui-widget-header {
+    border-bottom: 1px solid #5e5e5e;
+    background: #2ea0f0;
+    color: #222222;
+    font-weight: bold;
+    padding: 2px !important;
+    border-radius: 0px;
+    margin-bottom: 10px;
+}    
+    
+    
 }    
 } 
     
@@ -118,7 +129,11 @@ span {position: relative; display: block; color: #fff; font-size: 12px; padding:
 
     
 .foot-ar {position: relative;float: left; width: 100%; margin-top: 32px; height: 36px;
-.numb {float: left; display: inline-block; background: #eeeeee; border-radius:25px;  span {display: block; font-family: @fontB; font-size: 16px; color: #3b3b3b; padding: 8px 24px;}}    
+.numb {float: left; display: inline-block; background: #eeeeee; border-radius:25px;  border: solid 2px #eeeeee; .m-speed;
+span {display: block; font-family: @fontB; font-size: 16px; color: #3b3b3b; padding: 8px 24px; .m-speed;}}  
+.numb:hover {background: #fff;  border: solid 2px @colfirm2; span {color: @colfirm2}}    
+    
+    
 }
     .desc {float: left; display: inline-table; height: 100%; margin-left: 15px;
         span {display:table-cell; vertical-align: middle; font-size: 16px; }    
