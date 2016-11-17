@@ -7,9 +7,35 @@
         openSub_tableCl4_1 = 0; openSub_tableCl4_2 = 0; openSub_tableCl4_3 = 0; 
         openSub_tableCl5_1 = 0; openSub_tableCl5_2 = 0; openSub_tableCl5_3 = 0; 
         openSub_tableCl6_1 = 0; openSub_tableCl6_2 = 0; openSub_tableCl6_3 = 0; 
-        magClick = 0; magSale = 0; searchHeaderClick = 0;
+        magClick = 0; magSale = 0; searchHeaderClick = 0; clickMap = 0;
      
      
+     
+// map
+     
+$("#map-button").click(function () {  
+
+if (clickMap == 0) 
+{    
+$('#map-button').addClass('m-active');     
+$('.map-block').fadeIn(0);     
+$('.map-block').css('height' , '450px');     
+$('.map-body').css('height' , '450px');     
+$('.map-body').delay(500).fadeIn(1000); 
+clickMap = 1;
+     }
+    
+else {
+$('#map-button').removeClass('m-active'); 
+$('.map-body').fadeOut(1000);
+$('.map-block').delay(1000).fadeOut(0);     
+$('.map-block').css('height' , '0px');     
+$('.map-body').css('height' , '0px');     
+ 
+clickMap = 0;    
+}  
+
+});    
      
 // search
      

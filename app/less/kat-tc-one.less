@@ -87,7 +87,12 @@ a {font-size: 20px; background: #eeeeee; display: inline-block; padding: 10px 30
 .mid {position: relative; display: table-cell; vertical-align: middle; margin: 0 auto; 
 .window {position: relative; display: block; width: 18px; height: 18px; .bgCCC; background: url(../img/windows-n.svg); }  
 .w-active {background: url(../img/windows.svg);}    
-.mapi {position: relative; display: block; width: 13px; height: 18px; .bgCCC; background: url(../img/map-ico.svg);}  
+.mapi {position: relative; display: block; width: 13px; height: 18px; .bgCCC; background: url(../img/map-ico.svg); margin-right: 30px;}  
+.mapi::before {content: 'На карте'; font-size: 10px;   position: absolute; display: block; font-family: @fontB; color: @colfirm; text-transform: uppercase;
+top: -2px; right: -20px; width: 10px;   
+}
+    
+    
 .m-active {background: url(../img/map-ico-a.svg);}
 }}
     select {background: transparent;}    
@@ -272,7 +277,7 @@ a:hover {opacity: 0.75; border: solid 1px @colfirm2;}
 .cat--tc--inform--mag {padding-top: 0px;
 
 .mag--infom--txt {float: left; width: 100%;  height: auto; text-align: center; 
-    article {padding: 0px 80px 50px;    background: #fff; 
+    article {padding: 0px 80px 50px;    background: #fff; float: left;
         h3 {font-size: 30px; font-family: @fontB; color: #525252; margin-bottom: 40px;}
     }   
 

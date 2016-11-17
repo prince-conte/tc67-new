@@ -2,31 +2,35 @@
 
 .page--inform {float: left; width: 100%; background: #fafafa; padding-bottom: 65px;
     .content { .content--float {width: 100%; background: #fff; float: left; padding-bottom: 58px;}}    
-h1 {text-align: center; color: @coltxt !important; padding-bottom: 25px; font-size: 30px !important; font-family: @fontH !important;} 
-h2 {text-align: center; color: @coltxt !important; padding-bottom: 25px; font-size: 24px !important; font-family: @fontH !important;} 
+
+h2 {text-align: center; color: @coltxt !important; padding: 25px 0; font-size: 24px !important; font-family: @fontH !important;} 
 .left {text-align: left;}
-article {padding: 78px 0px 25px; float: left; width: 100%;
-p {margin: 20px 0; line-height: 1.8 !important;  float: left; width: 100%; display: block; font-size: 14px; font-family: @fonttxt !important; padding: 0 180px;} 
+article {padding: 78px 180px 25px; float: left; width: 100%;
+p {margin: 20px 0; line-height: 1.8 !important;  float: left; width: 100%; display: block; font-size: 14px; font-family: @fonttxt !important; padding: 0;} 
     img {padding:0 85px; margin: 20px 0;} 
 b {font-family: @fontB}
 .title-in-tc { font-size: 22px;}
 .title-in-tc-big { font-size: 28px;}
-li {padding: 0 185px 0 205px;  line-height: 1.8 !important; display: block; font-size: 14px !important;
+li {padding: 0 185px 0 205px;  line-height: 1.8 !important; display: block;
  span {padding-left: 20px;  line-height: 1.8 !important;  float: left; width: 100%; display: block; float: left; width: 100%; font-family: @fontH !important;}
 }
-    a {font-family: @fontB !important; color:@colfirm2; font-size: 14px !important; .m-speed;}
+    a {font-family: @fontB !important; color:@colfirm2; font-size: 17px; .m-speed;}
     
     a:hover {color: @colfirm;}
+    
+h1 {text-align: center; color: @coltxt !important; padding: 25px 0; font-size: 30px !important; font-family: @fontH !important;} 
+h1:first-child {padding-bottom: 0px 0 25px ; }    
+
     }
     
     
 
 // spisok mark    
-.spisok { float: left; width: 100%; padding:0 180px 10px;; 
+.spisok { float: left; width: 100%; padding:0 0px 10px;; 
 li { position: relative; float: left; width: 100%; font-size: 17px; padding: 6px 0; padding-left: 22px;
     a:hover {color: @colfirm;}   
 }  
-li::before { content: ''; position: absolute; left: 0px; top: 15px; width: 8px; height: 8px; background: @coltxt; border-radius:  50%;}    
+li::before { content: ''; position: absolute; left: 0px; top: 17px; width: 8px; height: 8px; background: @coltxt; border-radius:  50%;}    
     
 }  
     
@@ -39,15 +43,16 @@ li::before { content: ''; position: absolute; left: 0px; top: 15px; width: 8px; 
 }
 
 @media screen and (min-width:1024px) and (max-width:1279px)   {
-    
-    
+.page--inform article {padding: 78px 55px 25px;}    
 }
 
 
 @media screen and (min-width:768px) and (max-width:1023px)   {
+ 
+.page--inform article {padding: 78px 45px 25px;}    
     
 .page--inform article p {
-    padding: 0 25px;
+    padding: 0px;
 }  
     
     
@@ -66,48 +71,52 @@ li::before { content: ''; position: absolute; left: 0px; top: 15px; width: 8px; 
 
 
 @media screen and (min-width:600px) and (max-width:767px)   {
-
+.page--inform article {padding: 78px 55px 25px;}  
+    
 .page--inform article p {
-    padding: 0 25px;
+    padding: 0 px;
 } 
     
     
 .page--inform article li {
-    padding: 0 25px 0 30px;
+    padding: 0 0px 0 30px;
 }
     
 .page--inform .spisok {
     float: left;
     width: 100%;
-    padding: 0 25px 10px;
+    padding: 0 0px 10px;
 }
     
 }
 
 
 @media screen and (min-width:420px) and (max-width:599px)   {
+.page--inform article {padding: 78px 25px 25px;}    
     
 .page--inform article p {
-    padding: 0 25px;
+    padding: 0 0px;
 } 
 
     
 .page--inform article li {
-    padding: 0 25px 0 30px;
+    padding: 0 0px 0 30px;
 }
     
 .page--inform .spisok {
     float: left;
     width: 100%;
-    padding: 0 25px 10px;
+    padding: 0 0px 10px;
 }
     
 }
 
 
 @media screen and (max-width:419px)   {
+    
+.page--inform article {padding: 78px 25px 25px;}  
 .page--inform article p {
-    padding: 0 25px;
+    padding: 0 0px;
 } 
     
 .page--inform h1 {
@@ -122,13 +131,13 @@ li::before { content: ''; position: absolute; left: 0px; top: 15px; width: 8px; 
 }
     
 .page--inform article li {
-    padding: 0 25px 0 30px;
+    padding: 0 0px 0 30px;
 }
    
 .page--inform .spisok {
     float: left;
     width: 100%;
-    padding: 0 25px 10px;
+    padding: 0 0px 10px;
 }
     
 }
