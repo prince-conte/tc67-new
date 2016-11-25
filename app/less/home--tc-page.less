@@ -4,12 +4,14 @@
 .ph_cat_bg {background: #edeef0 !important;
 .one-tc {    border-left: solid 10px #edeef0 !important; border-right: solid 10px #edeef0 !important}
 .title-bar {    border-left: solid 10px #edeef0 !important; border-right: solid 10px #edeef0 !important}
+    
+.one--teeser--stick span {background: #edeef0 !important;}
 
 }
 
 
 .home--tc--page {float: left; width: 100%; position: relative; font-size: 0px; height: 560px;
-.content {height: 100%;}
+.content {height: 100%;} 
 
     
 
@@ -26,10 +28,16 @@
  .nav-inform { float: left; width: 100%;  height: 68px; text-align: center;  border-bottom: solid 1px #eeeeee;
 li {display: inline-table; height: 100%; margin: 0 12px;
 a {.middle; color: @coltxt; font-family: @fontB; font-size: 14px; text-transform: uppercase; .m-speed;
-.col-posit {margin-left: 15px; font-size: 14px; background: #eeeeee; font-style: normal; color: #909090; display: inline; padding: 8px 18px; border-radius: 45px;}      
+.col-posit {margin-left: 15px; font-size: 14px; background: #eeeeee; font-style: normal; color: #909090; display: inline; padding: 8px 18px; border-radius: 45px; .m-speed;}      
 }   
-a:hover {color: @colfirm2;}
-    .active {color: @colfirm2;}    
+a:hover {color: @colfirm2;
+    .col-posit {background: @colfirm2; color:#fff}   
+}
+    
+
+    .active {color: @colfirm2;}  
+    
+    
 }    
 
 } 
@@ -218,7 +226,7 @@ ul:last-child {border-bottom: solid 0px;}
  
 .tc--content-info-one {position: relative; float: left; width: 50%; 
 border-left: solid  20px #fff; border-right: solid  20px #fff;
-height: 400px;
+min-height: 400px;
 #map { width: 100%;height: 100%; position: absolute; top:0px; left: 0px; }       
     
 .one--table-line {width: 100%; height: 47px; float: left; position: relative;  
@@ -234,7 +242,10 @@ height: 400px;
     
     
 .one--table-line::before {content: ''; position: absolute; width: 100%; border: dotted 1px #f3f3f3; top:15px; left: 0px;}
-}    
+} 
+    
+    .tc--content-info-one:first-child {height: 400px}    
+    
 }
 
 
@@ -265,16 +276,17 @@ p {font-size: 15px; float: left; width: 100%;}
 .table-mag-desktop {float: left; width: 100%; margin: 25px 0; background: #fff; margin-top: 0px; display: block; border-left: solid 10px #edeef0 !important; padding: 20px 25px 25px;
     border-right: solid 10px #edeef0 !important;
 .line-mag {float: left; width: 100%;  font-size: 14px; border-bottom: solid 1px @colfirm2; 
-.addr {float: left; width: 25%; display: inline-block; padding: 10px; }    
-.time {float: left; width: 25%; display: inline-block; padding: 10px;}    
-.type {float: left; width: 15%; display: inline-block; padding: 10px;}    
-.lico {float: left; width: 20%; display: inline-block; padding: 10px;}    
-.tel{float: left; width: 15%; display: inline-block; padding: 10px; cursor: pointer}       
+.addr {float: left; width: 30%; display: inline-block; padding: 10px; font-size: 16px}    
+.time {float: left; width: 30%; display: inline-block; padding: 10px; font-size: 16px}    
+.type {float: left; width: 20%; display: inline-block; padding: 10px; font-size: 16px}       
+.tel{float: left; width: 20%; display: inline-block; padding: 10px; cursor: pointer; font-size: 16px; color: @colfirm2; font-family: @fontB;}      
+    .name-tel { color: @coltxt;}
 }
 
 .title {font-family: @fontB;} 
-.line-mag:hover { background: @colfirm2; div {color: #fff}}
-.title:hover {background: #fff;  div {color: @colfirm2}} 
+    .title:hover { background: #fff; div{color: @coltxt}} 
+.line-mag:hover { background: @colfirm2; div,a {color: #fff}}
+.title:hover {background: #fff;  div {color: @colfirm2} } 
 }
 
 
@@ -283,6 +295,35 @@ p {font-size: 15px; float: left; width: 100%;}
 #a-table-tx-mag {display: none;}
 #a-table-tx-sale {display: none;}
 .floating-magaz {float: left; width: 100%; display: none;}
+
+
+
+
+
+
+// lightebox
+
+
+.ad-full-w__gallery {
+    float: left;
+    width: 100%;
+    margin: 25px 0 0;
+
+    
+    a {float: left; display: inline-block; border:solid 20px #fff; width: 33.333333%; height: 280px; .bgCC;}
+    
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -653,7 +694,7 @@ h1 {
 
 
 
-@media screen and (min-width:420px) and (max-width:599px)   {
+@media screen and (min-width:480px) and (max-width:599px)   {
 
 .home--tc--content .content--float {
     padding: 40px 25px;
@@ -822,7 +863,7 @@ h1 {
 
 
 
-@media screen and (max-width:419px)   { 
+@media screen and (max-width:479px)   { 
 
 .home--tc--content .content--float {
     padding: 40px 25px;
@@ -940,7 +981,7 @@ h1 {
     float: left;
     height: 100%;
     padding-left: 12px;
-    width: 70%;
+    width: 70% !important;
 }
     
 .cat-tc-one .one-tc .one-info .mag .mag--title h5 {

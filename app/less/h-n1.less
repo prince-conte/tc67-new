@@ -1,5 +1,40 @@
 @import "grundfile.less";
 
+.sl-wrapper 
+{
+.sl-close {
+    position: fixed;
+    display: none;
+    top: 30px;
+    right: 45px;
+    z-index: 1999999999;
+    background: #2ea0f0;
+    height: 60px;
+    width: 60px;
+    font-size: 0px;
+    padding: 0px;
+    border-radius: 0;
+    
+.hamburger-box { 
+    
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    transition-delay: 0.14s;
+    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    left:1px;
+    
+    }
+    
+    .hamburger-inner::after {transform: rotate(-90deg); bottom: 0px;}  
+    .hamburger-inner::before {display: none}  
+    .hamburger-inner {transform: rotate(0deg);}  
+    
+    
+    }
+    
+    .sl-close:hover {opacity: 1;}
+
+}
 #hamb { position: fixed; display: block; top: 30px; right: 45px; z-index: 1999999999; background: #2ea0f0; height: 60px; width: 60px;}
 
 #hamb-mobile {position: absolute;display: block; top: 30px;right: 45px;z-index: 1000001 !important ;background: #2ea0f0;height: 60px;width: 60px;}

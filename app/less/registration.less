@@ -25,7 +25,7 @@
 .input-button:hover {position: relative; display: inline-block;  background-color: #0dc652;  color: #fff !important;}
 
 
-.section--reg--form {width: 100%;float: left; background: #fafafa;
+.section--reg--form {width: 100%;float: left; background: #d0d0d0;
 .content {
 .float-content {float: left;  padding: 30px 0;   width: 100%; background: #fff;  margin-bottom: 70px;
 min-height: 750px;} }
@@ -57,7 +57,7 @@ textarea {display: block; width: 100%; border: solid 1px #dddddd; padding: 20px;
     
 .section--reg--akkaunt {float: left; width: 100%; padding: 0 242px; margin-bottom: 70px;
 .section--reg--akkaunt--one {float: left; display: inline-table; width: 50%; box-shadow: 0px 18px 27px 0px rgba(209, 209, 209, 0.004);
-border: solid 9px #fafafa; height: 300px; background: @coltxt; position: relative;
+border: solid 9px #fff; height: 300px; background: @coltxt; position: relative;
 .ph-image {position: absolute; display: block; width: 100%; height: 100%; top:0px; left:0px;
 .bgCC; opacity: 0.55; }
 .phbg{position: absolute; width: 100%; height: 100%; top:0px; left:0px; opacity: 0.75; background: #18db61; display: none;}
@@ -140,6 +140,10 @@ a, input {min-width: 250px; margin: 0 10px;}
 }
 
 @media screen and (min-width:600px) and (max-width:767px)  {
+ 
+.section--reg--form input {
+    margin: 0px;
+}    
     
     
 .section--reg--form .section--reg--form--block {
@@ -159,7 +163,11 @@ a, input {min-width: 250px; margin: 0 10px;}
 
 @media screen and (min-width:420px) and (max-width:599px)  {
     
-    
+ 
+.section--reg--form input {
+    margin: 0px;
+}    
+   
     
 .section--reg--form .section--reg--form--block {
     padding: 0 0px;
@@ -196,7 +204,7 @@ a, input {min-width: 250px; margin: 0 10px;}
     
 .section--reg--form .section--reg--akkaunt .section--reg--akkaunt--one {
     width: 100%;
-    border: solid 7px #fafafa;
+    border: solid 7px #d0d0d0;
     height: 300px;
 
 }
@@ -224,16 +232,20 @@ a, input {min-width: 250px; margin: 0 10px;}
 }
 
 @media screen and (max-width:419px){
+
     
-    
-    
+.section--reg--form input {
+    margin: 0px;
+}    
+  
     
 .section--reg--form .section--reg--form--block {
     padding: 0 0px;
+    margin-left: 0px
 }
     
 .section--reg--form .section--reg--akkaunt {
-    padding: 0 0px;
+    padding: 0 25px;
 }
     
 .section--reg--form .section--reg--form--block .input-block {
@@ -263,8 +275,9 @@ a, input {min-width: 250px; margin: 0 10px;}
     
 .section--reg--form .section--reg--akkaunt .section--reg--akkaunt--one {
     width: 100%;
-    border: solid 7px #fafafa;
+    border: solid 7px #fff;
     height: 300px;
+    
 
 }
     
@@ -297,6 +310,14 @@ a, input {min-width: 250px; margin: 0 10px;}
     font-size: 12px;
     color: #2ea0f0;
 }
+    
+    
+    
+    .section--reg--akkaunt {
+        
+        margin-left: 0px
+    }
+    
     
     
 }
