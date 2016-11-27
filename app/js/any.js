@@ -10,6 +10,21 @@
         magClick = 0; magSale = 0; searchHeaderClick = 0; clickMap = 0;
      
      
+ 
+$('.baner').slick({
+  dots: true,
+  infinite: true,
+  speed: 500,
+  dots: false
+});
+     
+     
+     
+     
+     
+     
+     
+     
      
 // map
      
