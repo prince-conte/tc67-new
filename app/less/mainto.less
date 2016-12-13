@@ -177,7 +177,7 @@ span {position: relative; display: inline-block; font-size:14px; color:#fff; lin
 .phbg {position: absolute; display: block; top: 0px; left: 0px; background: #000; opacity: .40; width: 100%; height: 100%; 
 -webkit-transition: all 1s ease-out; -o-transition: all 1s ease-out; transition: all 1s ease-out;}    
 .one-info {position: absolute; display: block; top: 0px; left: 0px; padding: 16px;}
-.sc-image {position: absolute; display: block; width: 101%; height: 101%; top: -0.5%; left: -0.5%; background: url(../img/nophoto.jpg);
+.sc-image {position: absolute; display: block; width: 101%; height: 101%; top: -0.5%; left: -0.5%;
 .bgCC;  -webkit-transition: all 1s ease-out; -o-transition: all 1s ease-out; transition: all 1s ease-out; 
 }}
 .one:hover {.phbg {opacity: 0.75;}
@@ -198,7 +198,7 @@ span {position: relative; display: table-cell; vertical-align: middle; color: #f
 img {position: relative; display:inline-block; vertical-align: middle; height: 14px; width: auto; margin: 0px; margin-right: 10px;}}
 }}
     
-.image {position: absolute; display: block; width: 100%; height: 100%; top:0px; left:0px; overflow: hidden; border: solid 8px #fff; .bgCC; background: url(../img/nophoto.jpg); 
+.image {position: absolute; display: block; width: 100%; height: 100%; top:0px; left:0px; overflow: hidden; border: solid 8px #fff; .bgCC;
 .phbg {position: absolute; display: block; top: 0px; left: 0px; background: #000; opacity: .40; width: 100%; height: 100%; 
 -webkit-transition: all 1s ease-out; -o-transition: all 1s ease-out; transition: all 1s ease-out;}    
 .one-info {position: absolute; display: block; top: 0px; left: 0px; padding: 16px;}
@@ -242,7 +242,40 @@ a { font-size: 20px; background: @colfirm2 !important; font-family: @fontB !impo
 }
 
 
+// slick arrow
 
+
+.slick-prev {
+    position: absolute;
+    display: block;
+    width: 20px;
+    height: 33px;
+    background: url(../img/left.svg);
+    background-position: CENTER CENTER!important;
+    background-repeat: no-repeat!important;
+    background-size: contain!important;
+    top: 50%;
+    margin-top: -16px;
+    left: 250px;
+    z-index: 99999
+}
+
+
+.slick-next {
+    position: absolute;
+    display: block;
+    width: 20px;
+    height: 33px;
+    background: url(../img/left.svg);
+    background-position: CENTER CENTER!important;
+    background-repeat: no-repeat!important;
+    background-size: contain!important;
+    top: 50%;
+    margin-top: -16px;
+    right: 250px;
+    z-index: 99999;
+    .pov5;
+}
 
 
 
@@ -257,6 +290,22 @@ a { font-size: 20px; background: @colfirm2 !important; font-family: @fontB !impo
 }
 
 
+
+
+.slick-prev {
+    left: 60px;
+}
+
+
+.slick-next {
+    right: 60px;
+}
+
+
+
+
+
+
 @media screen and (min-width:768px) and (max-width:1023px)   {
 
 .content {
@@ -268,6 +317,30 @@ a { font-size: 20px; background: @colfirm2 !important; font-family: @fontB !impo
     width: 50%;
     height: 240px;
 }
+    
+    
+.slick-prev {
+    left: 60px;
+}
+
+
+.slick-next {
+    right: 60px;
+}
+
+   
+
+
+.slick-prev {
+    left: 30px;
+}
+
+
+.slick-next {
+    right: 30px;
+}
+
+   
  
 }
 
@@ -337,6 +410,23 @@ h3 {
     top: 100%;
     float: left;
 }
+    
+    
+
+
+.slick-prev {
+    display: none;
+}
+
+
+.slick-next {
+    display: none;
+}
+
+   
+    
+    
+    
 }
 
 
@@ -405,7 +495,20 @@ h2 a {
     float: left;
     margin: 10px 0 !important;
 }    
-        
+    
+
+
+.slick-prev {
+    display: none;
+}
+
+
+.slick-next {
+    display: none;
+}
+
+  
+.non-vip-teeser {display: none !important}   
     
 }
 
@@ -515,7 +618,27 @@ h2 a {
     width: 100%;
     float: left;
     margin: 10px 0 !important;
-}    
+}   
+    
+
+.teeser-slick
+{    
+    
+.slick-prev {
+    display: none !important;
+}
+
+
+.slick-next {
+    display: none !important;
+}
+
+ }
+    
+    
+    
+.non-vip-teeser {display: none !important}    
+    
     
 }
 

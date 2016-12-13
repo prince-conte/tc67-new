@@ -21,8 +21,13 @@ span {font-size: 14px; height: 98px;     padding: 25px 20px 21px;}
 i {font-size: 25px; color: #fff; .m-speed;}
 } .link:hover {i {color: @colfirm2;}}}
         
-.phone-block-f {position: relative; display: inline-block; float: left; padding:5px 0 0 45px;
-font-family: @fonttxt; font-weight: 300; color: #fff; font-size: 24px;}}
+.phone-block-f {position: relative; display: inline-block; float: right; padding:5px 20px 0 45px;
+font-family: @fonttxt; font-weight: 300; color: #fff; font-size: 24px;}
+
+.mail-block-f {position: relative; display: inline-block; float: left; padding:5px 20px 0 45px;
+font-family: @fonttxt; font-weight: 300; color: #fff; font-size: 24px; float: right;}    
+    
+}
 .end-block {position: relative; display: inline-block; float:right; width: 240px;   padding: 5px 0;
 .button {border: solid 2px @colfirm; margin:0px; float: right; width: 100%; text-align: center;  }   
 .cv-blue {border-radius: 0px; background:transparent; color:@colfirm2;  border: solid 2px @colfirm2; span {color:@colfirm2}}
@@ -345,7 +350,18 @@ footer .foot-info .end-block .parus {
     color: #797979;
     font-size: 16px;
     padding-top: 35px;
-    }   }
+    }   
+
+
+footer .foot-info .linked-block .mail-block-f{
+float: left;
+width: 100%;
+padding: 25px;
+text-align: center;    
+    }
+
+
+}
 
 @media screen and (max-width:419px)   {
 
@@ -485,4 +501,10 @@ footer .foot-info .end-block .parus {
 }   
    
 
+footer .foot-info .linked-block .mail-block-f{
+float: left;
+width: 100%;
+padding: 25px;
+text-align: center;    
+    }
 }

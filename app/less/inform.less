@@ -7,10 +7,10 @@ h2 {text-align: center; color: @coltxt !important; padding: 25px 0; font-size: 2
 .left {text-align: left;}
 article {padding: 78px 180px 25px; float: left; width: 100%;
 p {margin: 20px 0; line-height: 1.8 !important;  float: left; width: 100%; display: block; font-size: 14px; font-family: @fonttxt !important; padding: 0;} 
-    img {padding:0 85px; margin: 20px 0;} 
+img {max-width: 100%; padding: 35px 0; width: auto; height: auto; margin: 0 auto; position: relative; display: block;} 
 b {font-family: @fontB}
-.title-in-tc { font-size: 22px;}
-.title-in-tc-big { font-size: 28px;}
+.title-in-tc, h5 { font-size: 22px; font-family: @fontB}
+.title-in-tc-big, h6 { font-size: 28px; font-family: @fontB}
 li {padding: 0 185px 0 205px;  line-height: 1.8 !important; display: block;
  span {padding-left: 20px;  line-height: 1.8 !important;  float: left; width: 100%; display: block; float: left; width: 100%; font-family: @fontH !important;}
 }
@@ -26,18 +26,30 @@ h1:first-child {padding-bottom: 0px 0 25px ; }
     
 
 // spisok mark    
-.spisok { float: left; width: 100%; padding:0 0px 10px;; 
+ul, .spisok { float: left; width: 100%; padding:0 0px 10px;; 
 li { position: relative; float: left; width: 100%; font-size: 17px; padding: 6px 0; padding-left: 22px;
     a:hover {color: @colfirm;}   
 }  
 li::before { content: ''; position: absolute; left: 0px; top: 17px; width: 8px; height: 8px; background: @coltxt; border-radius:  50%;}    
     
 }  
+   
     
-    
+// ya   
+    .ya-share2__list{list-style-type: none !important;
+        
+        li {display: inline-block !important; width: auto !important; list-style-type: none !important; float: none; padding: 0}
+        li:before {display: none}
+        
+        
+    }
     
 }
-.news {h1 {text-align: center; color: #525252 !important; padding-bottom: 25px; font-size: 30px !important; font-family: @fontB !important;}}
+.news { position: relative; h1 {text-align: center; color: #525252 !important; padding-bottom: 25px; font-size: 30px !important; font-family: @fontB !important;}
+
+ img {max-width: 100%; width: auto; height: auto;}
+
+}
 .social--but {text-align: center; float: left; width: 100%; margin:0px 0;
 
 }

@@ -147,8 +147,7 @@ span {display: block; font-family: @fontB; font-size: 16px; color: #fff; padding
 // магазин    
     
 .mag {float: left; width: 100%; margin-bottom: 10px; border-bottom: solid 1px #e8e8e8;     padding: 0px 5px 15px; height: 100px;
-.mag--ava {float: left; width: 63px; height: 63px; margin: 10px 0;  display: inline-table; border-radius: 5px; overflow: hidden;
-background: url(../img/avatar.png); .bgCC;
+.mag--ava {float: left; width: 63px; height: 63px; margin: 10px 0;  display: inline-table; border-radius: 5px; overflow: hidden; .bgCC;
     img{width: 63px; height: 63px; display: table-cell;vertical-align: middle; border-radius: 5px; margin: 0;}    
 }
 
@@ -277,8 +276,11 @@ a:hover {opacity: 0.75; border: solid 1px @colfirm2;}
 .cat--tc--inform--mag {padding-top: 0px;
 
 .mag--infom--txt {float: left; width: 100%;  height: auto; text-align: center; 
-    article {padding: 0px 80px 50px;    background: #fff; float: left;
+    article {padding: 0px 80px 50px; position: relative; background: #fff; float: left;
         h3 {font-size: 30px; font-family: @fontB; color: #525252; margin-bottom: 40px;}
+        
+        img {max-width: 100%; width: auto; height: auto; margin: 0 auto; position: relative; display: block;}  
+        
     }   
 
     }}
@@ -926,5 +928,5 @@ select {  padding: 0 10px !important;}  }
 .cat-tc-one .one-tc .one-info .mag .mag--title {margin-top: 18px;} 
     
 .ui-in {border-right: solid 0px @colfirm2 !important;}    
-    
+
 }

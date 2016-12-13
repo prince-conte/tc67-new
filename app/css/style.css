@@ -722,7 +722,6 @@ progress[value]::-webkit-progress-value {
   height: 101%;
   top: -0.5%;
   left: -0.5%;
-  background: url(../img/nophoto.jpg);
   background-position: CENTER CENTER !important;
   background-repeat: no-repeat !important;
   background-size: COVER !important;
@@ -834,7 +833,6 @@ progress[value]::-webkit-progress-value {
   background-position: CENTER CENTER !important;
   background-repeat: no-repeat !important;
   background-size: COVER !important;
-  background: url(../img/nophoto.jpg);
 }
 .one .image .phbg {
   position: absolute;
@@ -925,12 +923,55 @@ h2 a:hover {
   background: #fff !important;
   color: #2ea0f0 !important;
 }
+.slick-prev {
+  position: absolute;
+  display: block;
+  width: 20px;
+  height: 33px;
+  background: url(../img/left.svg);
+  background-position: CENTER CENTER!important;
+  background-repeat: no-repeat !important;
+  background-size: contain!important;
+  top: 50%;
+  margin-top: -16px;
+  left: 250px;
+  z-index: 99999;
+}
+.slick-next {
+  position: absolute;
+  display: block;
+  width: 20px;
+  height: 33px;
+  background: url(../img/left.svg);
+  background-position: CENTER CENTER!important;
+  background-repeat: no-repeat !important;
+  background-size: contain!important;
+  top: 50%;
+  margin-top: -16px;
+  right: 250px;
+  z-index: 99999;
+  -moz-transform: rotate(180deg);
+  /* Для Firefox */
+  -ms-transform: rotate(180deg);
+  /* Для IE */
+  -webkit-transform: rotate(180deg);
+  /* Для Safari, Chrome, iOS */
+  -o-transform: rotate(180deg);
+  /* Для Opera */
+  transform: rotate(180deg);
+}
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
   .content {
     width: 100% !important;
     padding-left: 25px;
     padding-right: 25px;
   }
+}
+.slick-prev {
+  left: 60px;
+}
+.slick-next {
+  right: 60px;
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .content {
@@ -941,6 +982,18 @@ h2 a:hover {
   .home-arenda .a-table .one {
     width: 50%;
     height: 240px;
+  }
+  .slick-prev {
+    left: 60px;
+  }
+  .slick-next {
+    right: 60px;
+  }
+  .slick-prev {
+    left: 30px;
+  }
+  .slick-next {
+    right: 30px;
   }
 }
 @media screen and (min-width: 600px) and (max-width: 767px) {
@@ -990,6 +1043,12 @@ h2 a:hover {
     width: 100%;
     top: 100%;
     float: left;
+  }
+  .slick-prev {
+    display: none;
+  }
+  .slick-next {
+    display: none;
   }
 }
 @media screen and (min-width: 480px) and (max-width: 599px) {
@@ -1045,6 +1104,15 @@ h2 a:hover {
     width: 100%;
     float: left;
     margin: 10px 0 !important;
+  }
+  .slick-prev {
+    display: none;
+  }
+  .slick-next {
+    display: none;
+  }
+  .non-vip-teeser {
+    display: none !important;
   }
 }
 @media screen and (max-width: 479px) {
@@ -1140,6 +1208,15 @@ h2 a:hover {
     width: 100%;
     float: left;
     margin: 10px 0 !important;
+  }
+  .teeser-slick .slick-prev {
+    display: none !important;
+  }
+  .teeser-slick .slick-next {
+    display: none !important;
+  }
+  .non-vip-teeser {
+    display: none !important;
   }
 }
 .sl-wrapper .sl-close {
@@ -2637,14 +2714,16 @@ nav .top-menu li .login:hover span {
     width: 100%;
   }
 }
+.teeser-slick {
+  margin: 130px 0px 0px;
+}
 .teeser {
   position: relative;
   display: block;
   width: 100%;
-  padding: 80px 0 0;
   height: 640px;
   float: left;
-  margin: 50px 0px 0px;
+  margin: 130px 0px 0px;
 }
 .teeser .slide {
   position: absolute;
@@ -2740,6 +2819,9 @@ nav .top-menu li .login:hover span {
   margin: 25px;
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+  .teeser-slick {
+    margin: 80px 0px 0px;
+  }
   .teeser .content {
     display: table;
     width: 90% !important;
@@ -2749,6 +2831,9 @@ nav .top-menu li .login:hover span {
   }
 }
 @media screen and (min-width: 600px) and (max-width: 767px) {
+  .teeser-slick {
+    margin: 60px 0px 0px;
+  }
   .teeser .content {
     display: table;
     width: 90% !important;
@@ -2758,6 +2843,9 @@ nav .top-menu li .login:hover span {
   }
 }
 @media screen and (min-width: 420px) and (max-width: 599px) {
+  .teeser-slick {
+    margin: 40px 0px 0px;
+  }
   .teeser .midi h3.bold {
     color: #fff;
     padding: 13px;
@@ -2772,6 +2860,9 @@ nav .top-menu li .login:hover span {
   }
 }
 @media screen and (max-width: 419px) {
+  .teeser-slick {
+    margin: 40px 0px 0px;
+  }
   .teeser .midi h3.bold {
     color: #fff;
     padding: 13px;
@@ -2824,7 +2915,7 @@ nav .top-menu li .login:hover span {
   transition: all 0.3s;
 }
 .a-table--body-vip .one--teeser--block .tees-border {
-  border: 1px solid #e5e5e5;
+  border: 1px solid #cd5272;
   position: relative;
   display: block;
   float: left;
@@ -2859,7 +2950,8 @@ nav .top-menu li .login:hover span {
 .a-table--body-vip .one--teeser--block .tees-border .one--teeser--stick span {
   display: inline-block;
   font-size: 21px;
-  font-family: 'ProximaNovaBold', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
   color: #232425;
   background: #fafafa;
   padding: 12px;
@@ -2923,7 +3015,8 @@ nav .top-menu li .login:hover span {
   float: left;
   display: block;
   font-size: 18px;
-  font-family: 'ProximaNovaBold', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
   color: #232425;
   text-align: center;
   line-height: 1.7;
@@ -4655,7 +4748,6 @@ nav .top-menu li .login:hover span {
   display: inline-table;
   border-radius: 5px;
   overflow: hidden;
-  background: url(../img/avatar.png);
   background-position: CENTER CENTER !important;
   background-repeat: no-repeat !important;
   background-size: COVER !important;
@@ -4970,6 +5062,7 @@ nav .top-menu li .login:hover span {
 }
 .cat--tc--inform--mag .mag--infom--txt article {
   padding: 0px 80px 50px;
+  position: relative;
   background: #fff;
   float: left;
 }
@@ -4978,6 +5071,14 @@ nav .top-menu li .login:hover span {
   font-family: 'ProximaNovaBold', sans-serif;
   color: #525252;
   margin-bottom: 40px;
+}
+.cat--tc--inform--mag .mag--infom--txt article img {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+  position: relative;
+  display: block;
 }
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
   .tc-menu li {
@@ -5615,12 +5716,23 @@ footer .foot-info .linked-block .social .link:hover i {
 footer .foot-info .linked-block .phone-block-f {
   position: relative;
   display: inline-block;
-  float: left;
-  padding: 5px 0 0 45px;
+  float: right;
+  padding: 5px 20px 0 45px;
   font-family: 'ProximaNovaRegular', sans-serif;
   font-weight: 300;
   color: #fff;
   font-size: 24px;
+}
+footer .foot-info .linked-block .mail-block-f {
+  position: relative;
+  display: inline-block;
+  float: left;
+  padding: 5px 20px 0 45px;
+  font-family: 'ProximaNovaRegular', sans-serif;
+  font-weight: 300;
+  color: #fff;
+  font-size: 24px;
+  float: right;
 }
 footer .foot-info .end-block {
   position: relative;
@@ -5933,6 +6045,12 @@ footer .foot-info .end-block .parus a:hover {
     font-size: 16px;
     padding-top: 35px;
   }
+  footer .foot-info .linked-block .mail-block-f {
+    float: left;
+    width: 100%;
+    padding: 25px;
+    text-align: center;
+  }
 }
 @media screen and (max-width: 419px) {
   footer .foot-info .end-block .cv-blue {
@@ -6050,6 +6168,12 @@ footer .foot-info .end-block .parus a:hover {
     font-size: 16px;
     padding-top: 35px;
   }
+  footer .foot-info .linked-block .mail-block-f {
+    float: left;
+    width: 100%;
+    padding: 25px;
+    text-align: center;
+  }
 }
 .ph_cat_bg {
   background: #edeef0 !important;
@@ -6164,9 +6288,13 @@ footer .foot-info .end-block .parus a:hover {
   color: #fff;
   margin-bottom: 20px;
 }
+.tc--page--sl-title .tc--page--info h1 a {
+  color: #fff;
+  font-size: 42px;
+}
 .tc--page--sl-title .tc--page--info .tc--page--info--desc {
   display: block;
-  font-size: 20px;
+  font-size: 24px;
   color: #fff;
   height: 22px;
   text-align: center;
@@ -6302,6 +6430,12 @@ footer .foot-info .end-block .parus a:hover {
   background-size: contain!important;
 }
 /*! http://responsiveslides.com v1.54 by @viljamis */
+.home--tc--page .rslides {
+  background: #000;
+}
+.home--tc--page .rslides li {
+  opacity: .4;
+}
 .rslides {
   position: absolute;
   list-style: none;
@@ -6314,9 +6448,6 @@ footer .foot-info .end-block .parus a:hover {
   top: 0px;
   left: 0px;
   z-index: 9;
-  background-position: CENTER CENTER !important;
-  background-repeat: no-repeat !important;
-  background-size: COVER !important;
 }
 .rslides ul {
   width: 100% !important;
@@ -6333,17 +6464,6 @@ footer .foot-info .end-block .parus a:hover {
   background-position: CENTER CENTER !important;
   background-repeat: no-repeat !important;
   background-size: COVER !important;
-}
-.rslides .parallax-wtf .phbg {
-  background-image: -moz-linear-gradient(90deg, rgba(0, 0, 0, 0.56078) 0%, rgba(2, 2, 2, 0.28) 37%, rgba(3, 3, 3, 0.24) 47%, rgba(6, 6, 6, 0) 100%);
-  background-image: -webkit-linear-gradient(90deg, rgba(0, 0, 0, 0.56078) 0%, rgba(2, 2, 2, 0.28) 37%, rgba(3, 3, 3, 0.24) 47%, rgba(6, 6, 6, 0) 100%);
-  background-image: -ms-linear-gradient(90deg, rgba(0, 0, 0, 0.56078) 0%, rgba(2, 2, 2, 0.28) 37%, rgba(3, 3, 3, 0.24) 47%, rgba(6, 6, 6, 0) 100%);
-  position: absolute;
-  display: block;
-  width: 100%;
-  height: 100%;
-  top: 0px;
-  left: 0px;
 }
 .rslides .parallax {
   -webkit-backface-visibility: hidden;
@@ -9059,17 +9179,26 @@ div[data-role="editor-toolbar"] {
   padding: 0;
 }
 .page--inform article img {
-  padding: 0 85px;
-  margin: 20px 0;
+  max-width: 100%;
+  padding: 35px 0;
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+  position: relative;
+  display: block;
 }
 .page--inform article b {
   font-family: 'ProximaNovaBold', sans-serif;
 }
-.page--inform article .title-in-tc {
+.page--inform article .title-in-tc,
+.page--inform article h5 {
   font-size: 22px;
+  font-family: 'ProximaNovaBold', sans-serif;
 }
-.page--inform article .title-in-tc-big {
+.page--inform article .title-in-tc-big,
+.page--inform article h6 {
   font-size: 28px;
+  font-family: 'ProximaNovaBold', sans-serif;
 }
 .page--inform article li {
   padding: 0 185px 0 205px;
@@ -9106,11 +9235,13 @@ div[data-role="editor-toolbar"] {
 .page--inform article h1:first-child {
   padding-bottom: 0px 0 25px ;
 }
+.page--inform ul,
 .page--inform .spisok {
   float: left;
   width: 100%;
   padding: 0 0px 10px;
 }
+.page--inform ul li,
 .page--inform .spisok li {
   position: relative;
   float: left;
@@ -9119,9 +9250,11 @@ div[data-role="editor-toolbar"] {
   padding: 6px 0;
   padding-left: 22px;
 }
+.page--inform ul li a:hover,
 .page--inform .spisok li a:hover {
   color: #18db61;
 }
+.page--inform ul li::before,
 .page--inform .spisok li::before {
   content: '';
   position: absolute;
@@ -9132,12 +9265,33 @@ div[data-role="editor-toolbar"] {
   background: #232425;
   border-radius: 50%;
 }
+.page--inform .ya-share2__list {
+  list-style-type: none !important;
+}
+.page--inform .ya-share2__list li {
+  display: inline-block !important;
+  width: auto !important;
+  list-style-type: none !important;
+  float: none;
+  padding: 0;
+}
+.page--inform .ya-share2__list li:before {
+  display: none;
+}
+.news {
+  position: relative;
+}
 .news h1 {
   text-align: center;
   color: #525252 !important;
   padding-bottom: 25px;
   font-size: 30px !important;
   font-family: 'ProximaNovaBold', sans-serif !important;
+}
+.news img {
+  max-width: 100%;
+  width: auto;
+  height: auto;
 }
 .social--but {
   text-align: center;
@@ -9385,7 +9539,7 @@ div[data-role="editor-toolbar"] {
 .mess__block .mes-tabs .mess-info p {
   float: left;
   width: 100%;
-  font-size: 16px;
+  font-size: 20px;
 }
 .mess__block .mes-tabs .mess-info p a {
   color: #18db61;
