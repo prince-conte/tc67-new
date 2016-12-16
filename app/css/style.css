@@ -724,7 +724,7 @@ progress[value]::-webkit-progress-value {
   left: -0.5%;
   background-position: CENTER CENTER !important;
   background-repeat: no-repeat !important;
-  background-size: COVER !important;
+  background-size: contain!important;
   -webkit-transition: all 1s ease-out;
   -o-transition: all 1s ease-out;
   transition: all 1s ease-out;
@@ -863,7 +863,7 @@ progress[value]::-webkit-progress-value {
   left: -0.5%;
   background-position: CENTER CENTER !important;
   background-repeat: no-repeat !important;
-  background-size: COVER !important;
+  background-size: contain!important;
   -webkit-transition: all 1s ease-out;
   -o-transition: all 1s ease-out;
   transition: all 1s ease-out;
@@ -1275,12 +1275,12 @@ h2 a:hover {
 header .phbgh {
   position: fixed;
   display: none;
-  height: 0px;
+  height: 100px;
   width: 100%;
   top: 0px;
   left: 0px;
   background: #000;
-  z-index: 99;
+  z-index: 8;
 }
 #hamb-t {
   position: fixed;
@@ -1516,7 +1516,7 @@ nav {
   left: 0px;
   width: 100%;
   height: 100px;
-  z-index: 999;
+  z-index: 9999;
 }
 nav .logo-block {
   display: inline-block;
@@ -2227,6 +2227,7 @@ nav .top-menu li .login:hover span {
   position: relative;
   display: table;
   height: 100%;
+  z-index: 999;
 }
 .home .home-table h1 {
   position: relative;
@@ -2249,6 +2250,7 @@ nav .top-menu li .login:hover span {
   left: 0px;
   width: 100%;
   height: 100px;
+  z-index: 9999;
 }
 .home .sl-txt .sl-txt-block {
   position: relative;
@@ -2322,8 +2324,8 @@ nav .top-menu li .login:hover span {
   top: 0px;
   left: 0px;
   width: 100%;
-  height: 296px;
-  z-index: 99;
+  height: 90%;
+  z-index: 8;
   background-image: -moz-linear-gradient(-90deg, rgba(0, 0, 0, 0.56078) 0%, rgba(2, 2, 2, 0.28) 37%, rgba(3, 3, 3, 0.24) 47%, rgba(6, 6, 6, 0) 100%);
   background-image: -webkit-linear-gradient(-90deg, rgba(0, 0, 0, 0.56078) 0%, rgba(2, 2, 2, 0.28) 37%, rgba(3, 3, 3, 0.24) 47%, rgba(6, 6, 6, 0) 100%);
   background-image: -ms-linear-gradient(-90deg, rgba(0, 0, 0, 0.56078) 0%, rgba(2, 2, 2, 0.28) 37%, rgba(3, 3, 3, 0.24) 47%, rgba(6, 6, 6, 0) 100%);
@@ -2614,7 +2616,7 @@ nav .top-menu li .login:hover span {
   left: -0.5%;
   background-position: CENTER CENTER !important;
   background-repeat: no-repeat !important;
-  background-size: COVER !important;
+  background-size: contain!important;
   -webkit-transition: all 1s ease-out;
   -o-transition: all 1s ease-out;
   transition: all 1s ease-out;
@@ -3379,7 +3381,7 @@ nav .top-menu li .login:hover span {
   left: -0.5%;
   background-position: CENTER CENTER !important;
   background-repeat: no-repeat !important;
-  background-size: COVER !important;
+  background-size: contain!important;
   -webkit-transition: all 1s ease-out;
   -o-transition: all 1s ease-out;
   transition: all 1s ease-out;
@@ -4726,6 +4728,7 @@ nav .top-menu li .login:hover span {
   display: inline-table;
   height: 100%;
   margin-left: 15px;
+  margin-right: 10px;
 }
 .cat-tc-one .one-tc .one-info .desc span {
   display: table-cell;
@@ -7700,6 +7703,12 @@ footer .foot-info .end-block .parus a:hover {
     margin-left: 0px;
   }
 }
+.error-wtf {
+  color: red;
+  float: left;
+  margin-bottom: 25px;
+  margin-top: -10px;
+}
 .archiv {
   display: none;
 }
@@ -8561,6 +8570,8 @@ h2 {
   float: left;
   margin-right: 25px;
   font-size: 14px;
+  font-weight: 700;
+  font-family: 'Open Sans', sans-serif;
   color: #232425;
   padding: 20px;
   padding-left: 0px;
