@@ -10689,3 +10689,38 @@ body .redactor_toolbar li a.redactor_btn_alignment {
   height: 0px;
   background-color: bisque;
 }
+.sayavka_title {
+  text-align: center;
+  margin-bottom: 45px;
+  color: #232425;
+}
+.sayavka-button {
+  width: auto !important;
+  display: inline-block !important;
+}
+.sayavka-button span {
+  padding: 10px 20px;
+  font-size: 12px;
+  font-family: 'ProximaNovaRegular', sans-serif;
+}
+.sayavka-button:hover {
+  width: auto !important;
+  display: inline-block !important;
+}
+.sayavka-button:hover span {
+  padding: 10px 20px !important;
+  font-size: 12px !important;
+  font-family: 'ProximaNovaRegular', sans-serif;
+}
+.sayavka-list {
+  display: block;
+  float: left;
+  width: 100%;
+  margin: 15px 0;
+}
+.sayavka-list li {
+  margin: 8px 0;
+  font-size: 18px;
+  padding: 0px !important;
+  font-family: 'ProximaNovaBold', sans-serif;
+}
